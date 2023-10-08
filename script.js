@@ -138,23 +138,24 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error('Error loading file list:', error));
-
-        function handleFileData(data) {
-            lines = data.split('\n');
-            currentIndex = 0;
-            displayText.innerText = lines[currentIndex];
-        }
+ 
         
         window.loadFile = function () {
             const selectedFile = fileSelector.value;
         
-            // Seçilen dosyayı yükleme
-            fetch(selectedFile)
-                .then(response => response.text())
-                .then(data => {
-                    handleFileData(data);  // veriyi handleFileData fonksiyonuna gönderme
-                })
-                .catch(error => console.error('Error loading the file:', error));
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                lines = selectedFile.target.result.split('\n');
+                currentIndex = 0;
+                displayText.innerText = lines[currentIndex];
+            };
+            reader.readAsText(selectedFile);
+
         };
-        
+
+
+
+
+
+
 });
