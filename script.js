@@ -3,7 +3,8 @@ let isPlaying = false;
 let isMuted = false; // Eklenen değişken
 let timer;
 let lines = [];
- 
+
+
 const fileInput = document.getElementById('fileInput');
 const playPauseBtn = document.getElementById('playPauseBtn');
 const delayInput = document.getElementById('delayInput');
@@ -123,6 +124,8 @@ function translateText(text) {
 
 
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const fileSelector = document.getElementById('fileSelector');
     
@@ -139,22 +142,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error loading file list:', error));
 
-        function handleFileData(data) {
-            lines = data.split('\n');
-            currentIndex = 0;
-            displayText.innerText = lines[currentIndex];
-        }
-        
-        window.loadFile = function () {
-            const selectedFile = fileSelector.value;
-        
-            // Seçilen dosyayı yükleme
-            fetch(selectedFile)
-                .then(response => response.text())
-                .then(data => {
-                    handleFileData(data);  // veriyi handleFileData fonksiyonuna gönderme
-                })
-                .catch(error => console.error('Error loading the file:', error));
-        };
-        
+    window.loadFile = function () {
+        const selectedFile = fileSelector.value;
+
+        // Seçilen dosyayı yükleme
+        fetch(selectedFile)
+            .then(response => response.text())
+            .then(data => {
+                // 'data' değişkeni seçilen dosyanın içeriğini tutar.
+                // İçeriği istediğiniz gibi kullanın, örneğin bir paragrafa yerleştirme:
+                document.getElementById('content').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+    }
 });
