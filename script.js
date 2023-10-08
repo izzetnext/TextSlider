@@ -122,6 +122,22 @@ function translateText(text) {
 
 
 
+
+window.loadFile = function () {
+    const selectedFile = fileSelector.value;
+
+    // Seçilen dosyayı yükleme
+    fetch(selectedFile)
+        .then(response => response.text())
+        .then(data => {
+            lines = data.split('\n');  // Metin dosyasındaki satırları ayırma
+            currentIndex = 0;  // Başlangıç index'i
+            document.getElementById('displayText').innerText = lines[currentIndex];  // İlk satırı gösterme
+        })
+        .catch(error => console.error('Error loading the file:', error));
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const fileSelector = document.getElementById('fileSelector');
     
