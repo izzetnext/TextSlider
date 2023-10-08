@@ -14,6 +14,9 @@ const muteUnmuteBtn = document.getElementById('muteUnmuteBtn'); // Eklenen buton
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
+const presetTextsSelect = document.getElementById('presetTexts');
+
+
 prevBtn.addEventListener('click', function() {
     if (currentIndex > 0) {
         currentIndex--;
@@ -40,6 +43,7 @@ function updateSlide() {
 fileInput.addEventListener('change', handleFileUpload);
 playPauseBtn.addEventListener('click', togglePlayPause);
 muteUnmuteBtn.addEventListener('click', toggleMuteUnmute); // Eklenen event listener
+ 
 
 document.body.addEventListener('keydown', function(event) {
     if (event.key === ' ') {
@@ -121,38 +125,23 @@ function translateText(text) {
 }
 
 
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const fileSelector = document.getElementById('fileSelector');
-    
-    // Dosya isimlerini yükleme
-    fetch('files.json')
-        .then(response => response.json())
-        .then(data => {
-            data.files.forEach(file => {
-                const option = document.createElement('option');
-                option.value = file;
-                option.textContent = file;
-                fileSelector.appendChild(option);
-            });
-        })
-        .catch(error => console.error('Error loading file list:', error));
-
-    window.loadFile = function () {
-        const selectedFile = fileSelector.value;
-
-        // Seçilen dosyayı yükleme
-        fetch(selectedFile)
-            .then(response => response.text())
-            .then(data => {
-                // 'data' değişkeni seçilen dosyanın içeriğini tutar.
-                // İçeriği istediğiniz gibi kullanın, örneğin bir paragrafa yerleştirme:
-                document.getElementById('content').innerText = data;
+ 
+presetTextsSelect.addEventListener('change', function() {
+    if (presetTextsSelect.value) {
+        fetch(presetTextsSelect.value)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok' + response.statusText);
+                }
+                return response.text();
             })
-            .catch(error => console.error('Error loading the file:', error));
+            .then(data => {
+                lines = data.split('\n');
+                currentIndex = 0;
+                updateSlide();
+            })
+            .catch((error) => {
+                console.error('Fetch error: ', error);
+            });
     }
 });
