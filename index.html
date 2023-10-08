@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Slider</title>
+</head>
+
+<body>
+    <div class="controls">
+        <input type="file" id="fileInput">
+        <button id="playPauseBtn">Play</button>
+        <input type="number" id="delayInput" value="2000">
+        <label for="delayInput">Bekleme Süresi (ms)</label>
+        <button id="muteUnmuteBtn">Mute</button>
+        
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+
+    </div>
+    <div class="display">
+        <p id="displayText" class="text-big"></p>
+        <p id="translationText" class="text-small"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
