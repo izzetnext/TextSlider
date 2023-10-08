@@ -146,3 +146,30 @@ presetTextsSelect.addEventListener('change', function() {
             });
     }
 });
+
+
+
+document.addEventListener('keydown', function(e) {
+    switch (e.key) {
+        case 'ArrowLeft':
+            prevSlide();
+            break;
+        case 'ArrowRight':
+            nextSlide();
+            break;
+    }
+});
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlide();
+    }
+}
+
+function nextSlide() {
+    if (currentIndex < lines.length - 1) {
+        currentIndex++;
+        updateSlide();
+    }
+}
