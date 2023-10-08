@@ -138,13 +138,24 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error('Error loading file list:', error));
-
+ 
         
         window.loadFile = function () {
             const selectedFile = fileSelector.value;
         
-            handleFileUpload(selectedFile);
-        
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                lines = selectedFile.target.result.split('\n');
+                currentIndex = 0;
+                displayText.innerText = lines[currentIndex];
+            };
+            reader.readAsText(selectedFile);
+
         };
-        
+
+
+
+
+
+
 });
