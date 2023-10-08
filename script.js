@@ -120,7 +120,12 @@ function translateText(text) {
 }
 
 
+window.loadFile = function () {
+    const selectedFile = fileSelector.value;
 
+    handleFileUpload(selectedFile);
+
+};
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -139,15 +144,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error loading file list:', error));
  
-        
-        window.loadFile = function () {
-            const selectedFile = fileSelector.value;
-        
-            //handleFileUpload(selectedFile);
-
-        };
- 
-
-
-
 });
