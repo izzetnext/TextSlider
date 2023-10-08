@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.loadFile = function () {
             const selectedFile = fileSelector.value;
         
-            handleFileUpload(selectedFile);
+            //handleFileUpload(selectedFile);
 
         };
  
