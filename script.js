@@ -143,18 +143,10 @@ document.addEventListener("DOMContentLoaded", function () {
         window.loadFile = function () {
             const selectedFile = fileSelector.value;
         
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                lines = selectedFile.target.result.split('\n');
-                currentIndex = 0;
-                displayText.innerText = lines[currentIndex];
-            };
-            reader.readAsText(selectedFile);
+            handleFileUpload(selectedFile);
 
         };
-
-
-
+ 
 
 
 
