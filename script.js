@@ -33,6 +33,7 @@ nextBtn.addEventListener('click', function() {
 
 function updateSlide() {
     displayText.innerText = lines[currentIndex];
+    clearTimeout(timer);
     if (isPlaying) {
         synth.cancel(); // Hali hazırda konuşma varsa iptal et
         speakText();
