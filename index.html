@@ -10,11 +10,12 @@
 
 <body>
     <div class="controls">
+        <h2>Select a File to Display</h2>
         <select id="fileSelector">
-            <!-- JavaScript ile doldurulacak -->
+            <!-- Options will be populated by JavaScript -->
         </select>
         <button onclick="loadFile()">Load File</button>
-        <p id="content"></p>
+        
 
         <input type="file" id="fileInput">
         <button id="playPauseBtn">Play</button>
@@ -29,6 +30,7 @@
     <div class="display">
         <p id="displayText" class="text-big"></p>
         <p id="translationText" class="text-small"></p>
+        <p id="content"></p>
     </div>
     <script src="script.js"></script>
 </body>
