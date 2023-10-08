@@ -82,3 +82,19 @@ p {
     text-align: center;
     max-width: 100%;
 }
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    button, select {
+        width: 100%;
+        max-width: 300px; 
+        margin-bottom: 10px;
+    }
+
+    #displayText {
+        font-size: 18px;
+    }
+}
