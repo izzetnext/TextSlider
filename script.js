@@ -122,3 +122,33 @@ function translateText(text) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const fileSelector = document.getElementById('fileSelector');
+    
+    // Dosya isimlerini yükleme
+    fetch('files.json')
+        .then(response => response.json())
+        .then(data => {
+            data.files.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = file;
+                fileSelector.appendChild(option);
+            });
+        })
+        .catch(error => console.error('Error loading file list:', error));
+
+    window.loadFile = function () {
+        const selectedFile = fileSelector.value;
+
+        // Seçilen dosyayı yükleme
+        fetch(selectedFile)
+            .then(response => response.text())
+            .then(data => {
+                // 'data' değişkeni seçilen dosyanın içeriğini tutar.
+                // İçeriği istediğiniz gibi kullanın, örneğin bir paragrafa yerleştirme:
+                document.getElementById('content').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+    }
+});
