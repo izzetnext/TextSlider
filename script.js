@@ -4,7 +4,7 @@ let isMuted = false; // Eklenen değişken
 let timer;
 let lines = [];
 
-
+  
 const fileInput = document.getElementById('fileInput');
 const playPauseBtn = document.getElementById('playPauseBtn');
 const delayInput = document.getElementById('delayInput');
