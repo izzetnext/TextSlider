@@ -69,7 +69,8 @@ function handleFileUpload(e) {
     reader.onload = function(e) {
         lines = e.target.result.split('\n');
         currentIndex = 0;
-        displayText.innerText = lines[currentIndex];
+        //displayText.innerText = lines[currentIndex];
+        splitAndDisplayText (lines[currentIndex]) ;
     };
     reader.readAsText(file);
 }
@@ -90,7 +91,8 @@ function togglePlayPause() {
 //... Diğer kodlar
 function speakText() {
     if (!isMuted && !synth.speaking) { 
-        let utterThis = new SpeechSynthesisUtterance(lines[currentIndex]);
+        
+        let utterThis = new SpeechSynthesisUtterance(  lines[currentIndex].split(' ((')[0]   );
         utterThis.lang = 'de-DE';
         utterThis.onend = handleSpeakingEnd;
         synth.speak(utterThis);
@@ -104,7 +106,8 @@ function handleSpeakingEnd() {
     timer = setTimeout(() => {
         currentIndex++;
         if (currentIndex < lines.length) {
-            displayText.innerText = lines[currentIndex];
+            //displayText.innerText = lines[currentIndex];
+            splitAndDisplayText (lines[currentIndex]) ;
             speakText();
         } else {
             isPlaying = false;
