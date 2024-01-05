@@ -32,7 +32,10 @@ nextBtn.addEventListener('click', function() {
 });
 
 function updateSlide() {
-    displayText.innerText = lines[currentIndex];
+   // displayText.innerText = lines[currentIndex];
+    splitAndDisplayText (lines[currentIndex]) ;
+  
+    
     clearTimeout(timer);
     if (isPlaying) {
         synth.cancel(); // Hali hazırda konuşma varsa iptal et
@@ -173,3 +176,29 @@ function nextSlide() {
         updateSlide();
     }
 }
+
+
+
+function splitAndDisplayText(text) {
+    // Metni ' ((' karakterlerine göre böl ve sonucu bir dizide sakla
+    const parts = text.split(' ((');
+
+    // İkinci kısmın sonunda bulunan '))' karakterlerini kaldır
+    if (parts[1]) {
+        parts[1] = parts[1].replace('))', '');
+    }
+
+    // HTML'de gösterilecek metni oluştur
+    // İlk kısmı ve ikinci kısmı ayrı satırlara koy
+    const displayText = parts[0] + '<br>(' + parts[1] + ')';
+
+    // Metni HTML elemanına yazdır
+    document.getElementById('displayText').innerHTML = displayText;
+}
+
+ 
+
+
+
+
+
