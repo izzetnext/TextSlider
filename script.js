@@ -193,7 +193,7 @@ function splitAndDisplayText(text) {
 
     // HTML'de gösterilecek metni oluştur
     // İlk kısmı ve ikinci kısmı ayrı satırlara koy
-    const displayText = parts[0] + '<br><br><br>(  ' + parts[1] + ' )';
+    const displayText = parts[0] + '<br><br><br>(  ' + parts[1] + ')';
 
     // Metni HTML elemanına yazdır
     document.getElementById('displayText').innerHTML = displayText;
