@@ -184,7 +184,7 @@ function nextSlide() {
 
 function splitAndDisplayText(text) {
     // Metni ' ((' karakterlerine göre böl ve sonucu bir dizide sakla
-    const parts = text.split(' ((');
+    const parts = text.split('((');
 
     // İkinci kısmın sonunda bulunan '))' karakterlerini kaldır
     if (parts[1]) {
