@@ -92,7 +92,7 @@ function togglePlayPause() {
 function speakText() {
     if (!isMuted && !synth.speaking) { 
         
-        let utterThis = new SpeechSynthesisUtterance(  lines[currentIndex].split(' ((')[0]   );
+        let utterThis = new SpeechSynthesisUtterance(  lines[currentIndex].split('((')[0]   );
         utterThis.lang = 'de-DE';
         utterThis.onend = handleSpeakingEnd;
         synth.speak(utterThis);
