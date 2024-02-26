@@ -1,240 +1,240 @@
-Ich suche einen neuen Job.
-Ich arbeite im Büro.
-Ich schicke dir das Angebot.
-Ich nehme die Beschwerde entgegen.
-Ich gehe zur Messe.
-Ich lese den Arbeitsvertrag.
-Ich zahle meine Steuern.
-Ich rufe den Kunden an.
-Ich checke meine E-Mails.
-Ich halte ein Meeting.
-Ich bearbeite die Aufträge.
-Ich reagiere auf die Beschwerden.
-Ich stelle Produkte vor.
-Ich bespreche die Kündigung.
-Ich melde mich krank.
-Ich hole Informationen ein.
-Ich sende die Rechnung.
-Ich prüfe die Lieferung.
-Ich plane meine Arbeitszeit.
-Ich nehme Urlaub.
-Ich aktualisiere meinen Lebenslauf.
-Ich beantworte Kundenanfragen.
-Ich unterschreibe den Vertrag.
-Ich koordiniere das Team.
-Ich leite die Besprechung.
-Ich analysiere den Markt.
-Ich handle Reklamationen ab.
-Ich präsentiere meine Ideen.
-Ich schreibe eine E-Mail an den Betriebsrat.
-Ich kalkuliere die Kosten.
-Ich lege die Prioritäten fest.
-Ich bereite einen Bericht vor.
-Ich korrespondiere mit Lieferanten.
-Ich erkläre die Verzögerung.
-Ich bestelle Material.
-Ich trage Arbeitskleidung.
-Ich bespreche die Sozialleistungen.
-Ich notiere die Termine.
-Ich respektiere die Pausenzeiten.
-Ich informiere über Änderungen.
-Ich plane meine Wochenziele.
-Ich stelle ein Budget auf.
-Ich folge dem Protokoll.
-Ich setze mich mit dem Kunden in Verbindung.
-Ich erledige die Korrespondenz.
-Ich melde mich krank.
-Ich prüfe die Lagerbestände.
-Ich bewerte die Mitarbeiterleistung.
-Ich beantrage Urlaub.
-Ich arbeite Überstunden.
-Ich weise auf Mängel hin.
-Ich nehme an einer Schulung teil.
-Ich frage nach den Tarifen.
-Ich halte mich an die Fristen.
-Ich optimiere den Workflow.
-Ich bewerbe mich intern.
-Ich aktualisiere die Software.
-Ich archiviere die Dokumente.
-Ich konsultiere den Fachmann.
-Ich halte die Sicherheitsvorschriften ein.
-Ich führe ein Teammeeting durch.
-Ich aktualisiere meine Kompetenzen.
-Ich erstelle einen Projektplan.
-Ich nehme an einer Videokonferenz teil.
-Ich unterschreibe den Vertrag.
-Ich analysiere den Markt.
-Ich halte eine Präsentation.
-Ich organisiere die Betriebsfeier.
-Ich pflege das Netzwerk.
-Ich lege eine Kostenaufstellung vor.
-Ich schätze Risiken ein.
-Ich dokumentiere die Ergebnisse.
-Ich bezahle die Rechnungen.
-Ich führe Kundengespräche.
-Ich koordiniere die Termine.
-Ich entwickle neue Strategien.
-Ich handle Beschwerden ab.
-Ich berate die Geschäftsleitung.
-Ich überprüfe die Qualität.
-Ich reporte den Projektstatus.
-Ich bemühe mich, die Qualität zu verbessern.
-Ich erkunde verschiedene Karrieremöglichkeiten.
-Ich besuche Berufsmessen, um mehr über meine Optionen zu erfahren.
-Ich arbeite im Homeoffice.
-Ich bevorzuge ein Großraumbüro.
-Ich schreibe meinen Lebenslauf.
-Ich bereite mich auf das Vorstellungsgespräch vor.
-Ich unterschreibe den Arbeitsvertrag.
-Ich mache mich mit den Kollegen vertraut.
-Ich priorisiere meine Aufgaben.
-Ich manage meinen Terminkalender.
-Ich optimiere die Prozesse.
-Ich delegiere Aufgaben an meine Teammitglieder.
-Ich bearbeite Kundenaufträge.
-Ich bestelle die benötigten Materialien.
-Ich nehme Kundenbeschwerden entgegen.
-Ich finde Lösungen für die gemeldeten Probleme.
-Ich präsentiere unser neues Produkt.
-Ich knüpfe Kontakte mit potenziellen Kunden.
-Ich informiere mich über meine Rechte als Arbeitnehmer.
-Ich bespreche meine Kündigungsfrist.
-Ich checke meine Gehaltsabrechnung.
-Ich frage nach Sozialleistungen.
-Ich aktualisiere mein LinkedIn-Profil für die Jobsuche.
-Ich verhandle mein Gehalt im Vorstellungsgespräch.
-Ich rufe die Agentur für Arbeit an, um meine Arbeitslosigkeit zu melden.
-Ich führe Teambesprechungen durch, um die Wochenziele festzulegen.
-Ich konsultiere den Betriebsrat bei arbeitsrechtlichen Fragen.
-Ich lege meine Steuerunterlagen für die Steuererklärung bereit.
-Ich erstelle einen Projektplan für das neue Quartal.
-Ich schicke eine Reklamation an den Lieferanten.
-Ich buche eine Standfläche für die kommende Messe.
-Ich fordere von meinem Arbeitgeber eine Gehaltserhöhung.
-Ich bewerte die Leistung meiner Mitarbeiter während der Jahresgespräche.
-Ich schicke eine E-Mail, um den Termin für die Betriebsversammlung zu bestätigen.
-Ich diskutiere die Details meines Arbeitsvertrags mit dem Personalchef.
-Ich erkundige mich nach den Möglichkeiten der betrieblichen Altersvorsorge.
-Ich frage beim Arzt nach einer Krankschreibung, weil ich krank bin.
-Ich lese die aktuelle Tarifvereinbarung, um meine Rechte und Pflichten zu verstehen.
-Ich fülle das Formular für Elternzeit aus, da ich bald Vater werde.
-Ich bespreche meine Weiterbildungsmöglichkeiten mit dem Vorgesetzten.
-Ich informiere mich über die Ausbildungsmöglichkeiten in meiner Branche.
-Ich reiche meine Bewerbungsunterlagen für die ausgeschriebene Stelle ein.
-Ich plane meine Pausenzeiten effizient, um produktiv zu sein.
-Ich nehme an einem Networking-Event teil, um Kontakte zu knüpfen.
-Ich gehe auf die Anforderungen der Kunden ein, um den Verkauf zu fördern.
-Ich aktualisiere regelmäßig meine Kenntnisse durch Online-Kurse.
-Ich beantworte Kundenanfragen per E-Mail und Telefon.
-Ich führe eine Risikoanalyse durch, bevor ich in ein Projekt investiere.
-Ich kalkuliere die Kosten für das kommende Quartal.
-Ich vereinbare einen Termin mit dem Betriebsarzt für die jährliche Untersuchung.
-Ich informiere meine Kollegen über Änderungen im Zeitplan des Projekts.
-Ich prüfe den Lieferschein und melde fehlende Produkte.
-Ich halte eine Präsentation auf der Messe, um unser neues Produkt vorzustellen.
-Ich befolge die Betriebsanweisungen, um die Sicherheit am Arbeitsplatz zu gewährleisten.
-Ich stelle eine schriftliche Anfrage an den Lieferanten wegen fehlerhafter Ware.
-Ich melde mich telefonisch arbeitslos und bespreche das weitere Vorgehen mit der Agentur für Arbeit.
-Ich unterschreibe den Arbeitsvertrag nach genauer Prüfung der Konditionen.
-Ich bespreche mit meinem Vorgesetzten die Möglichkeiten für Elternzeit.
-Ich analysiere die monatliche Gehaltsabrechnung und frage nach unklaren Posten.
-Ich lasse mir vom Arzt eine Krankschreibung geben und informiere meinen Chef über meine Abwesenheit.
-Ich versuche, den Projektstatus rechtzeitig zu reporten.
-Ich plane, die Betriebsfeier gut zu organisieren.
-Ich schaffe es, die Rechnungen pünktlich zu bezahlen.
-Ich beabsichtige, das Teammeeting effizient durchzuführen.
-Ich hoffe, den Vertrag bald zu unterschreiben.
-Ich habe vor, die Risiken genau einzuschätzen.
-Ich wünsche mir, die Ergebnisse klar zu dokumentieren.
-Ich nehme mir vor, neue Strategien zu entwickeln.
-Ich bin darauf ausgerichtet, die Kundengespräche professionell zu führen.
-Ich bin verpflichtet, die Beschwerden schnell abzuhandeln.
-Ich bin dabei, die Termine zu koordinieren.
-Ich trachte danach, meine Kompetenzen regelmäßig zu aktualisieren.
-Ich strebe an, eine effiziente Präsentation zu halten.
-Ich bin bestrebt, das Netzwerk kontinuierlich zu pflegen.
-Ich bin entschlossen, die Kostenaufstellung präzise vorzulegen.
-Ich habe die Absicht, den Markt sorgfältig zu analysieren.
-Ich bin geneigt, die Geschäftsleitung kompetent zu beraten.
-Ich setze voraus, an einer Videokonferenz effektiv teilzunehmen.
-Ich gedenke, einen detaillierten Projektplan zu erstellen.
-Ich befinde mich gerade darin, die Mitarbeiter zu schulen.
-Ich arbeite daran, den Kundenstamm zu erweitern.
-Ich strebe danach, die Zielvorgaben zu erreichen.
-Ich versuche, die Ressourcen optimal zu nutzen.
-Ich bin bemüht, alle Anforderungen zu erfüllen.
-Ich konzentriere mich darauf, die Prozesse zu optimieren.
-Ich habe den Anspruch, immer pünktlich zu sein.
-Ich beabsichtige, die Protokolle regelmäßig zu aktualisieren.
-Ich pflege den Kontakt zu Geschäftspartnern.
-Ich bin gewillt, die Deadlines strikt einzuhalten.
-Ich habe vor, an der nächsten Konferenz teilzunehmen.
-Ich beschäftige mich damit, die Marketingstrategie zu überarbeiten.
-Ich setze alles daran, die Kundenzufriedenheit zu steigern.
-Ich rate dazu, die Risiken gründlich zu analysieren.
-Ich empfehle, alle Vertragsdetails zu überprüfen.
-Ich beschließe, meine Arbeitszeit flexibel zu gestalten.
-Ich nehme mir die Zeit, die Teamdynamik zu verstehen.
-Ich plane, die Qualitätsstandards zu erhöhen.
-Ich mache den Vorschlag, die Budgets neu zu bewerten.
-Ich begegne der Herausforderung, die Effizienz zu steigern.
-Ich habe die Absicht, die Mitarbeiter für eine Fortbildung anzumelden.
-Ich bitte darum, die neuesten Updates zu installieren.
-Ich trage die Verantwortung, die Datenschutzrichtlinien einzuhalten.
-Ich neige dazu, die Arbeit im Voraus zu planen.
-Ich stehe kurz davor, eine Entscheidung über die Stellenbesetzung zu treffen.
-Ich mache mir Gedanken darüber, das Geschäftsmodell zu ändern.
-Ich hoffe darauf, in der nächsten Besprechung klare Anweisungen zu bekommen.
-Ich verspreche, die Qualität unserer Dienstleistungen zu verbessern.
-Ich strebe danach, in diesem Quartal mehr Umsatz zu erzielen.
-Ich ziehe in Erwägung, die Produktionskosten zu senken.
-Ich rate dazu, regelmäßig Betriebsversammlungen abzuhalten.
-Ich freue mich darauf, den neuen Businessplan vorzustellen.
-Ich achte darauf, die Steuervorschriften einzuhalten.
-Ich bin bemüht, alle Kundenbeschwerden schnell zu lösen.
-Ich bitte darum, die Verspätung der Lieferung zu entschuldigen.
-Ich strebe danach, die Arbeitsbedingungen zu verbessern.
-Ich beabsichtige, eine Schulung für neue Mitarbeiter zu organisieren.
-Ich plane, die Verkaufsstrategie anzupassen, um mehr Gewinn zu erzielen.
-Ich befürchte, die vorgeschlagenen Änderungen könnten Probleme verursachen.
-Ich bin verpflichtet, die Arbeitszeitgesetze zu beachten.
-Ich habe vor, mich regelmäßig fortzubilden, um in meinem Beruf erfolgreich zu sein.
-Ich bin darauf angewiesen, mit dem Betriebsrat zusammenzuarbeiten, um die Mitarbeiterzufriedenheit zu erhöhen.
-Ich hoffe, bei der nächsten Betriebsversammlung die Unternehmensziele klar darzustellen.
-Ich beziehe mich auf die Lohnabrechnung, um meine Abzüge zu verstehen.
-Ich rate dazu, den Arbeitsvertrag genau durchzulesen, um spätere Missverständnisse zu vermeiden.
-Ich lege Wert darauf, pünktlich zu sein, um einen guten Eindruck zu machen.
-Ich bitte darum, mir bei Fragen zur Gehaltsabrechnung behilflich zu sein.
-Ich bemühe mich, meine Aufgaben effizient zu erledigen, um frühzeitig Feierabend machen zu können.
-Ich strebe danach, in diesem Quartal die Verkaufszahlen zu steigern.
-Ich neige dazu, die Auftragsabwicklung zu überprüfen, um Fehler zu minimieren.
-Ich versuche, alle Details im Arbeitsvertrag zu klären, um keine Überraschungen zu erleben.
-Ich schlage vor, frühzeitig mit der Planung für die Messe zu beginnen, um den Stand effektiv zu gestalten.
-Ich plane, während der Elternzeit von zu Hause aus zu arbeiten, um meinen Job nicht zu vernachlässigen.
-Ich ziehe es in Betracht, die Dienstleistungen unseres Unternehmens in der nächsten Betriebsversammlung vorzustellen.
-Ich setze alles daran, den Kunden bei Beschwerden schnell zu unterstützen, um ihre Zufriedenheit zu gewährleisten.
-Ich rate dringend dazu, die Sozialabgaben im Detail zu überprüfen, um eventuelle Fehler zu korrigieren.
-Ich versuche, die Agentur für Arbeit zu kontaktieren, um meine beruflichen Möglichkeiten zu besprechen.
-Ich bitte darum, bei einem Arztbesuch eine Krankschreibung zu erhalten, um meiner Arbeit fernzubleiben.
-Ich sehe die Notwendigkeit, die Arbeitsabläufe zu optimieren, um effizienter zu arbeiten.
-Ich habe den Wunsch, mehr über Berufsorientierung zu erfahren, um meine Karriere besser planen zu können.
-Ich versuche, die Kosten zu senken, um Gewinn zu maximieren.
-Ich plane, ein Meeting zu organisieren, um Probleme zu besprechen.
-Ich rate dazu, einen Anwalt zu konsultieren, um Rechte zu klären.
-Ich ziehe es vor, frühzeitig zu buchen, um Plätze zu sichern.
-Ich versuche, die Deadline einzuhalten, um Strafen zu vermeiden.
-Ich beabsichtige, die Daten zu analysieren, um Trends zu erkennen.
-Ich bitte darum, meine Arbeit zu überprüfen, um Fehler zu finden.
-Ich schlage vor, früher zu beginnen, um Stress zu reduzieren.
-Ich bemühe mich, Klarheit zu schaffen, um Missverständnisse zu vermeiden.
-Ich rate dringend dazu, die Richtlinien zu lesen, um informiert zu sein.
-Ich versuche, früh aufzustehen, um den Tag produktiv zu nutzen.
-Ich plane, den Bericht bis Freitag zu schreiben, um die Deadline einzuhalten.
-Ich rate dazu, die Software zu aktualisieren, um Sicherheitslücken zu schließen.
-Ich empfehle, eine Pause einzulegen, um sich zu erholen.
-Ich ziehe es vor, die Arbeit in Teilen zu erledigen, um den Überblick zu behalten.
-Ich beabsichtige, den Kunden direkt anzusprechen, um das Problem zu lösen.
-Ich bitte darum, die Zahlung zu bestätigen, um Unklarheiten zu vermeiden.
-Ich schlage vor, die Dokumente digital zu archivieren, um Platz zu sparen.
-Ich bemühe mich, den Kunden zufrieden zu stellen, um eine langfristige Beziehung aufzubauen.
-Ich rate dringend dazu, eine Schulung zu besuchen, um die Fähigkeiten zu verbessern.
+Ich suche einen neuen Job.	((	Yeni bir iş arıyorum.	))
+Ich arbeite im Büro.	((	Ofiste çalışıyorum.	))
+Ich schicke dir das Angebot.	((	Size teklifi göndereceğim.	))
+Ich nehme die Beschwerde entgegen.	((	Şikayeti alıyorum.	))
+Ich gehe zur Messe.	((	Fuara gidiyorum.	))
+Ich lese den Arbeitsvertrag.	((	İş sözleşmesini okudum.	))
+Ich zahle meine Steuern.	((	Vergilerimi ödüyorum.	))
+Ich rufe den Kunden an.	((	Müşteriyi arıyorum.	))
+Ich checke meine E-Mails.	((	E -postalarımı kontrol ediyorum.	))
+Ich halte ein Meeting.	((	Bir toplantı yapıyorum.	))
+Ich bearbeite die Aufträge.	((	Siparişler üzerinde çalışıyorum.	))
+Ich reagiere auf die Beschwerden.	((	Semptomlara tepki veriyorum.	))
+Ich stelle Produkte vor.	((	Ürünleri sunuyorum.	))
+Ich bespreche die Kündigung.	((	Fesih'i tartışıyorum.	))
+Ich melde mich krank.	((	İletişim kuruyorum.	))
+Ich hole Informationen ein.	((	Bilgi alıyorum.	))
+Ich sende die Rechnung.	((	Faturayı gönderiyorum.	))
+Ich prüfe die Lieferung.	((	Teslimatı kontrol ediyorum.	))
+Ich plane meine Arbeitszeit.	((	Çalışma saatlerimi planlıyorum.	))
+Ich nehme Urlaub.	((	Tatile çıkacağım.	))
+Ich aktualisiere meinen Lebenslauf.	((	Özgeçmişimi güncelliyorum.	))
+Ich beantworte Kundenanfragen.	((	Müşteri sorularına cevap veriyorum.	))
+Ich unterschreibe den Vertrag.	((	Sözleşmeyi imzaladım.	))
+Ich koordiniere das Team.	((	Ekibi koordine ediyorum.	))
+Ich leite die Besprechung.	((	Toplantıya liderlik ediyorum.	))
+Ich analysiere den Markt.	((	Pazarı analiz ediyorum.	))
+Ich handle Reklamationen ab.	((	Şikayetlerle uğraşıyorum.	))
+Ich präsentiere meine Ideen.	((	Fikirlerimi sunuyorum.	))
+Ich schreibe eine E-Mail an den Betriebsrat.	((	İş Konseyi'ne bir e -posta yazıyorum.	))
+Ich kalkuliere die Kosten.	((	Maliyetleri hesaplıyorum.	))
+Ich lege die Prioritäten fest.	((	Öncelikleri belirledim.	))
+Ich bereite einen Bericht vor.	((	Bir rapor hazırlıyorum.	))
+Ich korrespondiere mit Lieferanten.	((	Tedarikçilere karşılık geliyorum.	))
+Ich erkläre die Verzögerung.	((	Gecikmeyi açıklıyorum.	))
+Ich bestelle Material.	((	Malzeme sipariş ediyorum.	))
+Ich trage Arbeitskleidung.	((	İş kıyafetleri giyiyorum.	))
+Ich bespreche die Sozialleistungen.	((	Sosyal faydaları tartışıyorum.	))
+Ich notiere die Termine.	((	Randevuları yazıyorum.	))
+Ich respektiere die Pausenzeiten.	((	Mola zamanlarına saygı duyuyorum.	))
+Ich informiere über Änderungen.	((	Değişiklikler hakkında bilgilendiriyorum.	))
+Ich plane meine Wochenziele.	((	Haftalık hedeflerimi planlıyorum.	))
+Ich stelle ein Budget auf.	((	Bir bütçe kurdum.	))
+Ich folge dem Protokoll.	((	Protokolü takip ediyorum.	))
+Ich setze mich mit dem Kunden in Verbindung.	((	Müşteriyle iletişime geçiyorum.	))
+Ich erledige die Korrespondenz.	((	Yazışmaları yapıyorum.	))
+Ich melde mich krank.	((	İletişim kuruyorum.	))
+Ich prüfe die Lagerbestände.	((	Envanteri kontrol ediyorum.	))
+Ich bewerte die Mitarbeiterleistung.	((	Çalışan hizmetini değerlendiriyorum.	))
+Ich beantrage Urlaub.	((	Tatil için başvuruyorum.	))
+Ich arbeite Überstunden.	((	Fazla mesai yapıyorum.	))
+Ich weise auf Mängel hin.	((	Kusurlara işaret ediyorum.	))
+Ich nehme an einer Schulung teil.	((	Bir eğitim kursuna katılıyorum.	))
+Ich frage nach den Tarifen.	((	Tarifeleri istiyorum.	))
+Ich halte mich an die Fristen.	((	Son teslim tarihlerine bağlı kalıyorum.	))
+Ich optimiere den Workflow.	((	İş akışını optimize ediyorum.	))
+Ich bewerbe mich intern.	((	Dahili olarak başvuruyorum.	))
+Ich aktualisiere die Software.	((	Yazılımı güncelliyorum.	))
+Ich archiviere die Dokumente.	((	Belgeleri arşivlerim.	))
+Ich konsultiere den Fachmann.	((	Uzmana danışıyorum.	))
+Ich halte die Sicherheitsvorschriften ein.	((	Güvenlik düzenlemelerini saklıyorum.	))
+Ich führe ein Teammeeting durch.	((	Bir takım toplantısı yapıyorum.	))
+Ich aktualisiere meine Kompetenzen.	((	Becerilerimi güncelliyorum.	))
+Ich erstelle einen Projektplan.	((	Bir proje planı oluşturuyorum.	))
+Ich nehme an einer Videokonferenz teil.	((	Bir video konferansına katılıyorum.	))
+Ich unterschreibe den Vertrag.	((	Sözleşmeyi imzaladım.	))
+Ich analysiere den Markt.	((	Pazarı analiz ediyorum.	))
+Ich halte eine Präsentation.	((	Bir sunum yapıyorum.	))
+Ich organisiere die Betriebsfeier.	((	Şirket partisini organize ediyorum.	))
+Ich pflege das Netzwerk.	((	Ağı önemsiyorum.	))
+Ich lege eine Kostenaufstellung vor.	((	Bir maliyet hattı sunuyorum.	))
+Ich schätze Risiken ein.	((	Riskleri takdir ediyorum.	))
+Ich dokumentiere die Ergebnisse.	((	Sonuçları belgeliyorum.	))
+Ich bezahle die Rechnungen.	((	Faturaları ödüyorum.	))
+Ich führe Kundengespräche.	((	Müşteri aramalarım var.	))
+Ich koordiniere die Termine.	((	Randevuları koordine ediyorum.	))
+Ich entwickle neue Strategien.	((	Yeni stratejiler geliştiriyorum.	))
+Ich handle Beschwerden ab.	((	Şikayetlerle uğraşıyorum.	))
+Ich berate die Geschäftsleitung.	((	Yönetimi tavsiye ediyorum.	))
+Ich überprüfe die Qualität.	((	Kaliteyi kontrol ediyorum.	))
+Ich reporte den Projektstatus.	((	Proje durumunu rapor ediyorum.	))
+Ich bemühe mich, die Qualität zu verbessern.	((	Kaliteyi artırmaya çalışıyorum.	))
+Ich erkunde verschiedene Karrieremöglichkeiten.	((	Farklı kariyer fırsatlarını araştırıyorum.	))
+Ich besuche Berufsmessen, um mehr über meine Optionen zu erfahren.	((	Seçeneklerim hakkında daha fazla bilgi edinmek için profesyonel fuarları ziyaret ediyorum.	))
+Ich arbeite im Homeoffice.	((	Ev ofisinde çalışıyorum.	))
+Ich bevorzuge ein Großraumbüro.	((	Açık plan bir ofisi tercih ediyorum.	))
+Ich schreibe meinen Lebenslauf.	((	Özgeçmişimi yazıyorum.	))
+Ich bereite mich auf das Vorstellungsgespräch vor.	((	Röportaj için hazırlanıyorum.	))
+Ich unterschreibe den Arbeitsvertrag.	((	İş sözleşmesini imzaladım.	))
+Ich mache mich mit den Kollegen vertraut.	((	Kendimi meslektaşlarıma aşina ediyorum.	))
+Ich priorisiere meine Aufgaben.	((	Görevlerime öncelik veriyorum.	))
+Ich manage meinen Terminkalender.	((	Programımı yönetiyorum.	))
+Ich optimiere die Prozesse.	((	Süreçleri optimize ediyorum.	))
+Ich delegiere Aufgaben an meine Teammitglieder.	((	Görevleri ekip üyelerime devrediyorum.	))
+Ich bearbeite Kundenaufträge.	((	Müşteri siparişlerini işliyorum.	))
+Ich bestelle die benötigten Materialien.	((	Gerekli malzemeleri sipariş ediyorum.	))
+Ich nehme Kundenbeschwerden entgegen.	((	Müşteri şikayetlerini kabul ediyorum.	))
+Ich finde Lösungen für die gemeldeten Probleme.	((	Bildirilen sorunlar için çözümler buluyorum.	))
+Ich präsentiere unser neues Produkt.	((	Yeni ürünümüzü sunuyorum.	))
+Ich knüpfe Kontakte mit potenziellen Kunden.	((	Potansiyel müşterilerle temas kuruyorum.	))
+Ich informiere mich über meine Rechte als Arbeitnehmer.	((	Bir çalışan olarak haklarımı öğreniyorum.	))
+Ich bespreche meine Kündigungsfrist.	((	Bildirim süremi tartışıyorum.	))
+Ich checke meine Gehaltsabrechnung.	((	Maaş faturalandırmamı kontrol ediyorum.	))
+Ich frage nach Sozialleistungen.	((	Sosyal faydalar istiyorum.	))
+Ich aktualisiere mein LinkedIn-Profil für die Jobsuche.	((	İş arama için LinkedIn profilimi güncelliyorum.	))
+Ich verhandle mein Gehalt im Vorstellungsgespräch.	((	Bir röportajda maaşımı müzakere ediyorum.	))
+Ich rufe die Agentur für Arbeit an, um meine Arbeitslosigkeit zu melden.	((	İşsizliğimi bildirmek için istihdam ajansını arıyorum.	))
+Ich führe Teambesprechungen durch, um die Wochenziele festzulegen.	((	Haftalık hedefleri belirlemek için ekip toplantıları yapıyorum.	))
+Ich konsultiere den Betriebsrat bei arbeitsrechtlichen Fragen.	((	İş hukuku konularında çalışma konseyine danışıyorum.	))
+Ich lege meine Steuerunterlagen für die Steuererklärung bereit.	((	Vergi beyannameleri için vergi belgelerimi sunuyorum.	))
+Ich erstelle einen Projektplan für das neue Quartal.	((	Yeni çeyrek için bir proje planı oluşturuyorum.	))
+Ich schicke eine Reklamation an den Lieferanten.	((	Tedarikçiye bir şikayet gönderiyorum.	))
+Ich buche eine Standfläche für die kommende Messe.	((	Yaklaşan fuar için bir duruş rezervasyonu yapıyorum.	))
+Ich fordere von meinem Arbeitgeber eine Gehaltserhöhung.	((	İşverenimden maaş artışı arıyorum.	))
+Ich bewerte die Leistung meiner Mitarbeiter während der Jahresgespräche.	((	Yıllık görüşmeler sırasında çalışanlarımın performansını değerlendiriyorum.	))
+Ich schicke eine E-Mail, um den Termin für die Betriebsversammlung zu bestätigen.	((	İş toplantısının randevusunu onaylamak için bir e -posta gönderiyorum.	))
+Ich diskutiere die Details meines Arbeitsvertrags mit dem Personalchef.	((	İş sözleşmemin ayrıntılarını İK yöneticisi ile tartışıyorum.	))
+Ich erkundige mich nach den Möglichkeiten der betrieblichen Altersvorsorge.	((	Şirket emeklilik planlarının olanakları hakkında bilgi alıyorum.	))
+Ich frage beim Arzt nach einer Krankschreibung, weil ich krank bin.	((	Doktora hasta izni soruyorum çünkü hastayım.	))
+Ich lese die aktuelle Tarifvereinbarung, um meine Rechte und Pflichten zu verstehen.	((	Haklarımı ve yükümlülüklerimi anlamak için mevcut kolektif anlaşmayı okudum.	))
+Ich fülle das Formular für Elternzeit aus, da ich bald Vater werde.	((	Ebeveyn izni formunu dolduruyorum çünkü yakında baba olacağım.	))
+Ich bespreche meine Weiterbildungsmöglichkeiten mit dem Vorgesetzten.	((	Eğitim fırsatlarımı yöneticiyle tartışıyorum.	))
+Ich informiere mich über die Ausbildungsmöglichkeiten in meiner Branche.	((	Sektörümdeki eğitim fırsatlarını öğreniyorum.	))
+Ich reiche meine Bewerbungsunterlagen für die ausgeschriebene Stelle ein.	((	Başvuru belgelerimi reklamı yapılan pozisyon için gönderiyorum.	))
+Ich plane meine Pausenzeiten effizient, um produktiv zu sein.	((	Mola sürelerimi üretken olacak şekilde planlıyorum.	))
+Ich nehme an einem Networking-Event teil, um Kontakte zu knüpfen.	((	Kişiler yapmak için bir ağ etkinliğine katılıyorum.	))
+Ich gehe auf die Anforderungen der Kunden ein, um den Verkauf zu fördern.	((	Müşterilerin satışları teşvik etme gereksinimlerine yanıt veriyorum.	))
+Ich aktualisiere regelmäßig meine Kenntnisse durch Online-Kurse.	((	Bilgilerimi çevrimiçi kurslardan düzenli olarak güncelliyorum.	))
+Ich beantworte Kundenanfragen per E-Mail und Telefon.	((	Müşteri sorularına e -posta ve telefonla cevap veriyorum.	))
+Ich führe eine Risikoanalyse durch, bevor ich in ein Projekt investiere.	((	Bir projeye yatırım yapmadan önce bir risk analizi yapıyorum.	))
+Ich kalkuliere die Kosten für das kommende Quartal.	((	Önümüzdeki çeyrek için maliyetleri hesaplıyorum.	))
+Ich vereinbare einen Termin mit dem Betriebsarzt für die jährliche Untersuchung.	((	Yıllık sınav için şirket doktoru ile randevu alıyorum.	))
+Ich informiere meine Kollegen über Änderungen im Zeitplan des Projekts.	((	Meslektaşlarımı proje programındaki değişiklikler hakkında bilgilendiriyorum.	))
+Ich prüfe den Lieferschein und melde fehlende Produkte.	((	Teslimat notunu kontrol ediyorum ve eksik ürünleri rapor ediyorum.	))
+Ich halte eine Präsentation auf der Messe, um unser neues Produkt vorzustellen.	((	Yeni ürünümüzü sunmak için fuarda bir sunum yapıyorum.	))
+Ich befolge die Betriebsanweisungen, um die Sicherheit am Arbeitsplatz zu gewährleisten.	((	İşyerinde güvenlik sağlamak için çalışma talimatlarını takip ediyorum.	))
+Ich stelle eine schriftliche Anfrage an den Lieferanten wegen fehlerhafter Ware.	((	Yanlış mallar nedeniyle tedarikçiye yazılı bir talepte bulunuyorum.	))
+Ich melde mich telefonisch arbeitslos und bespreche das weitere Vorgehen mit der Agentur für Arbeit.	((	İşsiz telefonla temasa geçiyorum ve istihdam ajansına nasıl devam edeceğimi tartışıyorum.	))
+Ich unterschreibe den Arbeitsvertrag nach genauer Prüfung der Konditionen.	((	Koşulların kesin bir incelemesinden sonra iş sözleşmesini imzalıyorum.	))
+Ich bespreche mit meinem Vorgesetzten die Möglichkeiten für Elternzeit.	((	Ebeveyn izni fırsatlarını üstünlüğümle tartışıyorum.	))
+Ich analysiere die monatliche Gehaltsabrechnung und frage nach unklaren Posten.	((	Aylık maaş beyanını analiz ediyorum ve belirsiz öğeleri soruyorum.	))
+Ich lasse mir vom Arzt eine Krankschreibung geben und informiere meinen Chef über meine Abwesenheit.	((	Doktorun bana hastalık izni vermesine ve patronumu yokluğum hakkında bilgilendirmesine izin verdim.	))
+Ich versuche, den Projektstatus rechtzeitig zu reporten.	((	Proje durumunu zamanında bildirmeye çalışıyorum.	))
+Ich plane, die Betriebsfeier gut zu organisieren.	((	Şirket partisini iyi organize etmeyi planlıyorum.	))
+Ich schaffe es, die Rechnungen pünktlich zu bezahlen.	((	Faturaları zamanında ödemeyi başardım.	))
+Ich beabsichtige, das Teammeeting effizient durchzuführen.	((	Takım toplantısını verimli bir şekilde yürütmeyi planlıyorum.	))
+Ich hoffe, den Vertrag bald zu unterschreiben.	((	Sözleşmeyi yakında imzalamayı umuyorum.	))
+Ich habe vor, die Risiken genau einzuschätzen.	((	Riskleri tahmin etmeyi planlıyorum.	))
+Ich wünsche mir, die Ergebnisse klar zu dokumentieren.	((	Sonuçları net bir şekilde belgelemeyi umuyorum.	))
+Ich nehme mir vor, neue Strategien zu entwickeln.	((	Yeni stratejiler geliştirmeyi planlıyorum.	))
+Ich bin darauf ausgerichtet, die Kundengespräche professionell zu führen.	((	Müşteri görüşmelerini profesyonelce yapmaya yöneliyorum.	))
+Ich bin verpflichtet, die Beschwerden schnell abzuhandeln.	((	Semptomları hızlı bir şekilde müzakere etmek zorundayım.	))
+Ich bin dabei, die Termine zu koordinieren.	((	Randevuları koordine etmekle ilgiliyim.	))
+Ich trachte danach, meine Kompetenzen regelmäßig zu aktualisieren.	((	Daha sonra becerilerimi düzenli olarak güncellemeye güveniyorum.	))
+Ich strebe an, eine effiziente Präsentation zu halten.	((	Etkin bir sunum yapmaya çalışıyorum.	))
+Ich bin bestrebt, das Netzwerk kontinuierlich zu pflegen.	((	Ağı sürekli korumaya çalışıyorum.	))
+Ich bin entschlossen, die Kostenaufstellung präzise vorzulegen.	((	Maliyetin maliyetini tam olarak sunmaya kararlıyım.	))
+Ich habe die Absicht, den Markt sorgfältig zu analysieren.	((	Pazarı dikkatlice analiz etmek istiyorum.	))
+Ich bin geneigt, die Geschäftsleitung kompetent zu beraten.	((	Yönetime yetkin bir şekilde tavsiyede bulunmaya meyilliyim.	))
+Ich setze voraus, an einer Videokonferenz effektiv teilzunehmen.	((	Bir video konferansına etkili bir şekilde katıldığını varsayıyorum.	))
+Ich gedenke, einen detaillierten Projektplan zu erstellen.	((	Ayrıntılı bir proje planını anıyorum.	))
+Ich befinde mich gerade darin, die Mitarbeiter zu schulen.	((	Ben tam olarak çalışanları eğitiyorum.	))
+Ich arbeite daran, den Kundenstamm zu erweitern.	((	Müşteri tabanını genişletmek için çalışıyorum.	))
+Ich strebe danach, die Zielvorgaben zu erreichen.	((	Hedeflere ulaşmaya çalışıyorum.	))
+Ich versuche, die Ressourcen optimal zu nutzen.	((	Kaynakları en iyi şekilde kullanmaya çalışıyorum.	))
+Ich bin bemüht, alle Anforderungen zu erfüllen.	((	Tüm gereksinimleri karşılamaya çalışıyorum.	))
+Ich konzentriere mich darauf, die Prozesse zu optimieren.	((	Süreçleri optimize etmeye odaklanıyorum.	))
+Ich habe den Anspruch, immer pünktlich zu sein.	((	Her zaman zamanında olmak amacım var.	))
+Ich beabsichtige, die Protokolle regelmäßig zu aktualisieren.	((	Protokolleri düzenli olarak güncellemeyi planlıyorum.	))
+Ich pflege den Kontakt zu Geschäftspartnern.	((	İş ortaklarıyla temas kuruyorum.	))
+Ich bin gewillt, die Deadlines strikt einzuhalten.	((	Son teslim tarihlerini kesinlikle gözlemlemeye hazırım.	))
+Ich habe vor, an der nächsten Konferenz teilzunehmen.	((	Bir sonraki konferansa katılmayı planlıyorum.	))
+Ich beschäftige mich damit, die Marketingstrategie zu überarbeiten.	((	Pazarlama stratejisini gözden geçirmekle ilgileniyorum.	))
+Ich setze alles daran, die Kundenzufriedenheit zu steigern.	((	Müşteri memnuniyetini artırmak için elimden gelen her şeyi yapıyorum.	))
+Ich rate dazu, die Risiken gründlich zu analysieren.	((	Riskleri iyice analiz etmenizi tavsiye ederim.	))
+Ich empfehle, alle Vertragsdetails zu überprüfen.	((	Tüm sözleşme ayrıntılarını kontrol etmenizi öneririm.	))
+Ich beschließe, meine Arbeitszeit flexibel zu gestalten.	((	Çalışma zamanımı esnek hale getirmeye karar verdim.	))
+Ich nehme mir die Zeit, die Teamdynamik zu verstehen.	((	Takım dinamiklerini anlamak için zaman ayırıyorum.	))
+Ich plane, die Qualitätsstandards zu erhöhen.	((	Kalite standartlarını artırmayı planlıyorum.	))
+Ich mache den Vorschlag, die Budgets neu zu bewerten.	((	Bütçeleri yeniden değerlendirme önerisini yapıyorum.	))
+Ich begegne der Herausforderung, die Effizienz zu steigern.	((	Artan verimliliğin zorluğuyla karşılaşıyorum.	))
+Ich habe die Absicht, die Mitarbeiter für eine Fortbildung anzumelden.	((	Çalışanları daha fazla eğitim için kaydettirmeyi planlıyorum.	))
+Ich bitte darum, die neuesten Updates zu installieren.	((	Sizden en son güncellemeleri yüklemenizi istiyorum.	))
+Ich trage die Verantwortung, die Datenschutzrichtlinien einzuhalten.	((	Veri koruma yönergelerine uymaktan sorumluyum.	))
+Ich neige dazu, die Arbeit im Voraus zu planen.	((	İşi önceden planlama eğilimindeyim.	))
+Ich stehe kurz davor, eine Entscheidung über die Stellenbesetzung zu treffen.	((	İş mesleği hakkında karar vermek üzereyim.	))
+Ich mache mir Gedanken darüber, das Geschäftsmodell zu ändern.	((	İş modelini değiştirmeyi düşünüyorum.	))
+Ich hoffe darauf, in der nächsten Besprechung klare Anweisungen zu bekommen.	((	Bir sonraki toplantıda net talimatlar almayı umuyorum.	))
+Ich verspreche, die Qualität unserer Dienstleistungen zu verbessern.	((	Hizmetlerimizin kalitesini artırmaya söz veriyorum.	))
+Ich strebe danach, in diesem Quartal mehr Umsatz zu erzielen.	((	Daha sonra bu çeyrekte daha fazla satış elde etmeye çalışıyorum.	))
+Ich ziehe in Erwägung, die Produktionskosten zu senken.	((	Üretim maliyetlerini azaltmayı düşünüyorum.	))
+Ich rate dazu, regelmäßig Betriebsversammlungen abzuhalten.	((	Şirket toplantıları düzenli olarak yapmanızı tavsiye ederim.	))
+Ich freue mich darauf, den neuen Businessplan vorzustellen.	((	Yeni iş planını sunmayı dört gözle bekliyorum.	))
+Ich achte darauf, die Steuervorschriften einzuhalten.	((	Vergi düzenlemelerine uyduğunuzdan eminim.	))
+Ich bin bemüht, alle Kundenbeschwerden schnell zu lösen.	((	Tüm müşteri şikayetlerini hızlı bir şekilde çözmeye çalışıyorum.	))
+Ich bitte darum, die Verspätung der Lieferung zu entschuldigen.	((	Teslimatın gecikmesini mazur görmeyi istiyorum.	))
+Ich strebe danach, die Arbeitsbedingungen zu verbessern.	((	Çalışma koşullarını iyileştirmeye çalışıyorum.	))
+Ich beabsichtige, eine Schulung für neue Mitarbeiter zu organisieren.	((	Yeni çalışanlar için eğitim düzenlemeyi planlıyorum.	))
+Ich plane, die Verkaufsstrategie anzupassen, um mehr Gewinn zu erzielen.	((	Satış stratejisini daha fazla kar elde etmek için uyarlamayı planlıyorum.	))
+Ich befürchte, die vorgeschlagenen Änderungen könnten Probleme verursachen.	((	Önerilen değişikliklerin sorunlara neden olabileceğinden korkuyorum.	))
+Ich bin verpflichtet, die Arbeitszeitgesetze zu beachten.	((	Çalışma saatleri yasalarını gözlemlemek zorundayım.	))
+Ich habe vor, mich regelmäßig fortzubilden, um in meinem Beruf erfolgreich zu sein.	((	İşimde başarılı olmak için düzenli olarak eğitmeye devam etmeyi planlıyorum.	))
+Ich bin darauf angewiesen, mit dem Betriebsrat zusammenzuarbeiten, um die Mitarbeiterzufriedenheit zu erhöhen.	((	Çalışan memnuniyetini artırmak için İş Konseyi ile çalışmaya bağımlıyım.	))
+Ich hoffe, bei der nächsten Betriebsversammlung die Unternehmensziele klar darzustellen.	((	Bir sonraki şirket toplantısında kurumsal hedefleri açıkça sunmayı umuyorum.	))
+Ich beziehe mich auf die Lohnabrechnung, um meine Abzüge zu verstehen.	((	Kesintilerimi anlamak için bordroya atıfta bulunuyorum.	))
+Ich rate dazu, den Arbeitsvertrag genau durchzulesen, um spätere Missverständnisse zu vermeiden.	((	Daha sonra yanlış anlamalardan kaçınmak için iş sözleşmesini dikkatlice okumanızı tavsiye ederim.	))
+Ich lege Wert darauf, pünktlich zu sein, um einen guten Eindruck zu machen.	((	İyi bir izlenim bırakmak dakik olmak önemlidir.	))
+Ich bitte darum, mir bei Fragen zur Gehaltsabrechnung behilflich zu sein.	((	Sizden maaş ifadesi hakkında sorular konusunda bana yardım etmenizi istiyorum.	))
+Ich bemühe mich, meine Aufgaben effizient zu erledigen, um frühzeitig Feierabend machen zu können.	((	Günün sonunu bitirebilmek için görevlerimi verimli bir şekilde yapmaya çalışıyorum.	))
+Ich strebe danach, in diesem Quartal die Verkaufszahlen zu steigern.	((	Daha sonra bu çeyrekte satışları artırmaya çalışıyorum.	))
+Ich neige dazu, die Auftragsabwicklung zu überprüfen, um Fehler zu minimieren.	((	Hataları en aza indirmek için sipariş işlemeyi kontrol etme eğilimindeyim.	))
+Ich versuche, alle Details im Arbeitsvertrag zu klären, um keine Überraschungen zu erleben.	((	Sürprizler yaşamamak için iş sözleşmesindeki tüm ayrıntıları açıklığa kavuşturmaya çalışıyorum.	))
+Ich schlage vor, frühzeitig mit der Planung für die Messe zu beginnen, um den Stand effektiv zu gestalten.	((	Standı etkili bir şekilde şekillendirmek için fuar için planlamaya başlamanızı öneririm.	))
+Ich plane, während der Elternzeit von zu Hause aus zu arbeiten, um meinen Job nicht zu vernachlässigen.	((	Ebeveyn izni sırasında işimi ihmal etmemek için evden çalışmayı planlıyorum.	))
+Ich ziehe es in Betracht, die Dienstleistungen unseres Unternehmens in der nächsten Betriebsversammlung vorzustellen.	((	Şirketimizin hizmetlerini bir sonraki şirket toplantısında sunmayı düşünüyorum.	))
+Ich setze alles daran, den Kunden bei Beschwerden schnell zu unterstützen, um ihre Zufriedenheit zu gewährleisten.	((	Memnuniyetinizi sağlamak için müşteriyi hızlı bir şekilde desteklemek için elimden gelen her şeyi yapıyorum.	))
+Ich rate dringend dazu, die Sozialabgaben im Detail zu überprüfen, um eventuelle Fehler zu korrigieren.	((	Herhangi bir hatayı düzeltmek için Sosyal Güvenlik katkılarını ayrıntılı olarak kontrol etmenizi şiddetle tavsiye ediyorum.	))
+Ich versuche, die Agentur für Arbeit zu kontaktieren, um meine beruflichen Möglichkeiten zu besprechen.	((	Profesyonel fırsatlarımı tartışmak için istihdam ajansıyla iletişime geçmeye çalışıyorum.	))
+Ich bitte darum, bei einem Arztbesuch eine Krankschreibung zu erhalten, um meiner Arbeit fernzubleiben.	((	İşimden uzak durmak için bir doktor ziyaret ederken hastalık izni almanızı istiyorum.	))
+Ich sehe die Notwendigkeit, die Arbeitsabläufe zu optimieren, um effizienter zu arbeiten.	((	İş süreçlerini daha verimli çalışmak için optimize etme ihtiyacını görüyorum.	))
+Ich habe den Wunsch, mehr über Berufsorientierung zu erfahren, um meine Karriere besser planen zu können.	((	Kariyerimi daha iyi planlayabilmek için kariyer yönelimi hakkında daha fazla bilgi edinme arzum var.	))
+Ich versuche, die Kosten zu senken, um Gewinn zu maximieren.	((	Kârı en üst düzeye çıkarmak için maliyetleri azaltmaya çalışıyorum.	))
+Ich plane, ein Meeting zu organisieren, um Probleme zu besprechen.	((	Sorunları tartışmak için bir toplantı düzenlemeyi planlıyorum.	))
+Ich rate dazu, einen Anwalt zu konsultieren, um Rechte zu klären.	((	Hakları açıklığa kavuşturmak için bir avukata danışmanızı tavsiye ederim.	))
+Ich ziehe es vor, frühzeitig zu buchen, um Plätze zu sichern.	((	Yerleri güvence altına almak için erken rezervasyon yapmayı tercih ederim.	))
+Ich versuche, die Deadline einzuhalten, um Strafen zu vermeiden.	((	Cezaları önlemek için son tarihi korumaya çalışıyorum.	))
+Ich beabsichtige, die Daten zu analysieren, um Trends zu erkennen.	((	Eğilimleri tanımak için verileri analiz etmeyi planlıyorum.	))
+Ich bitte darum, meine Arbeit zu überprüfen, um Fehler zu finden.	((	Sizden hata bulmak için işimi kontrol etmenizi istiyorum.	))
+Ich schlage vor, früher zu beginnen, um Stress zu reduzieren.	((	Stresi azaltmak için daha önce başlamanızı öneririm.	))
+Ich bemühe mich, Klarheit zu schaffen, um Missverständnisse zu vermeiden.	((	Yanlış anlamalardan kaçınmak için netlik yaratmaya çalışıyorum.	))
+Ich rate dringend dazu, die Richtlinien zu lesen, um informiert zu sein.	((	Bilgilendirilecek yönergeleri okumanızı şiddetle tavsiye ederim.	))
+Ich versuche, früh aufzustehen, um den Tag produktiv zu nutzen.	((	Günü verimli bir şekilde kullanmak için erken kalkmaya çalışıyorum.	))
+Ich plane, den Bericht bis Freitag zu schreiben, um die Deadline einzuhalten.	((	Son tarihi korumak için raporu Cuma gününe kadar yazmayı planlıyorum.	))
+Ich rate dazu, die Software zu aktualisieren, um Sicherheitslücken zu schließen.	((	Güvenlik boşluklarını kapatmak için yazılımı güncellemenizi tavsiye ederim.	))
+Ich empfehle, eine Pause einzulegen, um sich zu erholen.	((	Kurtarmak için bir mola vermenizi tavsiye ederim.	))
+Ich ziehe es vor, die Arbeit in Teilen zu erledigen, um den Überblick zu behalten.	((	Bir genel bakış için kısmen işi yapmayı tercih ederim.	))
+Ich beabsichtige, den Kunden direkt anzusprechen, um das Problem zu lösen.	((	Sorunu çözmek için müşteriyi doğrudan ele almayı planlıyorum.	))
+Ich bitte darum, die Zahlung zu bestätigen, um Unklarheiten zu vermeiden.	((	Belirsizliklerden kaçınmak için ödemeyi onaylamanızı istiyorum.	))
+Ich schlage vor, die Dokumente digital zu archivieren, um Platz zu sparen.	((	Yerden tasarruf etmek için belgeleri dijital olarak arşivlemenizi öneririm.	))
+Ich bemühe mich, den Kunden zufrieden zu stellen, um eine langfristige Beziehung aufzubauen.	((	Müşteriyi uzun vadeli bir ilişki kurması için tatmin etmeye çalışıyorum.	))
+Ich rate dringend dazu, eine Schulung zu besuchen, um die Fähigkeiten zu verbessern.	((	Becerileri geliştirmek için eğitime katılmanızı şiddetle tavsiye ediyorum.	))
