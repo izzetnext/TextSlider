@@ -201,6 +201,49 @@ function splitAndDisplayText(text) {
     document.getElementById('displayText').innerHTML = displayText;
 }
 
+function dizinleriYukle() {
+    const apiUrl = 'https://api.github.com/repos/izzetnext/enpoi/contents/';
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const dizinListesi = document.getElementById('dizinListesi');
+            data.forEach(item => {
+                if (item.type === "dir") { // Yalnızca dizinleri listele
+                    const option = document.createElement('option');
+                    option.value = option.textContent = item.name;
+                    dizinListesi.appendChild(option);
+                }
+            });
+        })
+        .catch(error => console.error('Hata:', error));
+}
+
+// Sayfa yüklendiğinde dizin listesini yükle
+window.onload = function() {
+    dizinleriYukle();
+};
+
+document.getElementById('dizinListesi').addEventListener('change', function(e) {
+    const secilenDizin = e.target.value;
+    const apiUrl = `https://api.github.com/repos/izzetnext/enpoi/contents/${secilenDizin}`;
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const presetTexts = document.getElementById('presetTexts');
+            presetTexts.innerHTML = ''; // Mevcut içeriği temizle
+            data.forEach(item => {
+                if (item.type === "file") {
+                    const option = document.createElement('option');
+                    option.value = item.download_url; // Dosyanın indirme URL'sini değer olarak kullan
+                    option.textContent = item.name;
+                    presetTexts.appendChild(option);
+                }
+            });
+        })
+        .catch(error => console.error('Hata:', error));
+});
+
+
  
 
 
