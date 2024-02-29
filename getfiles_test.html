@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dosya Listesi</title>
+    <title>Repo Dosya Listesi</title>
 </head>
 <body>
     <div id="dosyaListesi">Dosyalar yükleniyor...</div>
 
     <script>
-        // GitHub API'sinden dosya listesini çeken fonksiyon
         function dosyalariListele() {
-            const apiUrl = 'https://api.github.com/repos/kullaniciAdi/repoAdi/contents/dizinYolu';
+            const apiUrl = 'https://api.github.com/repos/izzetnext/enpoi/contents/';
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
@@ -25,7 +24,6 @@
                 .catch(error => console.error('Hata:', error));
         }
 
-        // Sayfa yüklendiğinde dosya listesini çek
         window.onload = function() {
             dosyalariListele();
         };
