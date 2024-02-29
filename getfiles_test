@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dosya Listesi</title>
+</head>
+<body>
+    <div id="dosyaListesi">Dosyalar yükleniyor...</div>
+
+    <script>
+        // GitHub API'sinden dosya listesini çeken fonksiyon
+        function dosyalariListele() {
+            const apiUrl = 'https://api.github.com/repos/kullaniciAdi/repoAdi/contents/dizinYolu';
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const dosyaListesiElementi = document.getElementById('dosyaListesi');
+                    dosyaListesiElementi.innerHTML = ''; // Mevcut içeriği temizle
+                    data.forEach(dosya => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = dosya.name;
+                        dosyaListesiElementi.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Hata:', error));
+        }
+
+        // Sayfa yüklendiğinde dosya listesini çek
+        window.onload = function() {
+            dosyalariListele();
+        };
+    </script>
+</body>
+</html>
