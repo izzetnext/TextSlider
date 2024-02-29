@@ -94,6 +94,12 @@ function speakText() {
         
         let utterThis = new SpeechSynthesisUtterance(  lines[currentIndex].split('((')[0]   );
         utterThis.lang = 'de-DE';
+
+        utterThis.pitch = 1.5; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
+        utterThis.rate = 1.2; // Konuşma hızı, varsayılan değer 1'dir. Min 0.1, Max 10 arasında değer alabilir.
+        utterThis.volume = 1; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
+        
+
         utterThis.onend = handleSpeakingEnd;
         synth.speak(utterThis);
     } else {
