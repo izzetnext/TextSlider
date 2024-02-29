@@ -220,6 +220,7 @@ function dizinleriYukle() {
 
 // Sayfa yüklendiğinde dizin listesini yükle
 window.onload = function() {
+    console.log("dizinleriYukle");
     dizinleriYukle();
 };
 
