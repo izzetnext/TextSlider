@@ -22,7 +22,13 @@ To get started with TextSlider, simply clone the repository and follow the setup
 ```bash
 git clone https://github.com/izzetnext/TextSlider.git
 
+## Contributing
+We believe in keeping TextSlider simple, but we welcome contributions that enhance its functionality without compromising its core mission. If you have ideas or improvements, please feel free to fork the repository and submit a pull request.
 
+## License
+TextSlider is open-source software licensed under the MIT license. See the LICENSE file for more details.
+
+Thank you for exploring TextSlider. Dive in and start transforming your learning and memorization process today!
 
 
 
