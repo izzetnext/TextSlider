@@ -15,13 +15,6 @@ Welcome to TextSlider, a uniquely simple tool designed to transform text into a 
 
 The primary goal of TextSlider is to assist users in learning or memorizing material by presenting words in slide format. This method enables a focused, distraction-free learning environment where users can comfortably engage with the content visually and auditorily. By maintaining simplicity at its core, TextSlider ensures an intuitive experience for all users, emphasizing content without the need for complex features or interactions.
 
-## Getting Started
-
-To get started with TextSlider, simply clone the repository and follow the setup instructions. The project is designed to be as straightforward as possible, ensuring you can jump right into creating presentations from your text.
-
-```bash
-git clone https://github.com/izzetnext/TextSlider.git
-
 ## Contributing
 We believe in keeping TextSlider simple, but we welcome contributions that enhance its functionality without compromising its core mission. If you have ideas or improvements, please feel free to fork the repository and submit a pull request.
 
@@ -29,6 +22,14 @@ We believe in keeping TextSlider simple, but we welcome contributions that enhan
 TextSlider is open-source software licensed under the MIT license. See the LICENSE file for more details.
 
 Thank you for exploring TextSlider. Dive in and start transforming your learning and memorization process today!
+## Getting Started
+
+To get started with TextSlider, simply clone the repository and follow the setup instructions. The project is designed to be as straightforward as possible, ensuring you can jump right into creating presentations from your text.
+
+```bash
+git clone https://github.com/izzetnext/TextSlider.git
+
+
 
 
 
