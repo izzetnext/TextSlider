@@ -208,7 +208,7 @@ function splitAndDisplayText(text) {
 }
 
 function dizinleriYukle() {
-    const apiUrl = 'https://api.github.com/repos/izzetnext/enpoi/contents/';
+    const apiUrl = 'https://api.github.com/repos/izzetnext/TextSlider/Languages/contents/';
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
