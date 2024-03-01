@@ -232,7 +232,7 @@ window.onload = function() {
 
 document.getElementById('dizinListesi').addEventListener('change', function(e) {
     const secilenDizin = e.target.value;
-    const apiUrl = `https://api.github.com/repos/izzetnext/enpoi/contents/${secilenDizin}`;
+    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/Languages/contents/${secilenDizin}`;
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
