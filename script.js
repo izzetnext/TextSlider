@@ -208,7 +208,7 @@ function splitAndDisplayText(text) {
 }
 
 function dizinleriYukle() {
-    const apiUrl = 'https://api.github.com/repos/izzetnext/TextSlider/Languages/contents/';
+    const apiUrl = 'https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/';
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
@@ -232,7 +232,7 @@ window.onload = function() {
 
 document.getElementById('dizinListesi').addEventListener('change', function(e) {
     const secilenDizin = e.target.value;
-    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/Languages/contents/${secilenDizin}`;
+    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${secilenDizin}`;
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
