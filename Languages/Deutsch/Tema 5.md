@@ -1,5 +1,5 @@
-** Tema:Im Arbeitsalltag  
-** Lernziele :
+# Tema:Im Arbeitsalltag  
+## Lernziele :
 eine Teambesprechung leiten
 • eine Tagesordnung verstehen und ein Protokoll schreiben 
 • den Fragen eines Teamleiters folgen und Fragen stellen
@@ -9,7 +9,7 @@ eine Teambesprechung leiten
 • sich über Urlaubspläne austauschen 
 • sich erkundigen, wie ein Einstand gegeben wird, und dazu einladen
 
-** hier sind 20 Beispielsätze zum Thema "Im Arbeitsalltag":
+## hier sind 20 Beispielsätze zum Thema "Im Arbeitsalltag":
 - Ich leite heute die Teambesprechung und habe bereits eine Tagesordnung vorbereitet.
 - Nach der Besprechung werde ich ein Protokoll schreiben und es an alle Teammitglieder schicken.
 - Ich versuche immer, den Anweisungen und Fragen meines Teamleiters zu folgen.

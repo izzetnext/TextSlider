@@ -1,5 +1,5 @@
-** Tema:Arbeitsrecht 
-** Lernziele :
+# Tema:Arbeitsrecht 
+## Lernziele :
 • verschiedene Arbeitsverträge kennenlernen und über sie sprechen
 • Aufgaben von Betriebsräten verstehen
 • Informationen über eine Betriebsversammlung verstehen
@@ -8,7 +8,7 @@
 • mit der Agentur für Arbeit das weitere Vorgehen besprechen
 • einen Arbeitsvertrag lesen und verstehen
 • Nachfragen zu einem Arbeitsvertrag stellen und die Erläuterungen verstehen
-** hier sind : ich kann Ihnen 20 Beispielsätze zum Thema "Arbeitsrecht" gemäß Ihren Anforderungen erstellen:
+## hier sind : ich kann Ihnen 20 Beispielsätze zum Thema "Arbeitsrecht" gemäß Ihren Anforderungen erstellen:
 - Ich habe meinen Arbeitsvertrag gründlich gelesen, bevor ich ihn unterschrieben habe.
 - Ich bin zum Betriebsrat gegangen, um meine Rechte als Arbeitnehmer zu verstehen.
 - Ich nehme an der Betriebsversammlung teil, um über die neuesten Entwicklungen im Unternehmen informiert zu sein.

@@ -1,5 +1,5 @@
-** Tema:Qualitätssicherung  
-** Lernziele :
+# Tema:Qualitätssicherung  
+## Lernziele :
 • über Abweichungen von Qualitätszielen sprechen
 • auf Mängel aufmerksam machen und über Defekte und Fehler informieren
 • Maßnahmen zur Qualitätssicherung verstehen und beschreiben und Verbesserungsvorschläge machen
@@ -8,7 +8,7 @@
 • konstruktiv Kritik üben und den eigenen Standpunkt begründen 
 • Fehler angemessen zur Sprache bringen und sich für Fehler entschuldigen
 
-** hier sind 20 Sätze zum Thema "Qualitätssicherung" unter Berücksichtigung Ihrer Vorgaben:
+## hier sind 20 Sätze zum Thema "Qualitätssicherung" unter Berücksichtigung Ihrer Vorgaben:
 - Ich bemerke, dass die Qualität unseres Produkts in letzter Zeit nachgelassen hat.
 - Ich informiere meine Vorgesetzten über einen Defekt in der Produktionslinie, der die Qualität beeinträchtigt.
 - Ich schlage vor, eine zusätzliche Qualitätskontrolle einzuführen, um die Fehlerquote zu senken.

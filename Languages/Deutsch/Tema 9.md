@@ -1,5 +1,5 @@
-** Tema:Beschwerdemanagement
-** Lernziele :
+# Tema:Beschwerdemanagement
+## Lernziele :
 • sich zu Fehlern und Mängeln bei Einkäufen und Dienstleistungen äußern
 • den Lieferschein verstehen, mit der Bestellliste vergleichen und fehlende/fehlerhafte Ware registrieren 
 • im Fall von fehlender oder fehlerhafter Ware beim Lieferanten nachfragen 
@@ -9,7 +9,7 @@
 • Termine vereinbaren, bestätigen, absagen, verschieben
 • Voicemailnachrichten verstehen
 
-** hier sind 20 Beispielsätze zum Thema "Beschwerdemanagement":
+## hier sind 20 Beispielsätze zum Thema "Beschwerdemanagement":
 - Ich habe den Lieferschein mit der Bestellliste verglichen und einige fehlende Artikel bemerkt.
 - Ich rufe den Lieferanten an, um nach den fehlenden Produkten zu fragen.
 - Ich bin mit der Qualität der Dienstleistung nicht zufrieden und möchte eine Beschwerde einreichen.

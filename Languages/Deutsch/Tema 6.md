@@ -1,5 +1,5 @@
-** Tema:Arbeitsabläufe 
-** Lernziele :
+# Tema:Arbeitsabläufe 
+## Lernziele :
 • über Aktivitäten in einer Firma sprechen
 • über guten Kundenservice diskutieren
 • Kollegen und Kolleginnen über Arbeitsaufträge informieren
@@ -12,7 +12,7 @@
 • Arbeitsabläufe beschreiben
 • über erledigte Aufgaben informieren
 
-** hier sind 20 Beispielsätze zum Thema "Arbeitsabläufe":
+## hier sind 20 Beispielsätze zum Thema "Arbeitsabläufe":
 - Ich beginne meinen Arbeitstag immer mit der Überprüfung meiner E-Mails.
 - Ich habe heute einen wichtigen Kundenanruf, um den Service zu verbessern.
 - Ich informiere meine Kollegen über den aktuellen Status des Projekts.

@@ -1,5 +1,5 @@
-** Tema:Arbeitsorte und Arbeitswelten  
-** Lernziele :
+# Tema:Arbeitsorte und Arbeitswelten  
+## Lernziele :
 • Berufe und Branchen kennenlernen
 • Nachrichten über einen lokalen Arbeitsmarkt verstehen und wiedergeben
 • die Hauptinhalte von Schaubildern erfassen und mündlich wiedergeben
@@ -9,7 +9,7 @@
 • den Hergang und die Folgen eines Unfalls beschreiben
 • dem Arbeitgeber einen Unfall melden und einen
 
-** hier sind 20 Sätze auf B2-Niveau zum Thema Arbeitsorte und -welten:
+## hier sind 20 Sätze auf B2-Niveau zum Thema Arbeitsorte und -welten:
 - Ich arbeite in einer Werbeagentur im Herzen der Stadt.
 - Ich habe die Nachrichten gelesen, dass in unserer Region viele neue Jobs im Gesundheitswesen entstehen.
 - In dem Schaubild konnte ich erkennen, dass die IT-Branche am schnellsten wächst.

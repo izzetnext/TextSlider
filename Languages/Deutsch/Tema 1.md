@@ -1,5 +1,5 @@
-** Tema:Berufsorientierung 
-** Lernziele :
+# Tema:Berufsorientierung 
+## Lernziele :
 • sich vorstellen
 • sich mit anderen über alltägliche Ereignisse und Themen von allgemeinem Interesse unterhalten
 • über den eigenen Beruf, die Berufsausbildung und Berufserfahrung sprechen
@@ -9,7 +9,7 @@
 • über eine Firma berichten
 • mit Präsentationssoftware eine Präsentation halten
 • über übliche Abteilungsstrukturen in deutschen
-** hier sind 20 Beispielsätze zum Thema Berufsorientierung, die den angegebenen Lernzielen entsprechen:
+## hier sind 20 Beispielsätze zum Thema Berufsorientierung, die den angegebenen Lernzielen entsprechen:
 - Ich heiße Peter und arbeite als Grafikdesigner.
 - Bei der Arbeit reden wir oft über die Nachrichten und Politik.
 - Ich bin Lehrer und arbeite an einer Grundschule.

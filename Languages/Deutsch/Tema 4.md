@@ -1,5 +1,5 @@
-** Tema:Eine neue Arbeit  
-** Lernziele :
+# Tema:Eine neue Arbeit  
+## Lernziele :
 • über angemessenes Verhalten bei 
 • typische Fragen in einem Vorstellungsgespräch beantworten
 • sich nach einem Vorstellungsgespräch nach dem Stand der Dinge erkundigen
@@ -9,7 +9,7 @@
 • Informationen in einer Willkommensmappe verstehen und Fragen dazu stellen
 • Informationen über einen Betriebsausflug verstehen
 
-** hier sind 20 Beispielsätze zum Thema "Eine neue Arbeit":
+## hier sind 20 Beispielsätze zum Thema "Eine neue Arbeit":
 - Ich bin nervös vor meinem ersten Arbeitstag und frage mich, wie ich mich am besten verhalten sollte.
 - Im Vorstellungsgespräch wurde ich gefragt, warum ich den Job wechseln möchte.
 - Nach dem Vorstellungsgespräch habe ich eine E-Mail geschrieben, um mich nach dem aktuellen Stand zu erkundigen.

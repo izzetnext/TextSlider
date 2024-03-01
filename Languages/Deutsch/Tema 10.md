@@ -1,5 +1,5 @@
-** Tema:Auf einer Messe 
-** Lernziele :
+# Tema:Auf einer Messe 
+## Lernziele :
 • über Gründe für eine Messeteilnahme sprechen
 • Bedürfnisse von Messekontakten erfragen und Kundengespräche führen 
 • eine Messepräsentation vorbereiten 
@@ -11,7 +11,7 @@
 • Unternehmensaktivitäten beschreiben
 • einen Businessplan verstehen und schreiben
 
-** hier sind 20 Sätze, die mit dem Thema "Auf einer Messe" im Kontext von Arbeits- und Alltagssprache zu tun haben:
+## hier sind 20 Sätze, die mit dem Thema "Auf einer Messe" im Kontext von Arbeits- und Alltagssprache zu tun haben:
 - Ich bin auf der Messe, um mein Netzwerk zu erweitern und neue Kunden zu gewinnen.
 - Ich frage potenzielle Kunden nach ihren Bedürfnissen, um meine Produkte besser anbieten zu können.
 - Ich habe Wochen im Voraus damit verbracht, meine Messepräsentation vorzubereiten.

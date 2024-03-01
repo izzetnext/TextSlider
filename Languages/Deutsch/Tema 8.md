@@ -1,5 +1,5 @@
-** Tema:Auftragsabwicklung   
-** Lernziele :
+# Tema:Auftragsabwicklung   
+## Lernziele :
 • sich über die Beschaffung von Materialien austauschen
 • verstehen, was man bei der Materialbeschaffung berücksichtigen muss
 • Kundenanfragen aufnehmen, bewerten und abklären 
@@ -11,7 +11,7 @@
 • über Art und Menge fehlender Produkte informieren
 • Lösungsvorschläge für Lieferverzögerungen und Nachbesserungen formulieren
 
-** hier sind 20 Beispielsätze zum Thema "Auftragsabwicklung":
+## hier sind 20 Beispielsätze zum Thema "Auftragsabwicklung":
 - Ich kümmere mich um die Materialbeschaffung für unser nächstes Projekt.
 - Ich habe die Kundenanfrage geprüft und finde, dass wir den Auftrag annehmen sollten.
 - Ich muss noch mit unserem Lieferanten sprechen, um sicherzustellen, dass die Materialien rechtzeitig ankommen.

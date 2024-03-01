@@ -1,5 +1,5 @@
-** Tema:Im Bewerbungsprozess 
-** Lernziele :
+# Tema:Im Bewerbungsprozess 
+## Lernziele :
 • über Erfahrungen bei der Stellensuche sprechen
 • über eine Stellenanzeige berichten und die Tätigkeitsbeschreibungen und notwendigen Qualifikationen verstehen 
 • einen (tabellarischen) Lebenslauf schreiben 
@@ -9,7 +9,7 @@
 • eine Einladung zu einem Vorstellungsgespräch verstehen und den Termin bestätigen 
 • über soziale Kompetenzen sprechen
 
-** hier sind 20 Sätze zum Thema "Im Bewerbungsprozess":
+## hier sind 20 Sätze zum Thema "Im Bewerbungsprozess":
 - Ich habe viele Stellenanzeigen durchgelesen, um eine Position zu finden, die zu meinen Qualifikationen passt.
 - Ich fand eine interessante Stellenanzeige, die genau auf mein Profil zugeschnitten ist.
 - Ich arbeite gerade an meinem Lebenslauf und versuche, meine Berufserfahrung so präzise wie möglich darzustellen.

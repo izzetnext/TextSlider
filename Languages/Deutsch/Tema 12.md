@@ -1,5 +1,5 @@
-** Tema:Abgaben und Leistungen 
-** Lernziele :
+# Tema:Abgaben und Leistungen 
+## Lernziele :
 • Informationen zum Sozialversicherungssystem in Deutschland verstehen und Nachfragen dazu stellen
 • über Sozialleistungen sprechen
 • eine Lohn-/Gehaltsabrechnung verstehen und ihr Detailinformationen entnehmen 
@@ -8,7 +8,7 @@
 • bei einem Arztbesuch um eine Krankschreibung bitten 
 • Informationen über Renteneintritt, Elternzeit, Pflegezeit usw. verstehen
 
-** hier sind 20 Sätze, dass Sie spezielle Übungsmaterialien für den Themenbereich "Abgaben und Leistungen" benötigen.:
+## hier sind 20 Sätze, dass Sie spezielle Übungsmaterialien für den Themenbereich "Abgaben und Leistungen" benötigen.:
 - Ich habe meine Gehaltsabrechnung erhalten, aber ich verstehe die Abzüge für die Sozialversicherung nicht ganz.
 - Ich muss meinem Chef mitteilen, dass ich wegen einer Erkältung nicht zur Arbeit kommen kann.
 - Ich plane, bei meinem nächsten Arztbesuch um eine Krankschreibung zu bitten.
