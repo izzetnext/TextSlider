@@ -2,4 +2,4 @@
 personal
 
 Please test here
-https://izzetnext.github.io/enpoi/
+https://izzetnext.github.io/TextSlider/
