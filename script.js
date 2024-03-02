@@ -251,7 +251,12 @@ document.getElementById('dizinListesi').addEventListener('change', function(e) {
             // İlk seçeneği otomatik olarak seç
             if (presetTexts.options.length > 0) {
                 presetTexts.selectedIndex = 0;
+                // "change" olayını manuel olarak tetikle
+                const event = new Event('change');
+                presetTexts.dispatchEvent(event);
             }
+
+
         })
         .catch(error => console.error('Hata:', error));
 });
