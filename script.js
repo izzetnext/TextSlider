@@ -106,7 +106,7 @@ function speakText() {
         // Eğer ses kapatılmışsa, konuşma bitimini simüle eder
         handleSpeakingEnd();
     }
-}
+}   
  
 function handleSpeakingEnd() {
     timer = setTimeout(() => {
