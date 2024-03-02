@@ -238,6 +238,7 @@ document.getElementById('dizinListesi').addEventListener('change', function(e) {
         .then(data => {
             const presetTexts = document.getElementById('presetTexts');
             presetTexts.innerHTML = ''; // Mevcut içeriği temizle
+
             data.forEach(item => {
                 if (item.type === "file") {
                     const option = document.createElement('option');
@@ -246,9 +247,15 @@ document.getElementById('dizinListesi').addEventListener('change', function(e) {
                     presetTexts.appendChild(option);
                 }
             });
+
+            // İlk seçeneği otomatik olarak seç
+            if (presetTexts.options.length > 0) {
+                presetTexts.selectedIndex = 0;
+            }
         })
         .catch(error => console.error('Hata:', error));
 });
+
 
 
  
