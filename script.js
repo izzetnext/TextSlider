@@ -4,6 +4,7 @@ let isMuted = false; // Eklenen değişken
 let timer;
 let lines = [];
 
+
   
 const fileInput = document.getElementById('fileInput');
 const playPauseBtn = document.getElementById('playPauseBtn');
@@ -32,6 +33,9 @@ nextBtn.addEventListener('click', function() {
 });
 
 function updateSlide() {
+
+    console.log(   lines.length );
+    console.log(  currentIndex )
    // displayText.innerText = lines[currentIndex];
     splitAndDisplayText (lines[currentIndex]) ;
   
@@ -41,6 +45,8 @@ function updateSlide() {
         synth.cancel(); // Hali hazırda konuşma varsa iptal et
         speakText();
     }
+
+
 }
 
 
@@ -73,6 +79,8 @@ function handleFileUpload(e) {
         splitAndDisplayText (lines[currentIndex]) ;
     };
     reader.readAsText(file);
+
+    
 }
 
 function togglePlayPause() {

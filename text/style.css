@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Arka plan rengini siyah yap */
+    color: white; /* Tüm yazıların rengini beyaz yap */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* İçeriği yukarıda tut */
+    width: 100%; /* Genişlik %100 */
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: linear-gradient(to right, #7a7a7a, #a1a1a1, #7a7a7a);
+    padding: 10px;
+    border: 2px solid black; /* Siyah çerçeve */
+    border-radius: 19px; /* Köşeleri yuvarlaklaştır */
+}
+
+
+
+.toolbar img {
+    width: 60px; /* Daha büyük ekranlar için varsayılan boyut */
+    cursor: pointer;
+    transition: transform 0.2s; /* Düğme etkisi için geçiş */
+}
+
+/* fast-backward ve fast-forward için özel stil */
+#previous, #next {
+    width: 43px; /* Varsayılan genişlikten %20 daha küçük */
+}
+/* fast-backward ve fast-forward için özel stil */
+#fast-backward, #fast-forward {
+    width: 33px; /* Varsayılan genişlikten %20 daha küçük */
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.text-display {
+    width: 90%; /* Genişlik %90 */
+    max-height: 80%; /* İçerik bölümünün maksimum yüksekliği, gerekiyorsa ayarlayın */
+    margin: 20px auto; /* Üst ve alt marj 20px, sağ ve sol otomatik (ortalar) */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+
+#text-content {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Küçük ekranlar için stil ayarlamaları */
+@media (max-width: 768px) {
+    .toolbar img {
+        width: 40px; /* Küçük ekranlar için düğme boyutu */
+    }
+    /* fast-backward ve fast-forward için özel stil */
+    #previous, #next {
+        width: 33px; /* Varsayılan genişlikten %20 daha küçük */
+    }
+    /* fast-backward ve fast-forward için özel stil */
+    #fast-backward, #fast-forward {
+        width: 23px; /* Varsayılan genişlikten %20 daha küçük */
+    }
+    #text-content {
+        font-size: 14px; /* Küçük ekranlar için metin boyutu */
+    }
+    .content-wrapper {
+        margin-top: 50px; /* Küçük ekranlar için daha küçük bir margin-top değeri */
+    }
+}
+
+/* Çok küçük ekranlar için ek ayarlar */
+@media (max-width: 480px) {
+    .toolbar img {
+        width: 30px; /* Çok küçük ekranlar için düğme boyutu */
+    }
+    /* fast-backward ve fast-forward için özel stil */
+    #previous, #next {
+        width: 23px; /* Varsayılan genişlikten %20 daha küçük */
+    }
+    /* fast-backward ve fast-forward için özel stil */
+    #fast-backward, #fast-forward {
+        width: 13px; /* Varsayılan genişlikten %20 daha küçük */
+    }
+    .text-display {
+        padding: 10px;
+    }
+
+    #text-content {
+        font-size: 12px; /* Çok küçük ekranlar için metin boyutu */
+    }
+    .content-wrapper {
+        margin-top: 20px; /* Küçük ekranlar için daha küçük bir margin-top değeri */
+    }    
+}
+
+
+.empty-space {
+    flex-grow: 1;
+}

@@ -1,5 +1,3 @@
-
-
 - # Kapitel 1
 ## Sich vorstellen
 ## Darf ich mich vorstellen?
