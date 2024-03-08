@@ -15,7 +15,7 @@ document.querySelectorAll('.toolbar img').forEach(button => {
 function chooseFile() {
     // Bu fonksiyon, kullanıcıdan dosya seçmesini isteyebilir.
     // Örneğin, bir <input type="file"> öğesi tetiklenebilir.
-    alert('Choose File button clicked.');
+    document.getElementById('text-content').textContent = 'Choose File button clicked.' ;
 }
 
 // Slayt Bilgisi Güncelleme
@@ -28,13 +28,13 @@ function updateSlideInfo(currentSlide, totalSlides) {
 // Hızlı Geri butonu işlevi
 function fastBackward() {
     // Bu fonksiyon, slayt gösterisini en başa alabilir.
-    alert('Fast Backward button clicked.');
+    document.getElementById('text-content').textContent = 'Fast Backward button clicked.' ;
 }
 
 // Önceki Slayt butonu işlevi
 function previousSlide() {
     // Bu fonksiyon, slayt gösterisinde bir önceki slayta geçiş yapar.
-    alert('Previous Slide button clicked.');
+    document.getElementById('text-content').textContent = 'Previous Slide button clicked.' ;
 }
 
 // Oynat/Duraklat butonu işlevi
@@ -42,23 +42,23 @@ function togglePlayPause() {
     var img = document.getElementById('play-pause');
     if (img.src.includes("play.png")) {
         img.src = "images/pause.png";
-        alert('Playing slides.');
+        document.getElementById('text-content').textContent = 'Playing slides.' ;
     } else {
         img.src = "images/play.png";
-        alert('Paused slides.');
+        document.getElementById('text-content').textContent = 'Paused slides.' ;
     }
 }
 
 // Sonraki Slayt butonu işlevi
 function nextSlide() {
     // Bu fonksiyon, slayt gösterisinde bir sonraki slayta geçiş yapar.
-    alert('Next Slide button clicked.');
+    document.getElementById('text-content').textContent = 'Next Slide button clicked.' ;
 }
 
 // Hızlı İleri butonu işlevi
 function fastForward() {
     // Bu fonksiyon, slayt gösterisini en sona alabilir.
-    alert('Fast Forward button clicked.');
+    document.getElementById('text-content').textContent = 'Fast Forward button clicked.';
 }
 
 // Ses Aç/Kapa butonu işlevi
@@ -66,10 +66,10 @@ function toggleSound() {
     var img = document.getElementById('sound-toggle');
     if (img.src.includes("sound-on.png")) {
         img.src = "images/sound-off.png";
-        alert('Sound off.');
+        document.getElementById('text-content').textContent = 'Sound off.' ;
     } else {
         img.src = "images/sound-on.png";
-        alert('Sound on.');
+        document.getElementById('text-content').textContent = 'Sound on.' ;
     }
 }
 
@@ -78,10 +78,10 @@ function toggleShuffle() {
     var img = document.getElementById('shuffle-toggle');
     if (img.src.includes("shuffle-on.png")) {
         img.src = "images/shuffle-off.png";
-        alert('Shuffle off.');
+        document.getElementById('text-content').textContent = 'Shuffle off.' ;
     } else {
         img.src = "images/shuffle-on.png";
-        alert('Shuffle on.');
+        document.getElementById('text-content').textContent = 'Shuffle on.' ;
     }
 }
 
