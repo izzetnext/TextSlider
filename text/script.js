@@ -101,12 +101,14 @@ function toggleShuffle() {
 // Dil seçimi değiştiğinde çağrılacak fonksiyon
 function handleLanguageChange() {
     document.getElementById('text-content').textContent ='Language selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
-    const Language = e.target.value;
-    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${Language}`;
+
+
+    const secilenDizin = e.target.value;
+    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${secilenDizin}`;
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            const select_text_slide = document.getElementById('select_text_slide');
+            const presetTexts = document.getElementById('select_text_slide');
             select_text_slide.innerHTML = ''; // Mevcut içeriği temizle
 
             data.forEach(item => {
@@ -130,13 +132,31 @@ function handleLanguageChange() {
         })
         .catch(error => console.error('Hata:', error));
 
-
 }
 
 // Text slide seçimi değiştiğinde çağrılacak fonksiyon
 function handleTextSlideChange() {
     document.getElementById('text-content').textContent ='Text slide selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
 }
+
+
+function LoadLanguages() {
+    const apiUrl = 'https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/';
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const dizinListesi = document.getElementById('select_language');
+            data.forEach(item => {
+                if (item.type === "dir") { // Yalnızca dizinleri listele
+                    const option = document.createElement('option');
+                    option.value = option.textContent = item.name;
+                    select_language.appendChild(option);
+                }
+            });
+        })
+        .catch(error => console.error('Error:', error));
+}
+
 
 // Butonların Event Listener'larını tanımla
 function setupEventListeners() {
@@ -152,7 +172,7 @@ function setupEventListeners() {
     document.getElementById('select_language').addEventListener('change', handleLanguageChange);
     // Text.slide seçim kutusuna olay dinleyicisi ekle
     document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
-    handleLanguageChange();
+    LoadLanguages();
 
 }
 
