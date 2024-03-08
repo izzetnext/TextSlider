@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     width: 100%;
     background: linear-gradient(to right, #7a7a7a, #a1a1a1, #7a7a7a);
     padding: 10px;
@@ -58,14 +58,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     width: 100%;
+    margin-top: 5vh;
 }
 
 .text-display {
     width: 90%; /* Genişlik %90 */
     max-height: 80%; /* İçerik bölümünün maksimum yüksekliği, gerekiyorsa ayarlayın */
-    margin: 20px auto; /* Üst ve alt marj 20px, sağ ve sol otomatik (ortalar) */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -94,9 +93,7 @@ body {
     #text-content {
         font-size: 14px; /* Küçük ekranlar için metin boyutu */
     }
-    .content-wrapper {
-        margin-top: 50px; /* Küçük ekranlar için daha küçük bir margin-top değeri */
-    }
+
 }
 
 /* Çok küçük ekranlar için ek ayarlar */
@@ -119,12 +116,14 @@ body {
     #text-content {
         font-size: 12px; /* Çok küçük ekranlar için metin boyutu */
     }
-    .content-wrapper {
-        margin-top: 20px; /* Küçük ekranlar için daha küçük bir margin-top değeri */
-    }    
+ 
 }
 
 
 .empty-space {
     flex-grow: 1;
 }
+
+#select_language, #select_text_slide {
+    background-color: #bcbbbb;
+  }

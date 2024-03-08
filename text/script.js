@@ -13,10 +13,23 @@ document.querySelectorAll('.toolbar img').forEach(button => {
 
 // Dosya Seç butonu işlevi
 function chooseFile() {
-    // Bu fonksiyon, kullanıcıdan dosya seçmesini isteyebilir.
-    // Örneğin, bir <input type="file"> öğesi tetiklenebilir.
-    document.getElementById('text-content').textContent = 'Choose File button clicked.' ;
+    // Gizli dosya input elementini bul
+    var fileInput = document.getElementById('file-input');
+
+    // Dosya seçim diyalogunu aç
+    fileInput.click();
+
+    // Dosya seçildiğinde bir işlem yapmak için bir event listener ekleyin
+    fileInput.onchange = function() {
+        if (fileInput.files.length > 0) {
+            // Seçilen dosyanın adını al ve bir yerde kullan
+            var fileName = fileInput.files[0].name;
+            // Örneğin, seçilen dosyanın adını text-content elementinde göster
+            document.getElementById('text-content').textContent = "Selected file: " + fileName;
+        }
+    };
 }
+
 
 // Slayt Bilgisi Güncelleme
 function updateSlideInfo(currentSlide, totalSlides) {
@@ -85,6 +98,46 @@ function toggleShuffle() {
     }
 }
 
+// Dil seçimi değiştiğinde çağrılacak fonksiyon
+function handleLanguageChange() {
+    document.getElementById('text-content').textContent ='Language selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
+    const Language = e.target.value;
+    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${Language}`;
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const select_text_slide = document.getElementById('select_text_slide');
+            select_text_slide.innerHTML = ''; // Mevcut içeriği temizle
+
+            data.forEach(item => {
+                if (item.type === "file") {
+                    const option = document.createElement('option');
+                    option.value = item.download_url; // Dosyanın indirme URL'sini değer olarak kullan
+                    option.textContent = item.name;
+                    select_text_slide.appendChild(option);
+                }
+            });
+
+            // İlk seçeneği otomatik olarak seç
+            if (select_text_slide.options.length > 0) {
+                select_text_slide.selectedIndex = 0;
+                // "change" olayını manuel olarak tetikle
+                const event = new Event('change');
+                select_text_slide.dispatchEvent(event);
+            }
+
+
+        })
+        .catch(error => console.error('Hata:', error));
+
+
+}
+
+// Text slide seçimi değiştiğinde çağrılacak fonksiyon
+function handleTextSlideChange() {
+    document.getElementById('text-content').textContent ='Text slide selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
+}
+
 // Butonların Event Listener'larını tanımla
 function setupEventListeners() {
     document.getElementById('choose-file').onclick = chooseFile;
@@ -95,6 +148,12 @@ function setupEventListeners() {
     document.getElementById('fast-forward').onclick = fastForward;
     document.getElementById('sound-toggle').onclick = toggleSound;
     document.getElementById('shuffle-toggle').onclick = toggleShuffle;
+    // Dil seçim kutusuna olay dinleyicisi ekle
+    document.getElementById('select_language').addEventListener('change', handleLanguageChange);
+    // Text.slide seçim kutusuna olay dinleyicisi ekle
+    document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
+
+
 }
 
 // Sayfa yüklendiğinde event listener'ları kur
