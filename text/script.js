@@ -152,9 +152,11 @@ function setupEventListeners() {
     document.getElementById('select_language').addEventListener('change', handleLanguageChange);
     // Text.slide seçim kutusuna olay dinleyicisi ekle
     document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
-
+    handleLanguageChange();
 
 }
 
 // Sayfa yüklendiğinde event listener'ları kur
 window.onload = setupEventListeners;
+// Sayfa yüklendiğinde dizin listesini yükle
+ 
