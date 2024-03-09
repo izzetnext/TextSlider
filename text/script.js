@@ -1,4 +1,12 @@
- 
+let currentSlide = 0;
+let isPlaying = false;
+let isMuted = false; // Eklenen değişken
+let timer;
+let textfile_lines = [];
+
+
+
+
 // Buton efektleri için örnek
 document.querySelectorAll('.toolbar img').forEach(button => {
     button.addEventListener('mousedown', () => {
@@ -98,6 +106,21 @@ function toggleShuffle() {
     }
 }
 
+
+
+
+
+function updateSlide() {
+
+    console.log(   textfile_lines.length );
+    console.log(  textfile_lines  )
+ 
+
+}
+
+
+
+
 // Dil seçimi değiştiğinde çağrılacak fonksiyon
 function handleLanguageChange() {
     const language = this.value; // Seçilen dil
@@ -124,9 +147,16 @@ function handleLanguageChange() {
                     select_text_slide.appendChild(option);
                 }
             });
+
+            // İlk seçeneği otomatik olarak seç
+            if (presetTexts.options.length > 0) {
+                presetTexts.selectedIndex = 0;
+                // "change" olayını manuel olarak tetikle
+                const event = new Event('change');
+                presetTexts.dispatchEvent(event);
+            }
         })
         .catch(error => console.error('Error:', error));
-
 
 }
 
@@ -134,8 +164,29 @@ function handleLanguageChange() {
 // Text slide seçimi değiştiğinde çağrılacak fonksiyon
 function handleTextSlideChange() {
     document.getElementById('text-content').textContent ='Text slide selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
-
+   
+    if (presetTexts.value) {
+        fetch(presetTexts.value)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                textfile_lines = data.split('\n');
+                currentSlide = 0;
+                updateSlide();
+            })
+            .catch((error) => {
+                console.error('Fetch error: ', error);
+            });
+    }
 }
+
+ 
+
+
 
 
 function LoadLanguages() {
