@@ -100,43 +100,41 @@ function toggleShuffle() {
 
 // Dil seçimi değiştiğinde çağrılacak fonksiyon
 function handleLanguageChange() {
-    document.getElementById('text-content').textContent ='Language selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
-
-
-    const secilenDizin = e.target.value;
-    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${secilenDizin}`;
+    const language = this.value; // Seçilen dil
+    document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
+    
+    // Seçilen dildeki text dosyalarını yüklemek için GitHub API'sini kullan
+    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${language}`;
+    
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            const presetTexts = document.getElementById('select_text_slide');
-            select_text_slide.innerHTML = ''; // Mevcut içeriği temizle
+            const select_text_slide = document.getElementById('select_text_slide');
+            select_text_slide.innerHTML = ''; // Önceki seçenekleri temizle
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Select a text.slide';
+            defaultOption.selected = true;
+            select_text_slide.appendChild(defaultOption);
 
             data.forEach(item => {
-                if (item.type === "file") {
+                if (item.type === "file") { // Yalnızca dosyaları listele
                     const option = document.createElement('option');
-                    option.value = item.download_url; // Dosyanın indirme URL'sini değer olarak kullan
-                    option.textContent = item.name;
+                    option.value = option.textContent = item.name;
                     select_text_slide.appendChild(option);
                 }
             });
-
-            // İlk seçeneği otomatik olarak seç
-            if (select_text_slide.options.length > 0) {
-                select_text_slide.selectedIndex = 0;
-                // "change" olayını manuel olarak tetikle
-                const event = new Event('change');
-                select_text_slide.dispatchEvent(event);
-            }
-
-
         })
-        .catch(error => console.error('Hata:', error));
+        .catch(error => console.error('Error:', error));
+
 
 }
+
 
 // Text slide seçimi değiştiğinde çağrılacak fonksiyon
 function handleTextSlideChange() {
     document.getElementById('text-content').textContent ='Text slide selection changed to: ' + this.value ; // Gerçek işlevsellik buraya eklenecek
+
 }
 
 
@@ -145,7 +143,7 @@ function LoadLanguages() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            const dizinListesi = document.getElementById('select_language');
+            const select_language = document.getElementById('select_language');
             data.forEach(item => {
                 if (item.type === "dir") { // Yalnızca dizinleri listele
                     const option = document.createElement('option');
