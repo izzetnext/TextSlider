@@ -64,7 +64,7 @@ body {
     width: 33px; /* Varsayılan genişlikten %20 daha küçük */
 }
 
-#sound-toggle, #shuffle-toggle {
+#sound-toggle, #shuffle-toggle ,#danke {
     width: 43px; /* Varsayılan genişlikten %20 daha küçük */
 }
 
