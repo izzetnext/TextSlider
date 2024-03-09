@@ -269,6 +269,7 @@ function updateSlide() {
         synth.cancel(); // Hali hazırda konuşma varsa iptal et
         speakText();
     }
+    //adjustFontSize() ;
 }
 
 
@@ -393,3 +394,37 @@ function setupEventListeners() {
 window.onload = setupEventListeners;
 // Sayfa yüklendiğinde dizin listesini yükle
  
+
+
+function adjustFontSizeForScreen() {
+    const textContent = document.getElementById('text-content');
+    if (window.innerWidth < 768) { // Küçük ekranlar için
+        textContent.style.fontSize = '18px';
+    } else if (window.innerWidth < 1024) { // Orta boy ekranlar için
+        textContent.style.fontSize = '26px';
+    } else { // Büyük ekranlar için
+        textContent.style.fontSize = '48px';
+    }
+}
+
+
+
+function adjustFontSizeForTextLength() {
+    const textContent = document.getElementById('text-content');
+    const textLength = textContent.textContent.length;
+    if (textLength < 50) { // Kısa metinler için
+        textContent.style.fontSize = '18px';
+    } else if (textLength < 100) { // Orta uzunlukta metinler için
+        textContent.style.fontSize = '28px';
+    } else { // Uzun metinler için
+        textContent.style.fontSize = '48px';
+    }
+}
+
+
+
+function adjustFontSize() {
+    adjustFontSizeForScreen();
+    adjustFontSizeForTextLength();
+    // İsteğe bağlı olarak, burada ekran boyutu ve metin uzunluğuna göre daha karmaşık bir mantık uygulayabilirsiniz.
+}

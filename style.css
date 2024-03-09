@@ -85,7 +85,7 @@ body {
 
 
 #text-content {
-    font-size: 16px;
+    font-size: 48px;
     text-align: center;
 }
 
@@ -103,7 +103,7 @@ body {
         width: 23px; /* Varsayılan genişlikten %20 daha küçük */
     }
     #text-content {
-        font-size: 14px; /* Küçük ekranlar için metin boyutu */
+        font-size: 48px; /* Küçük ekranlar için metin boyutu */
     }
 
 }
@@ -126,7 +126,7 @@ body {
     }
 
     #text-content {
-        font-size: 12px; /* Çok küçük ekranlar için metin boyutu */
+        font-size: 48px; /* Çok küçük ekranlar için metin boyutu */
     }
  
 }
