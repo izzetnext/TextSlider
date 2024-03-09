@@ -313,7 +313,10 @@ function handleTextSlideChange() {
  
 // Dil seçimi değiştiğinde çağrılacak fonksiyon
 function handleLanguageChange() {
+    
     const language = this.value; // Seçilen dil
+    console.log("Dil seçimi değişti" + language);
+
     document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
 
     // JSON dosyasından seçilen dildeki text dosyalarını yüklemek için
@@ -353,22 +356,26 @@ function handleLanguageChange() {
 
 
 
-function LoadLanguages() {
-    // JSON dosyasının yolu (örneğin 'languages.json' veya uygun yolu belirtin)
+function LoadLanguages(callback) {
     const jsonUrl = 'languages.json';
 
     fetch(jsonUrl)
         .then(response => response.json())
         .then(data => {
             const select_language = document.getElementById('select_language');
-            // Önceden oluşturulmuş ve kaydedilmiş JSON verisini kullanarak dilleri listele
             data.forEach(language => {
                 const option = document.createElement('option');
                 option.value = option.textContent = language.language; // 'language' anahtarınızın ismine göre düzenleyin
                 select_language.appendChild(option);
             });
+            // Veriler başarıyla işlendikten sonra callback fonksiyonunu çağır
+            if (typeof callback === "function") {
+                callback();
+            }
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }
 
 
@@ -428,28 +435,6 @@ function setupContentWrapperControls() {
     });
 }
 
-// Sayfa yüklendiğinde tüm event listener'ları ayarla
-window.onload = function() {
-    setupEventListeners();
-    LoadLanguages(); // Bu, dil seçim kutularını doldurmak için
-
-    var msg = new SpeechSynthesisUtterance();
-    var voices = window.speechSynthesis.getVoices();
- 
-    // Seslerin her birini konsola yazdır
-    voices.forEach(function(voice, index) {
-        console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
-    });
-
-    // "Microsoft Katja - German (Germany)" sesini seç
-    for(var i = 0; i < voices.length; i++) {
-        if(voices[i].name === "Microsoft Hedda - German (Germany)") {
-            msg.voice = voices[i];
-        }
-    }
- 
-    
-}
  
 
 function adjustFontSizeForScreen() {
@@ -486,4 +471,117 @@ function adjustFontSize() {
 }
 
 
+function setupKeyboardControls() {
+
+    document.addEventListener('keydown', function(event) {
+    const select_text_slide = document.getElementById('select_text_slide');
+    const selectedIndex = select_text_slide.selectedIndex;
+    let changeMade = false;
+
+        switch (event.key) {
+            case 'ArrowUp':
+                // Sol yön tuşuna basıldığında önceki slayta geç
+                if (selectedIndex > 0) {
+                    select_text_slide.selectedIndex = selectedIndex - 1;
+                    changeMade = true;
+                }
+                break;
+            case 'ArrowDown':
+                // Sol yön tuşuna basıldığında önceki slayta geç
+                if (selectedIndex < select_text_slide.options.length - 1) {
+                    select_text_slide.selectedIndex = selectedIndex + 1;
+                    changeMade = true;
+                }
+                break;
+            case 'ArrowLeft':
+                // Sol yön tuşuna basıldığında önceki slayta geç
+                previousSlide();
+                break;
+            case 'ArrowRight':
+                // Sağ yön tuşuna basıldığında sonraki slayta geç
+                nextSlide();
+                break;
+            case 'Space':
+                // Boşluk (Space) tuşuna basıldığında oynat/duraklat
+                togglePlayPause();
+                break;
+        }
+        // Eğer bir değişiklik yapıldıysa, change olayını manuel olarak tetikle
+        if (changeMade) {
+            const event = new Event('change');
+            select_text_slide.dispatchEvent(event);
+        }        
+    });
+}
+
+
+function selectDefaultLanguage() {
+    // Varsayılan dil kodunu ayarlayın, örneğin 'en-US'
+    var defaultLanguageCode = 'Deutsch';
+    var selectLanguageElement = document.getElementById('select_language');
+
+    // `select_language` <select> elementinin <option> larını dolaş
+    for (var i = 0; i < selectLanguageElement.options.length; i++) {
+        if (selectLanguageElement.options[i].value === defaultLanguageCode) {
+            // Varsayılan dil kodunu bulduğunuzda, onu seçili yap
+            selectLanguageElement.selectedIndex = i;
+            break; // Döngüden çık
+        }
+    }
+}
+
+function selectRandomTextSlide(selectElement) {
+    const optionsCount = selectElement.options.length;
+    console.log( selectElement.options.length );
+    if (optionsCount > 0) {
+        // Rasgele bir index seç
+        const randomIndex = Math.floor(Math.random() * optionsCount);
+        selectElement.selectedIndex = randomIndex;
+        const event = new Event('change');
+        selectElement.dispatchEvent(event);        
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM yüklendiğinde çalışacak kodlar
+    setupEventListeners();
+    // Diğer işlemler
+    console.log( "DOMContentLoaded" );
+});
+
+// Sayfa yüklendiğinde tüm event listener'ları ayarla
+window.onload = function() {
+    setupEventListeners();
+    // LoadLanguages işlemi tamamlandığında selectDefaultLanguage fonksiyonunu çağır
+    LoadLanguages(function() {
+        selectDefaultLanguage(); 
+        console.log( "select_language"  + select_language.options.length  ); 
+        const event = new Event('change');
+        select_language.dispatchEvent(event);
+
+    });
+
+    setupKeyboardControls();
+
+      
+/*     var msg = new SpeechSynthesisUtterance();
+    var voices = window.speechSynthesis.getVoices();
  
+    // Seslerin her birini konsola yazdır
+    voices.forEach(function(voice, index) {
+        console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
+    });
+
+    // "Microsoft Katja - German (Germany)" sesini seç
+    for(var i = 0; i < voices.length; i++) {
+        if(voices[i].name === "Microsoft Hedda - German (Germany)") {
+            msg.voice = voices[i];
+        }
+    } */
+ 
+    console.log( "window.onload" );  
+    
+  //  selectRandomTextSlide(select_text_slide);
+
+}
