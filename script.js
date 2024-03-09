@@ -5,6 +5,7 @@ let timer;
 let textfile_lines = [];
 let fast_track = 1;
 let slide_delay = 1; 
+let volume_level = 1;
 
 const synth = window.speechSynthesis;
 
@@ -35,22 +36,37 @@ document.querySelectorAll('.toolbar img').forEach(button => {
 
 // Dosya Seç butonu işlevi
 function chooseFile() {
-    // Gizli dosya input elementini bul
     var fileInput = document.getElementById('file-input');
 
-    // Dosya seçim diyalogunu aç
-    fileInput.click();
+    fileInput.click(); // Kullanıcıdan dosya seçmesini isteyen diyalog kutusunu aç
 
-    // Dosya seçildiğinde bir işlem yapmak için bir event listener ekleyin
     fileInput.onchange = function() {
         if (fileInput.files.length > 0) {
-            // Seçilen dosyanın adını al ve bir yerde kullan
-            var fileName = fileInput.files[0].name;
-            // Örneğin, seçilen dosyanın adını text-content elementinde göster
-            document.getElementById('text-content').textContent = "Selected file: " + fileName;
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            // Dil ve text slide seçim kutularının seçili indekslerini sıfırla
+            document.getElementById('select_language').selectedIndex = 0;
+            document.getElementById('select_text_slide').innerHTML = '<option value="" selected>Select a text.slide</option>';
+
+            reader.onload = function(e) {
+                const fileContent = e.target.result;
+                // Dosyanın içeriğini kullanarak textfile_lines dizisini doldur
+                textfile_lines = fileContent.split('\n');
+                currentSlide = 0; // Başlangıç slaytını sıfırla
+                fast_track = Math.floor(textfile_lines.length / 11); // fast_track hesapla
+                updateSlide(); // İlk slaytı göster
+            };
+
+            reader.readAsText(file); // Dosyayı metin olarak oku
+            // Seçilen dosyanın adını göster
+            document.getElementById('text-content').textContent = "Selected file: " + file.name;
         }
     };
 }
+
+
+
 
 
 // Slayt Bilgisi Güncelleme
@@ -84,18 +100,19 @@ function togglePlayPause() {
 
 
 
-
-
-
 // Ses Aç/Kapa butonu işlevi
 function toggleSound() {
     var img = document.getElementById('sound-toggle');
     if (img.src.includes("sound-on.png")) {
         img.src = "images/sound-off.png";
-        document.getElementById('text-content').textContent = 'Sound off.' ;
+        volume_level = 0 ;
+        synth.cancel(); // Hali hazırda konuşma varsa iptal et
+        speakText();
+        //document.getElementById('text-content').textContent = 'Sound off.' ;
     } else {
         img.src = "images/sound-on.png";
-        document.getElementById('text-content').textContent = 'Sound on.' ;
+        volume_level = 1 ;
+        //document.getElementById('text-content').textContent = 'Sound on.' ;
     }
 }
 
@@ -104,10 +121,10 @@ function toggleShuffle() {
     var img = document.getElementById('shuffle-toggle');
     if (img.src.includes("shuffle-on.png")) {
         img.src = "images/shuffle-off.png";
-        document.getElementById('text-content').textContent = 'Shuffle off.' ;
+        //document.getElementById('text-content').textContent = 'Shuffle off.' ;
     } else {
         img.src = "images/shuffle-on.png";
-        document.getElementById('text-content').textContent = 'Shuffle on.' ;
+        //document.getElementById('text-content').textContent = 'Shuffle on.' ;
     }
 }
 
@@ -115,15 +132,29 @@ function toggleShuffle() {
 
 function handleSpeakingEnd() {
     timer = setTimeout(() => {
-        currentSlide++;
-        if (currentSlide < textfile_lines.length) {
-            //displayText.innerText = lines[currentIndex];
-            single_line_parsing (textfile_lines[currentSlide]) ;
-            speakText();
-        } else {
-            isPlaying = false;
-            currentSlide = 0;
+
+    // shuffle-toggle butonunun şu anki durumunu kontrol et
+    const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
+
+    if (shuffleEnabled) {
+        // Rastgele bir slayta geç
+        currentSlide = Math.floor(Math.random() * textfile_lines.length);
+        updateSlide();
+    } else {
+        // Normal bir sonraki slayta geçiş yap
+        if (currentSlide < textfile_lines.length - 1) {
+            currentSlide++;
+            updateSlide();
         }
+
+        
+    }
+
+
+
+
+
+        
     }, slide_delay*1000 );
 }
 
@@ -137,7 +168,7 @@ function speakText() {
 
         // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
         // utterThis.rate = 0.3; // Konuşma hızı, varsayılan değer 1'dir. Min 0.1, Max 10 arasında değer alabilir.
-        // utterThis.volume = 1; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
+         utterThis.volume = volume_level ; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
 
         utterThis.onend = handleSpeakingEnd;
         synth.speak(utterThis);
@@ -170,24 +201,40 @@ function fastForward() {
 
 // Önceki Slayt butonu işlevi
 function previousSlide() {
-    // Bu fonksiyon, slayt gösterisinde bir önceki slayta geçiş yapar.
-    //document.getElementById('text-content').textContent = 'Previous Slide button clicked.' ;
-    if (currentSlide > 0 ) {
-        currentSlide--;
+    // shuffle-toggle butonunun şu anki durumunu kontrol et
+    const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
+
+    if (shuffleEnabled) {
+        // Rastgele bir slayta geç
+        currentSlide = Math.floor(Math.random() * textfile_lines.length);
         updateSlide();
+    } else {
+        // Normal bir önceki slayta geçiş yap
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateSlide();
+        }
     }
 }
+
 
 // Sonraki Slayt butonu işlevi
 function nextSlide() {
-    // Bu fonksiyon, slayt gösterisinde bir sonraki slayta geçiş yapar.
-    //document.getElementById('text-content').textContent = 'Next Slide button clicked.' ;
-    if (currentSlide < textfile_lines.length - 1) {
-        currentSlide++;
+    // shuffle-toggle butonunun şu anki durumunu kontrol et
+    const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
+
+    if (shuffleEnabled) {
+        // Rastgele bir slayta geç
+        currentSlide = Math.floor(Math.random() * textfile_lines.length);
         updateSlide();
+    } else {
+        // Normal bir sonraki slayta geçiş yap
+        if (currentSlide < textfile_lines.length - 1) {
+            currentSlide++;
+            updateSlide();
+        }
     }
 }
-
 
 
 function single_line_parsing(text) {
@@ -214,10 +261,6 @@ function single_line_parsing(text) {
 
 function updateSlide() {
 
-    console.log(  "textfile_lines.length=" + textfile_lines.length );
-    console.log(  "currentSlide" + currentSlide  ) ;
-
-     
     updateSlideInfo (currentSlide+1 , textfile_lines.length);
     single_line_parsing (textfile_lines [currentSlide]) ;
 
