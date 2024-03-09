@@ -68,6 +68,11 @@ body {
     width: 43px; /* Varsayılan genişlikten %20 daha küçük */
 }
 
+#slide-info  {
+    text-align: center;
+    width: 70px; /* Varsayılan genişlikten %20 daha küçük */
+    /* border: 1px solid black; /* Siyah çerçeve */
+}
 
 .content-wrapper {
     display: flex;
