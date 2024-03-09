@@ -8,6 +8,7 @@ let slide_delay = 1;
 let volume_level = 1;
 
 const synth = window.speechSynthesis;
+ 
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
