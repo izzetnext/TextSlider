@@ -428,3 +428,28 @@ function adjustFontSize() {
     adjustFontSizeForTextLength();
     // İsteğe bağlı olarak, burada ekran boyutu ve metin uzunluğuna göre daha karmaşık bir mantık uygulayabilirsiniz.
 }
+
+
+function setupEventListeners() {
+    // Mevcut event listener'lar
+    // ...
+
+    // Danke butonu için modal açma işlevselliği
+    var dankeBtn = document.getElementById('danke');
+    var modal = document.getElementById('myModal');
+    var closeSpan = document.getElementsByClassName('close')[0];
+
+    dankeBtn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    closeSpan.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
