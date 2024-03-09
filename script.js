@@ -431,6 +431,23 @@ function setupContentWrapperControls() {
 window.onload = function() {
     setupEventListeners();
     LoadLanguages(); // Bu, dil seçim kutularını doldurmak için
+
+    var msg = new SpeechSynthesisUtterance();
+    var voices = window.speechSynthesis.getVoices();
+ 
+    // Seslerin her birini konsola yazdır
+    voices.forEach(function(voice, index) {
+        console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
+    });
+
+    // "Microsoft Katja - German (Germany)" sesini seç
+    for(var i = 0; i < voices.length; i++) {
+        if(voices[i].name === "Microsoft Hedda - German (Germany)") {
+            msg.voice = voices[i];
+        }
+    }
+ 
+    
 }
  
 
