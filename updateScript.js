@@ -30,5 +30,32 @@ function LoadLanguagesWithFiles() {
         .catch(error => console.error('Error:', error));
 }
 
+
+function copyJsonToClipboard() {
+    const jsonDataElement = document.getElementById('jsonData');
+    // Metin seçiliyorsa, kullanıcıdan izin al
+    if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(jsonDataElement);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try {
+            // Metni kopyalamayı dene
+            const successful = document.execCommand('copy');
+            const msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Copying text command was ' + msg);
+        } catch (err) {
+            console.log('Oops, unable to copy', err);
+        }
+        // Seçimi kaldır
+        selection.removeAllRanges();
+    } else {
+        console.log('Copy to clipboard not supported in this browser');
+    }
+}
+
+document.getElementById('copyJson').addEventListener('click', copyJsonToClipboard);
+
 // Event listener'ı kur
 document.getElementById('fetchData').addEventListener('click', LoadLanguagesWithFiles);
