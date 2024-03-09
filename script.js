@@ -386,8 +386,6 @@ function setupEventListeners() {
     document.getElementById('select_language').addEventListener('change', handleLanguageChange);
     // Text.slide seçim kutusuna olay dinleyicisi ekle
     document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
-    LoadLanguages();
-
     // Danke butonu için modal açma işlevselliği
     var dankeBtn = document.getElementById('danke');
     var modal = document.getElementById('myModal');
@@ -407,13 +405,34 @@ function setupEventListeners() {
         }
     }
 
+    // content-wrapper kontrolü için ek işlevsellik
+    setupContentWrapperControls();
 }
 
-// Sayfa yüklendiğinde event listener'ları kur
-window.onload = setupEventListeners;
-// Sayfa yüklendiğinde dizin listesini yükle
- 
+function setupContentWrapperControls() {
+    const contentWrapper = document.querySelector('.content-wrapper');
 
+    contentWrapper.addEventListener('click', function(event) {
+        const bounds = this.getBoundingClientRect();
+        const width = bounds.width;
+        const clickX = event.clientX - bounds.left; // Tıklanan X koordinatı
+
+        if (clickX < width * 0.3) { // Sol %30'luk alan
+            previousSlide();
+        } else if (clickX > width * 0.7) { // Sağ %30'luk alan
+            nextSlide();
+        } else { // Orta alan
+            togglePlayPause();
+        }
+    });
+}
+
+// Sayfa yüklendiğinde tüm event listener'ları ayarla
+window.onload = function() {
+    setupEventListeners();
+    LoadLanguages(); // Bu, dil seçim kutularını doldurmak için
+}
+ 
 
 function adjustFontSizeForScreen() {
     const textContent = document.getElementById('text-content');
@@ -449,3 +468,4 @@ function adjustFontSize() {
 }
 
 
+ 
