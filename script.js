@@ -250,7 +250,7 @@ function single_line_parsing(text) {
     // İlk kısmı ve ikinci kısmı ayrı satırlara koy
     //const displayText = parts[0] + '<br><br><br><br>(  ' + parts[1] + ')';
 
-    const displayText = parts[0] + '<br><br><br><br> <p style="color:MediumSeaGreen;"> (  ' +  parts[1] + ')</p> ';      
+    const displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> (  ' +  parts[1] + ')</p> ';      
 
     // Metni HTML elemanına yazdır
     document.getElementById('text-content').innerHTML = displayText;
