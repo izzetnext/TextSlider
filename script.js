@@ -388,6 +388,25 @@ function setupEventListeners() {
     document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
     LoadLanguages();
 
+    // Danke butonu için modal açma işlevselliği
+    var dankeBtn = document.getElementById('danke');
+    var modal = document.getElementById('myModal');
+    var closeSpan = document.getElementsByClassName('close')[0];
+
+    dankeBtn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    closeSpan.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
 }
 
 // Sayfa yüklendiğinde event listener'ları kur
@@ -430,26 +449,3 @@ function adjustFontSize() {
 }
 
 
-function setupEventListeners() {
-    // Mevcut event listener'lar
-    // ...
-
-    // Danke butonu için modal açma işlevselliği
-    var dankeBtn = document.getElementById('danke');
-    var modal = document.getElementById('myModal');
-    var closeSpan = document.getElementsByClassName('close')[0];
-
-    dankeBtn.onclick = function() {
-        modal.style.display = 'block';
-    }
-
-    closeSpan.onclick = function() {
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-}

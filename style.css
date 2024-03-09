@@ -194,6 +194,7 @@ body {
     cursor: pointer;
   }
 
+
   .modal {
     display: none; /* Modal başlangıçta gizli */
     position: fixed;
