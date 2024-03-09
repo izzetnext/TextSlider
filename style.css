@@ -20,6 +20,18 @@ body {
 }
 
 
+#delayInput {
+    width: 50px;
+    background-color: #c4c4c4;
+    border: 1px solid #ccc;
+    padding: 1px;
+    color: #000;
+  }
+  
+  #delayInput:focus + label,  /* Target label when input is focused */
+  #delayInput:valid + label  /* Target label when input value is valid (optional) */  {
+    color: #000;  /* Set desired color, here black */
+  }
 
 .toolbar {
     display: flex;
@@ -127,3 +139,5 @@ body {
 #select_language, #select_text_slide {
     background-color: #bcbbbb;
   }
+
+  

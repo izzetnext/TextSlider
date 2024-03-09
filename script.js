@@ -3,8 +3,22 @@ let isPlaying = false;
 let isMuted = false; // Eklenen değişken
 let timer;
 let textfile_lines = [];
+let fast_track = 1;
+let slide_delay = 1; 
 
+const synth = window.speechSynthesis;
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  if (this.value < 1) {
+         this.value =1 ; 
+        }
+  output.innerHTML = this.value;
+  slide_delay = this.value;
+}
 
 
 // Buton efektleri için örnek
@@ -46,41 +60,32 @@ function updateSlideInfo(currentSlide, totalSlides) {
     slideInfo.textContent = `${currentSlide} / ${totalSlides}`;
 }
 
-// Hızlı Geri butonu işlevi
-function fastBackward() {
-    // Bu fonksiyon, slayt gösterisini en başa alabilir.
-    document.getElementById('text-content').textContent = 'Fast Backward button clicked.' ;
-}
-
-// Önceki Slayt butonu işlevi
-function previousSlide() {
-    // Bu fonksiyon, slayt gösterisinde bir önceki slayta geçiş yapar.
-    document.getElementById('text-content').textContent = 'Previous Slide button clicked.' ;
-    if (currentSlide > 0 ) {
-        currentSlide--;
-        updateSlide();
-    }
-}
 
 // Oynat/Duraklat butonu işlevi
 function togglePlayPause() {
     var img = document.getElementById('play-pause');
     if (img.src.includes("play.png")) {
         img.src = "images/pause.png";
-        document.getElementById('text-content').textContent = 'Playing slides.' ;
+        //document.getElementById('text-content').textContent = 'Playing slides.' ;
     } else {
         img.src = "images/play.png";
-        document.getElementById('text-content').textContent = 'Paused slides.' ;
+        //document.getElementById('text-content').textContent = 'Paused slides.' ;
     }
+
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+        speakText();
+    } else {
+        clearTimeout(timer);
+        synth.cancel(); // Konuşma duraklatıldığında mevcut seslendirmeyi durdurur.
+    }
+
 }
 
 
 
-// Hızlı İleri butonu işlevi
-function fastForward() {
-    // Bu fonksiyon, slayt gösterisini en sona alabilir.
-    document.getElementById('text-content').textContent = 'Fast Forward button clicked.';
-}
+
+
 
 // Ses Aç/Kapa butonu işlevi
 function toggleSound() {
@@ -108,6 +113,81 @@ function toggleShuffle() {
 
 
 
+function handleSpeakingEnd() {
+    timer = setTimeout(() => {
+        currentSlide++;
+        if (currentSlide < textfile_lines.length) {
+            //displayText.innerText = lines[currentIndex];
+            single_line_parsing (textfile_lines[currentSlide]) ;
+            speakText();
+        } else {
+            isPlaying = false;
+            currentSlide = 0;
+        }
+    }, slide_delay*1000 );
+}
+
+
+
+function speakText() {
+    if (!isMuted && !synth.speaking) { 
+        
+        let utterThis = new SpeechSynthesisUtterance(  textfile_lines[currentSlide].split('((')[0]   );
+        utterThis.lang = 'de-DE';
+
+        // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
+        // utterThis.rate = 0.3; // Konuşma hızı, varsayılan değer 1'dir. Min 0.1, Max 10 arasında değer alabilir.
+        // utterThis.volume = 1; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
+
+        utterThis.onend = handleSpeakingEnd;
+        synth.speak(utterThis);
+    } else {
+        // Eğer ses kapatılmışsa, konuşma bitimini simüle eder
+        handleSpeakingEnd();
+    }
+}  
+
+
+// Hızlı Geri butonu işlevi
+function fastBackward() {
+    // Slayt gösterisinde 20 slayt geriye gider.
+    currentSlide -= fast_track;
+    if (currentSlide < 0) {
+        currentSlide = 0; // En baştan öncesine gitmek mümkün değilse, başa al.
+    }
+    updateSlide();
+}
+
+// Hızlı İleri butonu işlevi
+function fastForward() {
+    // Slayt gösterisinde 20 slayt ileriye gider.
+    currentSlide += fast_track;
+    if (currentSlide >= textfile_lines.length) {
+        currentSlide = textfile_lines.length - 1; // En sondan sonrasına gitmek mümkün değilse, sona al.
+    }
+    updateSlide();
+}
+
+// Önceki Slayt butonu işlevi
+function previousSlide() {
+    // Bu fonksiyon, slayt gösterisinde bir önceki slayta geçiş yapar.
+    //document.getElementById('text-content').textContent = 'Previous Slide button clicked.' ;
+    if (currentSlide > 0 ) {
+        currentSlide--;
+        updateSlide();
+    }
+}
+
+// Sonraki Slayt butonu işlevi
+function nextSlide() {
+    // Bu fonksiyon, slayt gösterisinde bir sonraki slayta geçiş yapar.
+    //document.getElementById('text-content').textContent = 'Next Slide button clicked.' ;
+    if (currentSlide < textfile_lines.length - 1) {
+        currentSlide++;
+        updateSlide();
+    }
+}
+
 
 
 function single_line_parsing(text) {
@@ -132,27 +212,20 @@ function single_line_parsing(text) {
 
 
 
-
-
-
-
-// Sonraki Slayt butonu işlevi
-function nextSlide() {
-    // Bu fonksiyon, slayt gösterisinde bir sonraki slayta geçiş yapar.
-    //document.getElementById('text-content').textContent = 'Next Slide button clicked.' ;
-    if (currentSlide < textfile_lines.length - 1) {
-        currentSlide++;
-        updateSlide();
-    }
-}
-
-
 function updateSlide() {
 
     console.log(  "textfile_lines.length=" + textfile_lines.length );
     console.log(  "currentSlide" + currentSlide  ) ;
+
+     
+    updateSlideInfo (currentSlide+1 , textfile_lines.length);
     single_line_parsing (textfile_lines [currentSlide]) ;
 
+    clearTimeout(timer);
+    if (isPlaying) {
+        synth.cancel(); // Hali hazırda konuşma varsa iptal et
+        speakText();
+    }
 }
 
 
@@ -181,6 +254,7 @@ function handleTextSlideChange() {
                 // textfile_lines ve currentSlide'ı güncelleme işlemlerinizi burada yapabilirsiniz.
                 textfile_lines = data.split('\n');
                 currentSlide = 0;
+                fast_track = Math.floor(textfile_lines.length / 11);
                 updateSlide();
             })
             .catch((error) => {
