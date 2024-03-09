@@ -1,202 +1,116 @@
-let currentIndex = 0;
+let currentSlide = 0;
 let isPlaying = false;
 let isMuted = false; // Eklenen değişken
 let timer;
-let lines = [];
+let textfile_lines = [];
 
 
-  
-const fileInput = document.getElementById('fileInput');
-const playPauseBtn = document.getElementById('playPauseBtn');
-const delayInput = document.getElementById('delayInput');
-const displayText = document.getElementById('displayText');
-const synth = window.speechSynthesis;
-const muteUnmuteBtn = document.getElementById('muteUnmuteBtn'); // Eklenen buton
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-const presetTextsSelect = document.getElementById('presetTexts');
 
 
-prevBtn.addEventListener('click', function() {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateSlide();
-    }
-});
+// Buton efektleri için örnek
+document.querySelectorAll('.toolbar img').forEach(button => {
+    button.addEventListener('mousedown', () => {
+        button.style.transform = 'scale(0.9)';
+    });
 
-nextBtn.addEventListener('click', function() {
-    if (currentIndex < lines.length - 1) {
-        currentIndex++;
-        updateSlide();
-    }
-});
-
-function updateSlide() {
-
-    console.log(   lines.length );
-    console.log(  currentIndex )
-   // displayText.innerText = lines[currentIndex];
-    splitAndDisplayText (lines[currentIndex]) ;
-  
-    
-    clearTimeout(timer);
-    if (isPlaying) {
-        synth.cancel(); // Hali hazırda konuşma varsa iptal et
-        speakText();
-    }
-
-
-}
-
-
-fileInput.addEventListener('change', handleFileUpload);
-playPauseBtn.addEventListener('click', togglePlayPause);
-muteUnmuteBtn.addEventListener('click', toggleMuteUnmute); // Eklenen event listener
- 
-
-document.body.addEventListener('keydown', function(event) {
-    if (event.key === ' ') {
-        togglePlayPause();
-    }
+    button.addEventListener('mouseup', () => {
+        button.style.transform = 'scale(1)';
+    });
 });
 
 
-function toggleMuteUnmute() { // Eklenen fonksiyon
-    isMuted = !isMuted;
-    muteUnmuteBtn.innerText = isMuted ? 'Unmute' : 'Mute';
-}
+// Dosya Seç butonu işlevi
+function chooseFile() {
+    // Gizli dosya input elementini bul
+    var fileInput = document.getElementById('file-input');
 
-function handleFileUpload(e) {
-    const file = e.target.files[0];
-    if (!file) return;
+    // Dosya seçim diyalogunu aç
+    fileInput.click();
 
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        lines = e.target.result.split('\n');
-        currentIndex = 0;
-        //displayText.innerText = lines[currentIndex];
-        splitAndDisplayText (lines[currentIndex]) ;
-    };
-    reader.readAsText(file);
-
-    
-}
-
-function togglePlayPause() {
-    isPlaying = !isPlaying;
-    playPauseBtn.innerText = isPlaying ? 'Pause' : 'Play';
-    if (isPlaying) {
-        speakText();
-    } else {
-        clearTimeout(timer);
-        synth.cancel(); // Konuşma duraklatıldığında mevcut seslendirmeyi durdurur.
-    }
-}
-
- 
-
-//... Diğer kodlar
-function speakText() {
-    if (!isMuted && !synth.speaking) { 
-        
-        let utterThis = new SpeechSynthesisUtterance(  lines[currentIndex].split('((')[0]   );
-        utterThis.lang = 'de-DE';
-
-        // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
-        // utterThis.rate = 0.3; // Konuşma hızı, varsayılan değer 1'dir. Min 0.1, Max 10 arasında değer alabilir.
-        // utterThis.volume = 1; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
-        
-
-        utterThis.onend = handleSpeakingEnd;
-        synth.speak(utterThis);
-    } else {
-        // Eğer ses kapatılmışsa, konuşma bitimini simüle eder
-        handleSpeakingEnd();
-    }
-}   
- 
-function handleSpeakingEnd() {
-    timer = setTimeout(() => {
-        currentIndex++;
-        if (currentIndex < lines.length) {
-            //displayText.innerText = lines[currentIndex];
-            splitAndDisplayText (lines[currentIndex]) ;
-            speakText();
-        } else {
-            isPlaying = false;
-            playPauseBtn.innerText = 'Play';
-            currentIndex = 0;
+    // Dosya seçildiğinde bir işlem yapmak için bir event listener ekleyin
+    fileInput.onchange = function() {
+        if (fileInput.files.length > 0) {
+            // Seçilen dosyanın adını al ve bir yerde kullan
+            var fileName = fileInput.files[0].name;
+            // Örneğin, seçilen dosyanın adını text-content elementinde göster
+            document.getElementById('text-content').textContent = "Selected file: " + fileName;
         }
-    }, delayInput.value);
-}
-
-
-function translateText(text) {
-    // Bu fonksiyonu daha kompleks bir çeviri API'si ile değiştirebilirsiniz.
-    // Burada basit bir sözlük kullanıyoruz, bu nedenle çeviri mükemmel olmayacaktır.
-    const simpleDictionary = {
-        "Hallo": "dddddd",
-        "Welt": "Dünya",
-        // Diğer kelimeleri buraya ekleyin...
     };
-
-    const translated = text.split(" ").map(word => simpleDictionary[word] || word).join(" ");
-    document.getElementById('translationText').innerText = translated;
 }
 
 
- 
-presetTextsSelect.addEventListener('change', function() {
-    if (presetTextsSelect.value) {
-        fetch(presetTextsSelect.value)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok' + response.statusText);
-                }
-                return response.text();
-            })
-            .then(data => {
-                lines = data.split('\n');
-                currentIndex = 0;
-                updateSlide();
-            })
-            .catch((error) => {
-                console.error('Fetch error: ', error);
-            });
-    }
-});
+// Slayt Bilgisi Güncelleme
+function updateSlideInfo(currentSlide, totalSlides) {
+    // Slayt bilgisini günceller
+    var slideInfo = document.getElementById('slide-info');
+    slideInfo.textContent = `${currentSlide} / ${totalSlides}`;
+}
 
+// Hızlı Geri butonu işlevi
+function fastBackward() {
+    // Bu fonksiyon, slayt gösterisini en başa alabilir.
+    document.getElementById('text-content').textContent = 'Fast Backward button clicked.' ;
+}
 
-
-document.addEventListener('keydown', function(e) {
-    switch (e.key) {
-        case 'ArrowLeft':
-            prevSlide();
-            break;
-        case 'ArrowRight':
-            nextSlide();
-            break;
-    }
-});
-
-function prevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
+// Önceki Slayt butonu işlevi
+function previousSlide() {
+    // Bu fonksiyon, slayt gösterisinde bir önceki slayta geçiş yapar.
+    document.getElementById('text-content').textContent = 'Previous Slide button clicked.' ;
+    if (currentSlide > 0 ) {
+        currentSlide--;
         updateSlide();
     }
 }
 
-function nextSlide() {
-    if (currentIndex < lines.length - 1) {
-        currentIndex++;
-        updateSlide();
+// Oynat/Duraklat butonu işlevi
+function togglePlayPause() {
+    var img = document.getElementById('play-pause');
+    if (img.src.includes("play.png")) {
+        img.src = "images/pause.png";
+        document.getElementById('text-content').textContent = 'Playing slides.' ;
+    } else {
+        img.src = "images/play.png";
+        document.getElementById('text-content').textContent = 'Paused slides.' ;
     }
 }
 
 
 
-function splitAndDisplayText(text) {
+// Hızlı İleri butonu işlevi
+function fastForward() {
+    // Bu fonksiyon, slayt gösterisini en sona alabilir.
+    document.getElementById('text-content').textContent = 'Fast Forward button clicked.';
+}
+
+// Ses Aç/Kapa butonu işlevi
+function toggleSound() {
+    var img = document.getElementById('sound-toggle');
+    if (img.src.includes("sound-on.png")) {
+        img.src = "images/sound-off.png";
+        document.getElementById('text-content').textContent = 'Sound off.' ;
+    } else {
+        img.src = "images/sound-on.png";
+        document.getElementById('text-content').textContent = 'Sound on.' ;
+    }
+}
+
+// Karıştır Aç/Kapa butonu işlevi
+function toggleShuffle() {
+    var img = document.getElementById('shuffle-toggle');
+    if (img.src.includes("shuffle-on.png")) {
+        img.src = "images/shuffle-off.png";
+        document.getElementById('text-content').textContent = 'Shuffle off.' ;
+    } else {
+        img.src = "images/shuffle-on.png";
+        document.getElementById('text-content').textContent = 'Shuffle on.' ;
+    }
+}
+
+
+
+
+
+function single_line_parsing(text) {
     // Metni ' ((' karakterlerine göre böl ve sonucu bir dizide sakla
     const parts = text.split('((');
 
@@ -212,68 +126,153 @@ function splitAndDisplayText(text) {
     const displayText = parts[0] + '<br><br><br><br> <p style="color:MediumSeaGreen;"> (  ' +  parts[1] + ')</p> ';      
 
     // Metni HTML elemanına yazdır
-    document.getElementById('displayText').innerHTML = displayText;
+    document.getElementById('text-content').innerHTML = displayText;
 }
 
-function dizinleriYukle() {
-    const apiUrl = 'https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/';
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const dizinListesi = document.getElementById('dizinListesi');
-            data.forEach(item => {
-                if (item.type === "dir") { // Yalnızca dizinleri listele
-                    const option = document.createElement('option');
-                    option.value = option.textContent = item.name;
-                    dizinListesi.appendChild(option);
-                }
-            });
-        })
-        .catch(error => console.error('Hata:', error));
+
+
+
+
+
+
+
+// Sonraki Slayt butonu işlevi
+function nextSlide() {
+    // Bu fonksiyon, slayt gösterisinde bir sonraki slayta geçiş yapar.
+    //document.getElementById('text-content').textContent = 'Next Slide button clicked.' ;
+    if (currentSlide < textfile_lines.length - 1) {
+        currentSlide++;
+        updateSlide();
+    }
 }
 
-// Sayfa yüklendiğinde dizin listesini yükle
-window.onload = function() {
-    console.log("dizinleriYukle");
-    dizinleriYukle();
-};
 
-document.getElementById('dizinListesi').addEventListener('change', function(e) {
-    const secilenDizin = e.target.value;
-    const apiUrl = `https://api.github.com/repos/izzetnext/TextSlider/contents/Languages/${secilenDizin}`;
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const presetTexts = document.getElementById('presetTexts');
-            presetTexts.innerHTML = ''; // Mevcut içeriği temizle
+function updateSlide() {
 
-            data.forEach(item => {
-                if (item.type === "file") {
-                    const option = document.createElement('option');
-                    option.value = item.download_url; // Dosyanın indirme URL'sini değer olarak kullan
-                    option.textContent = item.name;
-                    presetTexts.appendChild(option);
+    console.log(  "textfile_lines.length=" + textfile_lines.length );
+    console.log(  "currentSlide" + currentSlide  ) ;
+    single_line_parsing (textfile_lines [currentSlide]) ;
+
+}
+
+
+
+function handleTextSlideChange() {
+    const select_language = document.getElementById('select_language');
+    const select_text_slide = document.getElementById('select_text_slide');
+
+    if (select_text_slide.value) {
+        // Dosyanın tam yolunu oluştur
+        const filePath = `Languages/${select_language.value}/${select_text_slide.value}`;
+        const fileUrl = `https://raw.githubusercontent.com/izzetnext/TextSlider/main/${filePath}`;
+
+        fetch(fileUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.statusText);
                 }
+                return response.text();
+            })
+            .then(data => {
+                // Dosyanın içeriği data değişkeninde
+                // Şimdi ne yapmak istediğinize bağlı olarak bu veriyi kullanabilirsiniz.
+                // Örneğin, içeriği bir div veya pre etiketine yazdırabilirsiniz.
+                document.getElementById('text-content').textContent = data;
+                // textfile_lines ve currentSlide'ı güncelleme işlemlerinizi burada yapabilirsiniz.
+                textfile_lines = data.split('\n');
+                currentSlide = 0;
+                updateSlide();
+            })
+            .catch((error) => {
+                console.error('Fetch error: ', error);
             });
-
-            // İlk seçeneği otomatik olarak seç
-            if (presetTexts.options.length > 0) {
-                presetTexts.selectedIndex = 0;
-                // "change" olayını manuel olarak tetikle
-                const event = new Event('change');
-                presetTexts.dispatchEvent(event);
-            }
-
-
-        })
-        .catch(error => console.error('Hata:', error));
-});
+    }
+}
 
 
 
  
+// Dil seçimi değiştiğinde çağrılacak fonksiyon
+function handleLanguageChange() {
+    const language = this.value; // Seçilen dil
+    document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
+
+    // JSON dosyasından seçilen dildeki text dosyalarını yüklemek için
+    const jsonUrl = 'languages.json';
+    
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(languagesWithFiles => {
+            const select_text_slide = document.getElementById('select_text_slide');
+            select_text_slide.innerHTML = ''; // Önceki seçenekleri temizle
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Select a text.slide';
+            defaultOption.disabled = true; // Kullanıcı bu seçeneği seçemesin
+            defaultOption.selected = true; // Varsayılan olarak bu seçenek gösterilsin
+            select_text_slide.appendChild(defaultOption);
+
+            // Seçilen dile ait dosyaları bul
+            const languageFiles = languagesWithFiles.find(l => l.language === language)?.files || [];
+            
+            languageFiles.forEach(fileName => {
+                const option = document.createElement('option');
+                option.value = option.textContent = fileName;
+                select_text_slide.appendChild(option);
+            });
+
+            // İlk seçeneği otomatik olarak seç
+            if (select_text_slide.options.length > 1) {
+                select_text_slide.selectedIndex = 1;
+                // "change" olayını manuel olarak tetikle
+                select_text_slide.dispatchEvent(new Event('change'));
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
 
 
 
 
+function LoadLanguages() {
+    // JSON dosyasının yolu (örneğin 'languages.json' veya uygun yolu belirtin)
+    const jsonUrl = 'languages.json';
 
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            const select_language = document.getElementById('select_language');
+            // Önceden oluşturulmuş ve kaydedilmiş JSON verisini kullanarak dilleri listele
+            data.forEach(language => {
+                const option = document.createElement('option');
+                option.value = option.textContent = language.language; // 'language' anahtarınızın ismine göre düzenleyin
+                select_language.appendChild(option);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+
+
+// Butonların Event Listener'larını tanımla
+function setupEventListeners() {
+    document.getElementById('choose-file').onclick = chooseFile;
+    document.getElementById('fast-backward').onclick = fastBackward;
+    document.getElementById('previous').onclick = previousSlide;
+    document.getElementById('play-pause').onclick = togglePlayPause;
+    document.getElementById('next').onclick = nextSlide;
+    document.getElementById('fast-forward').onclick = fastForward;
+    document.getElementById('sound-toggle').onclick = toggleSound;
+    document.getElementById('shuffle-toggle').onclick = toggleShuffle;
+    // Dil seçim kutusuna olay dinleyicisi ekle
+    document.getElementById('select_language').addEventListener('change', handleLanguageChange);
+    // Text.slide seçim kutusuna olay dinleyicisi ekle
+    document.getElementById('select_text_slide').addEventListener('change', handleTextSlideChange);
+    LoadLanguages();
+
+}
+
+// Sayfa yüklendiğinde event listener'ları kur
+window.onload = setupEventListeners;
+// Sayfa yüklendiğinde dizin listesini yükle
+ 

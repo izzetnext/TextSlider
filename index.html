@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Text Slider</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51EJFT3BSY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-51EJFT3BSY');
-    </script>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+        <div class="toolbar">
+            <select id="select_language">
+                <option value="" selected>Select Language</option>
+                <!-- GitHub API ile doldurulacak -->
+            </select>
 
-
-    
-    <div class="controls"> 
-
-        <select id="dizinListesi">
-            <option value="" selected>Select Language</option>
-            <!-- GitHub API ile doldurulacak -->
-        </select>
-
-        <select id="presetTexts">
-            <option value="" selected>Select a text.slide</option>
-            <!-- GitHub API ile doldurulacak -->
-        </select>
-
-        <input type="file" id="fileInput">
-        <button id="playPauseBtn">Play</button>
-        <input type="number" id="delayInput" value="2000">
-        <label for="delayInput">Wait (ms)</label>
-        <button id="muteUnmuteBtn">Mute</button>
-
-        <button id="prevBtn">Previous</button>
-        <button id="nextBtn">Next</button>
-
+            <select id="select_text_slide">
+                <option value="" selected>Select a text.slide</option>
+                <!-- GitHub API ile doldurulacak -->
+            </select>
     </div>
-    <div class="display">
-        <p id="displayText" class="text-big"></p>
-        <p id="translationText" class="text-small"></p>
-        <p id="content"></p>
+
+        <div class="toolbar">
+            
+            <input type="file" id="file-input" style="display: none;">
+            <img src="images/choose-file.png" id="choose-file" alt="Choose File">
+            <span id="slide-info">0 / 0</span>
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <img src="images/fast-backward.png" id="fast-backward" alt="Fast Backward">
+            <img src="images/previous.png" id="previous" alt="Previous">
+            <img src="images/play.png" id="play-pause" alt="Play">
+            <img src="images/next.png" id="next" alt="Next">
+            <img src="images/fast-forward.png" id="fast-forward" alt="Fast Forward">
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <img src="images/sound-on.png" id="sound-toggle" alt="Sound Toggle">
+            <img src="images/shuffle-on.png" id="shuffle-toggle" alt="Shuffle Toggle">
+        </div>
+        <div class="content-wrapper">
+            <div class="text-display">
+                <p id="text-content">Please choose a text file to start.</p>
+            </div>
+        </div>
     </div>
-    <script src="script.js?v=1.02"></script>
+ 
+    <script src="script.js"></script>
 </body>
-
 </html>
+
+ 
