@@ -163,6 +163,8 @@ body {
     color: #000000;
   }
 
+
+
   #delayText {
     color: #000000;
     font-family: Arial, sans-serif;
@@ -170,6 +172,14 @@ body {
     height: 3;
     padding: 0;
   }
+
+  #slidecontainer
+  {
+    height:22px;
+    border: 1px solid #797979;
+    overflow: hidden;
+  }
+  
   .slider {
     -webkit-appearance: none;
     width: 100%;
