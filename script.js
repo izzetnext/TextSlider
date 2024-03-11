@@ -6,8 +6,11 @@ let textfile_lines = [];
 let fast_track = 1;
 let slide_delay = 1; 
 let volume_level = 1;
+let randonSelectionLoad = 1;
 
 const synth = window.speechSynthesis;
+synth.lang = 'de-DE';
+
  
 
 var slider = document.getElementById("myRange");
@@ -164,7 +167,7 @@ function handleSpeakingEnd() {
 function speakText() {
     if (!isMuted && !synth.speaking) { 
         
-        let utterThis = new SpeechSynthesisUtterance(  textfile_lines[currentSlide].split('((')[0]   );
+        let utterThis = new SpeechSynthesisUtterance( cleanText( textfile_lines[currentSlide].split('((')[0]  )  );
         utterThis.lang = 'de-DE';
 
         // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
@@ -178,6 +181,20 @@ function speakText() {
         handleSpeakingEnd();
     }
 }  
+
+
+function cleanText(text) {
+    // Metnin başında #, ##, -, ( karakterlerini kaldır
+    // + işareti bir veya daha fazla tekrarlanan karakterleri ifade eder
+    // ^ işareti metnin başını ifade eder
+    // \- ve \(, - ve ( karakterlerinin özel anlamını iptal eder (escape)
+    // | işareti "veya" anlamına gelir
+
+    const cleanedText = text.replace(/^#+|-+|\(+|\*+/g, '');
+
+    return cleanedText.trim(); // Başında ve sonunda kalan boşlukları da temizle
+}
+
 
 
 // Hızlı Geri butonu işlevi
@@ -251,7 +268,18 @@ function single_line_parsing(text) {
     // İlk kısmı ve ikinci kısmı ayrı satırlara koy
     //const displayText = parts[0] + '<br><br><br><br>(  ' + parts[1] + ')';
 
-    const displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> (  ' +  parts[1] + ')</p> ';      
+    let displayText; // displayText'i dışarıda tanımla
+
+    //console.log(parts[1] + " geldi");
+    
+    if (typeof parts[1] === "undefined" || parts[1] == null || parts[1] === "") {
+        // parts[1] tanımsız veya null veya boş bir string ise
+        displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> </p>';      
+    } else {
+        // parts[1] mevcut ve değeri bir string ise
+        displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> ( ' +  parts[1] + ' )</p>';      
+    }
+
 
     // Metni HTML elemanına yazdır
     document.getElementById('text-content').innerHTML = displayText;
@@ -315,7 +343,7 @@ function handleTextSlideChange() {
 function handleLanguageChange() {
     
     const language = this.value; // Seçilen dil
-    console.log("Dil seçimi değişti" + language);
+    //console.log("Dil seçimi değişti : " + language);
 
     document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
 
@@ -349,6 +377,14 @@ function handleLanguageChange() {
                 // "change" olayını manuel olarak tetikle
                 select_text_slide.dispatchEvent(new Event('change'));
             }
+            if (randonSelectionLoad===1) {
+                selectRandomTextSlide();
+                randonSelectionLoad=0;
+                const event = new Event('change');
+                select_text_slide.dispatchEvent(event);
+            }
+            
+
         })
         .catch(error => console.error('Error:', error));
 }
@@ -530,7 +566,7 @@ function selectDefaultLanguage() {
     }
 }
 
-function selectRandomTextSlide(selectElement) {
+/* function selectRandomTextSlide(selectElement) {
     const optionsCount = selectElement.options.length;
     console.log( selectElement.options.length );
     if (optionsCount > 0) {
@@ -540,15 +576,18 @@ function selectRandomTextSlide(selectElement) {
         const event = new Event('change');
         selectElement.dispatchEvent(event);        
     }
+} */
+
+function selectRandomTextSlide() {
+    const select_text_slide = document.getElementById('select_text_slide');
+    const optionsCount = select_text_slide.options.length;
+    if (optionsCount > 0) {
+        // Rasgele bir index seç
+        const randomIndex = Math.floor(Math.random() * optionsCount);
+        select_text_slide.selectedIndex = randomIndex;
+    }
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // DOM yüklendiğinde çalışacak kodlar
-    setupEventListeners();
-    // Diğer işlemler
-    console.log( "DOMContentLoaded" );
-});
+ 
 
 // Sayfa yüklendiğinde tüm event listener'ları ayarla
 window.onload = function() {
@@ -556,32 +595,42 @@ window.onload = function() {
     // LoadLanguages işlemi tamamlandığında selectDefaultLanguage fonksiyonunu çağır
     LoadLanguages(function() {
         selectDefaultLanguage(); 
-        console.log( "select_language"  + select_language.options.length  ); 
+        //console.log( "select_language "  + select_language.options.length  ); 
         const event = new Event('change');
         select_language.dispatchEvent(event);
-
+        // Ve seçenekler doldurulduktan sonra aşağıdaki fonksiyonu çağırın
+ 
     });
 
     setupKeyboardControls();
 
       
-/*     var msg = new SpeechSynthesisUtterance();
+    var msg = new SpeechSynthesisUtterance();
+    var selectedVoice;
     var voices = window.speechSynthesis.getVoices();
  
     // Seslerin her birini konsola yazdır
     voices.forEach(function(voice, index) {
-        console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
+       // console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
     });
 
     // "Microsoft Katja - German (Germany)" sesini seç
     for(var i = 0; i < voices.length; i++) {
         if(voices[i].name === "Microsoft Hedda - German (Germany)") {
-            msg.voice = voices[i];
+            selectedVoice = voices[i];
         }
-    } */
+    }  
  
-    console.log( "window.onload" );  
     
-  //  selectRandomTextSlide(select_text_slide);
+    msg.voice = selectedVoice;
+    //console.log("Seçilen ses: ", msg.voice ? msg.voice.name : "Ses bulunamadı.");
+    msg.lang = 'de-DE';
+
+   // msg.text = ("Ich hoffe auf eine zeitnahe Bearbeitung meiner Unterlagen und danke Ihnen im Voraus für Ihre Bemühungen? ");
+ 
+    synth.speak(msg);    
+    //console.log( "window.onload fertig" );  
+    
+    //selectRandomTextSlide(select_text_slide);
 
 }
