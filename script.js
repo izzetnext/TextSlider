@@ -9,7 +9,7 @@ let volume_level = 1;
 let randonSelectionLoad = 1;
 
 const synth = window.speechSynthesis;
-synth.lang = 'de-DE';
+//synth.lang = 'de-DE';
 
  
 
@@ -603,34 +603,8 @@ window.onload = function() {
     });
 
     setupKeyboardControls();
-
-      
-    var msg = new SpeechSynthesisUtterance();
-    var selectedVoice;
-    var voices = window.speechSynthesis.getVoices();
- 
-    // Seslerin her birini konsola yazdır
-    voices.forEach(function(voice, index) {
-       // console.log(index + ': ' + voice.name + ' (' + voice.lang + ')');
-    });
-
-    // "Microsoft Katja - German (Germany)" sesini seç
-    for(var i = 0; i < voices.length; i++) {
-        if(voices[i].name === "Microsoft Hedda - German (Germany)") {
-            selectedVoice = voices[i];
-        }
-    }  
- 
-    
-    msg.voice = selectedVoice;
-    //console.log("Seçilen ses: ", msg.voice ? msg.voice.name : "Ses bulunamadı.");
-    msg.lang = 'de-DE';
-
-   // msg.text = ("Ich hoffe auf eine zeitnahe Bearbeitung meiner Unterlagen und danke Ihnen im Voraus für Ihre Bemühungen? ");
- 
-    synth.speak(msg);    
-    //console.log( "window.onload fertig" );  
-    
-    //selectRandomTextSlide(select_text_slide);
+  
 
 }
+
+
