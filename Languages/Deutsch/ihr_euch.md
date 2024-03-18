@@ -131,3 +131,96 @@ Mit euch kann man Pferde stehlen.
 Ihr seid immer für mich da. 
 Ich bin froh, euch zu haben. 
 Ihr macht mein Leben schöner. 
+Ihr seid meine Freunde. (Siz benim arkadaşlarımsınız.)
+Wie heißt ihr? (Adınız ne?)
+Woher kommt ihr? (Nerelisiniz?)
+Was macht ihr heute? (Bugün ne yapıyorsunuz?)
+Wollt ihr mit mir ins Kino gehen? (Benimle sinemaya gitmek ister misiniz?)
+Ihr habt ein schönes Haus. (Güzel bir eviniz var.)
+Seid ihr schon fertig? (Hazır mısınız?)
+Ihr könnt mir helfen. (Bana yardım edebilirsiniz.)
+Ihr müsst jetzt gehen. (Artık gitmeniz gerekiyor.)
+Ihr solltet mehr Sport machen. (Daha fazla spor yapmalısınız.)
+Ihr dürft hier nicht rauchen. (Burada sigara içmeniz yasak.)
+Ihr müsst nicht so schnell fahren. (Bu kadar hızlı gitmek zorunda değilsiniz.)
+Ihr seid sehr nett. (Çok naziksiniz.)
+Ihr seid mir sehr wichtig. (Benim için çok önemlisiniz.)
+Ich danke euch für alles. (Her şey için teşekkür ederim.)
+Ich sehe euch morgen. (Yarın görüşürüz.)
+Ich habe euch etwas zu erzählen. (Size anlatacak bir şeyim var.)
+Ich kann euch nicht helfen. (Size yardım edemem.)
+Ich möchte euch besuchen. (Sizi ziyaret etmek istiyorum.)
+Ich habe euch vermisst. (Sizi özledim.)
+Ich schreibe euch einen Brief. (Size bir mektup yazıyorum.)
+Ich schenke euch ein Geschenk. (Size bir hediye veriyorum.)
+Ich rufe euch an. (Sizi arıyorum.)
+Ich warte auf euch. (Sizi bekliyorum.)
+Ich freue mich auf euch. (Sizi görmeyi dört gözle bekliyorum.)
+Ich hoffe, ihr kommt bald wieder. (Umarım yakında tekrar gelirsiniz.)
+Ich wünsche euch alles Gute. (Size her şeyin gönlünüzce olmasını dilerim.)
+Ich habe euch lieb. (Sizi seviyorum.)
+Habt ihr Lust auf einen Kaffee? (Bir kahve içmek ister misiniz?)
+Könnt ihr mir bitte helfen? (Bana yardım edebilir misiniz?)
+Wollt ihr mit uns kommen? (Bizimle gelmek ister misiniz?)
+Was habt ihr am Wochenende gemacht? (Hafta sonu ne yaptınız?)
+Wie findet ihr das neue Restaurant? (Yeni restoran hakkında ne düşünüyorsunuz?)
+Ich habe euch ein Geschenk mitgebracht. (Size bir hediye getirdim.)
+Es war schön, euch zu sehen. (Sizi görmek güzeldi.)
+Wir freuen uns auf das nächste Mal. (Bir dahaki sefere görüşmek üzere.)
+Ich hoffe, ihr habt einen schönen Tag. (Umarım güzel bir gün geçirirsiniz.)
+Vielen Dank für eure Hilfe. (Yardımınız için çok teşekkür ederim.)
+Ihr seid die besten Freunde, die man sich wünschen kann. (Siz, istenebilecek en iyi arkadaşlarsınız.)
+Mit euch kann man Pferde stehlen. (Sizle her şey yapılabilir.)
+Ihr seid immer für mich da. (Siz her zaman yanımdasınız.)
+Ich bin froh, euch zu haben. (Sizi tanıdığım için mutluyum.)
+Ihr macht mein Leben schöner. (Hayatımı güzelleştiriyorsunuz.)
+Habt ihr Lust auf einen Ausflug?
+Wollt ihr am Abend etwas unternehmen?
+Könnt ihr mir eure Telefonnummer geben?
+Habt ihr schon Pläne für den Urlaub?
+Seid ihr schon mal in Berlin gewesen?
+Was haltet ihr von der neuen Politik der Regierung?
+Wem gehört dieses Auto?
+Wo habt ihr denn eure Fahrräder gelassen?
+Könnt ihr mir bitte die Tür aufhalten?
+Darf ich mich hier hinsetzen?
+Entschuldigung, könnt ihr mir sagen, wie spät es ist?
+Ich suche den Bahnhof. Könnt ihr mir helfen?
+Ist das hier der richtige Bus nach Frankfurt?
+Wo kann ich denn hier ein Ticket kaufen?
+Wie viel kostet ein Kaffee?
+Dürfte ich bitte bezahlen?
+Das war sehr lecker! Danke fürs Essen!
+Hattet ihr einen schönen Abend?
+Ich muss jetzt leider gehen. Tschüss!
+Bis bald!
+Wollt ihr morgen mit mir ins Kino gehen?
+Was habt ihr am Wochenende gemacht?
+Wie findet ihr den neuen Film?
+Ich habe euch ein Geschenk mitgebracht.
+Es war schön, euch zu sehen.
+Wir freuen uns auf das nächste Mal.
+Ich hoffe, ihr habt einen schönen Tag.
+Vielen Dank für eure Hilfe.
+Ihr seid die besten Freunde, die man sich wünschen kann.
+Mit euch kann man Pferde stehlen.
+Ihr seid immer für mich da.
+Ich bin froh, euch zu haben.
+Ihr macht mein Leben schöner.
+Was ist denn mit euch passiert?
+Ihr seht heute so müde aus.
+Ist alles in Ordnung?
+Ich mache mir Sorgen um euch.
+Kann ich euch irgendwas helfen?
+Ihr müsst mir nicht alles erzählen.
+Ich bin für euch da, wenn ihr jemanden zum Reden braucht.
+Ihr könnt mir immer vertrauen.
+Ich halte zu euch, egal was passiert.
+Ihr seid mir sehr wichtig.
+Ich habe euch lieb.
+Was würdet ihr ohne mich tun?
+Ihr seid die besten Freunde, die man sich wünschen kann.
+Ich bin so dankbar, euch zu haben.
+Ihr macht mein Leben so viel besser.
+Ich weiß nicht, was ich ohne euch machen würde.
+Ihr seid einfach die besten!
