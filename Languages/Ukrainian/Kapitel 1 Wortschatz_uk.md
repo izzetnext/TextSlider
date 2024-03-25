@@ -35,7 +35,7 @@
 - Die Stelle als Projektmanager ist noch vakant. ((- Позиція керівника проекту все ще вакантна.))
 - Sie bewarb sich um die Stelle als Vertriebsmitarbeiter. ((- Вона подала заявку на посаду працівника продажів.))
 **Pendeln oder umziehen?** ((** Поїздка або переміщення? **))
-- Viele Menschen stehen vor der Frage: Pendeln oder umziehen? ((- Багато людей стикаються з цим питанням: поїздка чи переміщення?))
+- Viele Menschen stehen vor derPendeln oder umziehen? ((- Багато людей стикаються з цим питанням: поїздка чи переміщення?))
 - Pendeln oder umziehen? Das hängt von verschiedenen Faktoren ab. ((- Маршрути чи переміщення?Це залежить від різних факторів.))
 **der Arbeitsort** ((** Місце роботи **))
 - Der Arbeitsort ist gut mit öffentlichen Verkehrsmitteln erreichbar. ((- Місце роботи легко дістатися за допомогою громадського транспорту.))

@@ -35,7 +35,7 @@
 - Die Stelle als Projektmanager ist noch vakant. ((- لا يزال الموقف كمدير للمشروع شاغراً.))
 - Sie bewarb sich um die Stelle als Vertriebsmitarbeiter. ((- تقدمت بطلب للحصول على المنصب كموظف مبيعات.))
 **Pendeln oder umziehen?** ((** التنقل أو التحرك؟ **))
-- Viele Menschen stehen vor der Frage: Pendeln oder umziehen? ((- يواجه الكثير من الناس السؤال: التنقل أو التحرك؟))
+- Viele Menschen stehen vor derPendeln oder umziehen? ((- يواجه الكثير من الناس السؤال: التنقل أو التحرك؟))
 - Pendeln oder umziehen? Das hängt von verschiedenen Faktoren ab. ((- التنقل أو التحرك؟هذا يعتمد على عوامل مختلفة.))
 **der Arbeitsort** ((** مكان العمل **))
 - Der Arbeitsort ist gut mit öffentlichen Verkehrsmitteln erreichbar. ((- من السهل الوصول إلى مكان العمل عن طريق وسائل النقل العام.))

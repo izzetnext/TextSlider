@@ -35,7 +35,7 @@
 - Die Stelle als Projektmanager ist noch vakant. ((- Proje yöneticisi olarak pozisyon hala boş.))
 - Sie bewarb sich um die Stelle als Vertriebsmitarbeiter. ((- Satış çalışanı olarak başvurdu.))
 **Pendeln oder umziehen?** ((** Gaziye mi yoksa hareket mi? **))
-- Viele Menschen stehen vor der Frage: Pendeln oder umziehen? ((- Birçok insan soruyu karşılıyor: işe gidip gelmek mi yoksa hareket etmek mi?))
+- Viele Menschen stehen vor derPendeln oder umziehen? ((- Birçok insan soruyu karşılıyor: işe gidip gelmek mi yoksa hareket etmek mi?))
 - Pendeln oder umziehen? Das hängt von verschiedenen Faktoren ab. ((- İşe mi gidiyorsunuz veya hareket ediyor musunuz?Bu çeşitli faktörlere bağlıdır.))
 **der Arbeitsort** ((** İşin yeri **))
 - Der Arbeitsort ist gut mit öffentlichen Verkehrsmitteln erreichbar. ((- İşyerine ulaşmak kolaydır.))
