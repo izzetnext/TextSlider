@@ -7,53 +7,39 @@ let fast_track = 1;
 let slide_delay = 1; 
 let volume_level = 1;
 let randonSelectionLoad = 1;
-
-const synth = window.speechSynthesis;
+ const synth = window.speechSynthesis;
 //synth.lang = 'de-DE';
-
- 
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
-
-slider.oninput = function() {
+ slider.oninput = function() {
   if (this.value < 1) {
          this.value =1 ; 
         }
   output.innerHTML = this.value;
   slide_delay = this.value;
 }
-
-
 // Buton efektleri için örnek
 document.querySelectorAll('.toolbar img').forEach(button => {
     button.addEventListener('mousedown', () => {
         button.style.transform = 'scale(0.9)';
     });
-
-    button.addEventListener('mouseup', () => {
+     button.addEventListener('mouseup', () => {
         button.style.transform = 'scale(1)';
     });
 });
-
-
 // Dosya Seç butonu işlevi
 function chooseFile() {
     var fileInput = document.getElementById('file-input');
-
-    fileInput.click(); // Kullanıcıdan dosya seçmesini isteyen diyalog kutusunu aç
-
-    fileInput.onchange = function() {
+     fileInput.click(); // Kullanıcıdan dosya seçmesini isteyen diyalog kutusunu aç
+     fileInput.onchange = function() {
         if (fileInput.files.length > 0) {
             const file = fileInput.files[0];
             const reader = new FileReader();
-
-            // Dil ve text slide seçim kutularının seçili indekslerini sıfırla
+             // Dil ve text slide seçim kutularının seçili indekslerini sıfırla
             document.getElementById('select_language').selectedIndex = 0;
             document.getElementById('select_text_slide').innerHTML = '<option value="" selected>Select a text.slide</option>';
-
-            reader.onload = function(e) {
+             reader.onload = function(e) {
                 const fileContent = e.target.result;
                 // Dosyanın içeriğini kullanarak textfile_lines dizisini doldur
                 textfile_lines = fileContent.split('\n');
@@ -61,27 +47,19 @@ function chooseFile() {
                 fast_track = Math.floor(textfile_lines.length / 11); // fast_track hesapla
                 updateSlide(); // İlk slaytı göster
             };
-
-            reader.readAsText(file); // Dosyayı metin olarak oku
+             reader.readAsText(file); // Dosyayı metin olarak oku
             // Seçilen dosyanın adını göster
             document.getElementById('text-content').textContent = "Selected file: " + file.name;
         }
     };
 }
-
-
-
-
-
-// Slayt Bilgisi Güncelleme
+ // Slayt Bilgisi Güncelleme
 function updateSlideInfo(currentSlide, totalSlides) {
     // Slayt bilgisini günceller
     var slideInfo = document.getElementById('slide-info');
     slideInfo.textContent = `${currentSlide} / ${totalSlides}`;
 }
-
-
-// Oynat/Duraklat butonu işlevi
+ // Oynat/Duraklat butonu işlevi
 function togglePlayPause() {
     var img = document.getElementById('play-pause');
     if (img.src.includes("play.png")) {
@@ -91,20 +69,15 @@ function togglePlayPause() {
         img.src = "images/play.png";
         //document.getElementById('text-content').textContent = 'Paused slides.' ;
     }
-
-    isPlaying = !isPlaying;
+     isPlaying = !isPlaying;
     if (isPlaying) {
         speakText();
     } else {
         clearTimeout(timer);
         synth.cancel(); // Konuşma duraklatıldığında mevcut seslendirmeyi durdurur.
     }
-
-}
-
-
-
-// Ses Aç/Kapa butonu işlevi
+ }
+ // Ses Aç/Kapa butonu işlevi
 function toggleSound() {
     var img = document.getElementById('sound-toggle');
     if (img.src.includes("sound-on.png")) {
@@ -119,8 +92,7 @@ function toggleSound() {
         //document.getElementById('text-content').textContent = 'Sound on.' ;
     }
 }
-
-// Karıştır Aç/Kapa butonu işlevi
+ // Karıştır Aç/Kapa butonu işlevi
 function toggleShuffle() {
     var img = document.getElementById('shuffle-toggle');
     if (img.src.includes("shuffle-on.png")) {
@@ -131,16 +103,11 @@ function toggleShuffle() {
         //document.getElementById('text-content').textContent = 'Shuffle on.' ;
     }
 }
-
-
-
-function handleSpeakingEnd() {
+ function handleSpeakingEnd() {
     timer = setTimeout(() => {
-
-    // shuffle-toggle butonunun şu anki durumunu kontrol et
+     // shuffle-toggle butonunun şu anki durumunu kontrol et
     const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
-
-    if (shuffleEnabled) {
+     if (shuffleEnabled) {
         // Rastgele bir slayta geç
         currentSlide = Math.floor(Math.random() * textfile_lines.length);
         updateSlide();
@@ -150,54 +117,33 @@ function handleSpeakingEnd() {
             currentSlide++;
             updateSlide();
         }
-
-        
-    }
-
-
-
-
-
-        
-    }, slide_delay*1000 );
+     }
+     }, slide_delay*1000 );
 }
-
-
-
-function speakText() {
+ function speakText() {
     if (!isMuted && !synth.speaking) { 
-        
-        let utterThis = new SpeechSynthesisUtterance( cleanText( textfile_lines[currentSlide].split('((')[0]  )  );
+         let utterThis = new SpeechSynthesisUtterance( cleanText( textfile_lines[currentSlide].split('((')[0]  )  );
         utterThis.lang = 'de-DE';
-
-        // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
+         // utterThis.pitch = 2; // Ses tonu, varsayılan değer 1'dir. Min 0.1, Max 2 arasında değer alabilir.
         // utterThis.rate = 0.3; // Konuşma hızı, varsayılan değer 1'dir. Min 0.1, Max 10 arasında değer alabilir.
          utterThis.volume = volume_level ; // Ses seviyesi, varsayılan değer 1'dir. Min 0, Max 1 arasında değer alabilir.
-
-        utterThis.onend = handleSpeakingEnd;
+         utterThis.onend = handleSpeakingEnd;
         synth.speak(utterThis);
     } else {
         // Eğer ses kapatılmışsa, konuşma bitimini simüle eder
         handleSpeakingEnd();
     }
 }  
-
-
-function cleanText(text) {
+ function cleanText(text) {
     // Metnin başında #, ##, -, ( karakterlerini kaldır
     // + işareti bir veya daha fazla tekrarlanan karakterleri ifade eder
     // ^ işareti metnin başını ifade eder
     // \- ve \(, - ve ( karakterlerinin özel anlamını iptal eder (escape)
     // | işareti "veya" anlamına gelir
-
-    const cleanedText = text.replace(/^#+|-+|\(+|\*+/g, '');
-
-    return cleanedText.trim(); // Başında ve sonunda kalan boşlukları da temizle
+     const cleanedText = text.replace(/^#+|-+|\(+|\*+/g, '');
+     return cleanedText.trim(); // Başında ve sonunda kalan boşlukları da temizle
 }
-
-
-
-// Hızlı Geri butonu işlevi
+ // Hızlı Geri butonu işlevi
 function fastBackward() {
     // Slayt gösterisinde 20 slayt geriye gider.
     currentSlide -= fast_track;
@@ -206,8 +152,7 @@ function fastBackward() {
     }
     updateSlide();
 }
-
-// Hızlı İleri butonu işlevi
+ // Hızlı İleri butonu işlevi
 function fastForward() {
     // Slayt gösterisinde 20 slayt ileriye gider.
     currentSlide += fast_track;
@@ -216,13 +161,11 @@ function fastForward() {
     }
     updateSlide();
 }
-
-// Önceki Slayt butonu işlevi
+ // Önceki Slayt butonu işlevi
 function previousSlide() {
     // shuffle-toggle butonunun şu anki durumunu kontrol et
     const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
-
-    if (shuffleEnabled) {
+     if (shuffleEnabled) {
         // Rastgele bir slayta geç
         currentSlide = Math.floor(Math.random() * textfile_lines.length);
         updateSlide();
@@ -234,14 +177,11 @@ function previousSlide() {
         }
     }
 }
-
-
-// Sonraki Slayt butonu işlevi
+ // Sonraki Slayt butonu işlevi
 function nextSlide() {
     // shuffle-toggle butonunun şu anki durumunu kontrol et
     const shuffleEnabled = document.getElementById('shuffle-toggle').src.includes('shuffle-on.png');
-
-    if (shuffleEnabled) {
+     if (shuffleEnabled) {
         // Rastgele bir slayta geç
         currentSlide = Math.floor(Math.random() * textfile_lines.length);
         updateSlide();
@@ -253,66 +193,46 @@ function nextSlide() {
         }
     }
 }
-
-
-function single_line_parsing(text) {
+ function single_line_parsing(text) {
     // Metni ' ((' karakterlerine göre böl ve sonucu bir dizide sakla
     const parts = text.split('((');
-
-    // İkinci kısmın sonunda bulunan '))' karakterlerini kaldır
+     // İkinci kısmın sonunda bulunan '))' karakterlerini kaldır
     if (parts[1]) {
         parts[1] = parts[1].replace('))', '');
     }
-
-    // HTML'de gösterilecek metni oluştur
+     // HTML'de gösterilecek metni oluştur
     // İlk kısmı ve ikinci kısmı ayrı satırlara koy
     //const displayText = parts[0] + '<br><br><br><br>(  ' + parts[1] + ')';
-
-    let displayText; // displayText'i dışarıda tanımla
-
-    //console.log(parts[1] + " geldi");
-    
-    if (typeof parts[1] === "undefined" || parts[1] == null || parts[1] === "") {
+     let displayText; // displayText'i dışarıda tanımla
+     //console.log(parts[1] + " geldi");
+     if (typeof parts[1] === "undefined" || parts[1] == null || parts[1] === "") {
         // parts[1] tanımsız veya null veya boş bir string ise
         displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> </p>';      
     } else {
         // parts[1] mevcut ve değeri bir string ise
         displayText = parts[0] + '<br><br> <p style="font-size:70%; color:MediumSeaGreen;"> ( ' +  parts[1] + ' )</p>';      
     }
-
-
-    // Metni HTML elemanına yazdır
+     // Metni HTML elemanına yazdır
     document.getElementById('text-content').innerHTML = displayText;
 }
-
-
-
-
-function updateSlide() {
-
-    updateSlideInfo (currentSlide+1 , textfile_lines.length);
+ function updateSlide() {
+     updateSlideInfo (currentSlide+1 , textfile_lines.length);
     single_line_parsing (textfile_lines [currentSlide]) ;
-
-    clearTimeout(timer);
+     clearTimeout(timer);
     if (isPlaying) {
         synth.cancel(); // Hali hazırda konuşma varsa iptal et
         speakText();
     }
     //adjustFontSize() ;
 }
-
-
-
-function handleTextSlideChange() {
+ function handleTextSlideChange() {
     const select_language = document.getElementById('select_language');
     const select_text_slide = document.getElementById('select_text_slide');
-
-    if (select_text_slide.value) {
+     if (select_text_slide.value) {
         // Dosyanın tam yolunu oluştur
         const filePath = `Languages/${select_language.value}/${select_text_slide.value}`;
         const fileUrl = `https://raw.githubusercontent.com/izzetnext/TextSlider/main/${filePath}`;
-
-        fetch(fileUrl)
+         fetch(fileUrl)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok: ' + response.statusText);
@@ -335,22 +255,14 @@ function handleTextSlideChange() {
             });
     }
 }
-
-
-
- 
-// Dil seçimi değiştiğinde çağrılacak fonksiyon
+ // Dil seçimi değiştiğinde çağrılacak fonksiyon
 function handleLanguageChange() {
-    
-    const language = this.value; // Seçilen dil
+     const language = this.value; // Seçilen dil
     //console.log("Dil seçimi değişti : " + language);
-
-    document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
-
-    // JSON dosyasından seçilen dildeki text dosyalarını yüklemek için
+     document.getElementById('text-content').textContent = 'Language selection changed to: ' + language;
+     // JSON dosyasından seçilen dildeki text dosyalarını yüklemek için
     const jsonUrl = 'languages.json';
-    
-    fetch(jsonUrl)
+     fetch(jsonUrl)
         .then(response => response.json())
         .then(languagesWithFiles => {
             const select_text_slide = document.getElementById('select_text_slide');
@@ -361,17 +273,14 @@ function handleLanguageChange() {
             defaultOption.disabled = true; // Kullanıcı bu seçeneği seçemesin
             defaultOption.selected = true; // Varsayılan olarak bu seçenek gösterilsin
             select_text_slide.appendChild(defaultOption);
-
-            // Seçilen dile ait dosyaları bul
+             // Seçilen dile ait dosyaları bul
             const languageFiles = languagesWithFiles.find(l => l.language === language)?.files || [];
-            
-            languageFiles.forEach(fileName => {
+             languageFiles.forEach(fileName => {
                 const option = document.createElement('option');
                 option.value = option.textContent = fileName;
                 select_text_slide.appendChild(option);
             });
-
-            // İlk seçeneği otomatik olarak seç
+             // İlk seçeneği otomatik olarak seç
             if (select_text_slide.options.length > 1) {
                 select_text_slide.selectedIndex = 1;
                 // "change" olayını manuel olarak tetikle
@@ -383,19 +292,12 @@ function handleLanguageChange() {
                 const event = new Event('change');
                 select_text_slide.dispatchEvent(event);
             }
-            
-
-        })
+         })
         .catch(error => console.error('Error:', error));
 }
-
-
-
-
-function LoadLanguages(callback) {
+ function LoadLanguages(callback) {
     const jsonUrl = 'languages.json';
-
-    fetch(jsonUrl)
+     fetch(jsonUrl)
         .then(response => response.json())
         .then(data => {
             const select_language = document.getElementById('select_language');
@@ -413,10 +315,7 @@ function LoadLanguages(callback) {
             console.error('Error:', error);
         });
 }
-
-
-
-// Butonların Event Listener'larını tanımla
+ // Butonların Event Listener'larını tanımla
 function setupEventListeners() {
     document.getElementById('choose-file').onclick = chooseFile;
     document.getElementById('fast-backward').onclick = fastBackward;
@@ -434,34 +333,27 @@ function setupEventListeners() {
     var dankeBtn = document.getElementById('danke');
     var modal = document.getElementById('myModal');
     var closeSpan = document.getElementsByClassName('close')[0];
-
-    dankeBtn.onclick = function() {
+     dankeBtn.onclick = function() {
         modal.style.display = 'block';
     }
-
-    closeSpan.onclick = function() {
+     closeSpan.onclick = function() {
         modal.style.display = 'none';
     }
-
-    window.onclick = function(event) {
+     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
         }
     }
-
-    // content-wrapper kontrolü için ek işlevsellik
+     // content-wrapper kontrolü için ek işlevsellik
     setupContentWrapperControls();
 }
-
-function setupContentWrapperControls() {
+ function setupContentWrapperControls() {
     const contentWrapper = document.querySelector('.content-wrapper');
-
-    contentWrapper.addEventListener('click', function(event) {
+     contentWrapper.addEventListener('click', function(event) {
         const bounds = this.getBoundingClientRect();
         const width = bounds.width;
         const clickX = event.clientX - bounds.left; // Tıklanan X koordinatı
-
-        if (clickX < width * 0.3) { // Sol %30'luk alan
+         if (clickX < width * 0.3) { // Sol %30'luk alan
             previousSlide();
         } else if (clickX > width * 0.7) { // Sağ %30'luk alan
             nextSlide();
@@ -470,10 +362,7 @@ function setupContentWrapperControls() {
         }
     });
 }
-
- 
-
-function adjustFontSizeForScreen() {
+ function adjustFontSizeForScreen() {
     const textContent = document.getElementById('text-content');
     if (window.innerWidth < 768) { // Küçük ekranlar için
         textContent.style.fontSize = '18px';
@@ -483,10 +372,7 @@ function adjustFontSizeForScreen() {
         textContent.style.fontSize = '48px';
     }
 }
-
-
-
-function adjustFontSizeForTextLength() {
+ function adjustFontSizeForTextLength() {
     const textContent = document.getElementById('text-content');
     const textLength = textContent.textContent.length;
     if (textLength < 50) { // Kısa metinler için
@@ -497,24 +383,17 @@ function adjustFontSizeForTextLength() {
         textContent.style.fontSize = '48px';
     }
 }
-
-
-
-function adjustFontSize() {
+ function adjustFontSize() {
     adjustFontSizeForScreen();
     adjustFontSizeForTextLength();
     // İsteğe bağlı olarak, burada ekran boyutu ve metin uzunluğuna göre daha karmaşık bir mantık uygulayabilirsiniz.
 }
-
-
-function setupKeyboardControls() {
-
-    document.addEventListener('keydown', function(event) {
+ function setupKeyboardControls() {
+     document.addEventListener('keydown', function(event) {
     const select_text_slide = document.getElementById('select_text_slide');
     const selectedIndex = select_text_slide.selectedIndex;
     let changeMade = false;
-
-        switch (event.key) {
+         switch (event.key) {
             case 'ArrowUp':
                 // Sol yön tuşuna basıldığında önceki slayta geç
                 if (selectedIndex > 0) {
@@ -549,14 +428,11 @@ function setupKeyboardControls() {
         }        
     });
 }
-
-
-function selectDefaultLanguage() {
+ function selectDefaultLanguage() {
     // Varsayılan dil kodunu ayarlayın, örneğin 'en-US'
     var defaultLanguageCode = 'Deutsch';
     var selectLanguageElement = document.getElementById('select_language');
-
-    // `select_language` <select> elementinin <option> larını dolaş
+     // `select_language` <select> elementinin <option> larını dolaş
     for (var i = 0; i < selectLanguageElement.options.length; i++) {
         if (selectLanguageElement.options[i].value === defaultLanguageCode) {
             // Varsayılan dil kodunu bulduğunuzda, onu seçili yap
@@ -565,8 +441,7 @@ function selectDefaultLanguage() {
         }
     }
 }
-
-/* function selectRandomTextSlide(selectElement) {
+ /* function selectRandomTextSlide(selectElement) {
     const optionsCount = selectElement.options.length;
     console.log( selectElement.options.length );
     if (optionsCount > 0) {
@@ -577,8 +452,7 @@ function selectDefaultLanguage() {
         selectElement.dispatchEvent(event);        
     }
 } */
-
-function selectRandomTextSlide() {
+ function selectRandomTextSlide() {
     const select_text_slide = document.getElementById('select_text_slide');
     const optionsCount = select_text_slide.options.length;
     if (optionsCount > 0) {
@@ -587,9 +461,7 @@ function selectRandomTextSlide() {
         select_text_slide.selectedIndex = randomIndex;
     }
 }
- 
-
-// Sayfa yüklendiğinde tüm event listener'ları ayarla
+ // Sayfa yüklendiğinde tüm event listener'ları ayarla
 window.onload = function() {
     setupEventListeners();
     // LoadLanguages işlemi tamamlandığında selectDefaultLanguage fonksiyonunu çağır
@@ -599,12 +471,7 @@ window.onload = function() {
         const event = new Event('change');
         select_language.dispatchEvent(event);
         // Ve seçenekler doldurulduktan sonra aşağıdaki fonksiyonu çağırın
+     });
+     setupKeyboardControls();
+ }
  
-    });
-
-    setupKeyboardControls();
-  
-
-}
-
-
