@@ -23,6 +23,7 @@
       "Nvv 3_ar.md",
       "Nvv 4_ar.md",
       "Nvv 5_ar.md",
+      "Pasiv_ar.md",
       "Zungenbrecher_ar.md",
       "ihr_euch_ar.md",
       "mix 1_ar.md"
@@ -43,6 +44,7 @@
       "Fragen_A1.md",
       "Fragen_B1 Beruf.md",
       "Fragen_B1.md",
+      "Fragetypen.md",
       "Genetiv 2.md",
       "Genetiv.md",
       "Grammatikunterricht.md",
@@ -57,9 +59,11 @@
       "Nvv 3.md",
       "Nvv 4.md",
       "Nvv 5.md",
+      "Pasiv.md",
       "Redemittel Aspeckt B1.md",
       "Redemittel Aspeckt B2.md",
       "Redemittel Linie.md",
+      "Zeitformen 2.md",
       "Zungenbrecher.md",
       "der Vorname.md",
       "ihr_euch.md",
@@ -90,6 +94,7 @@
       "Nvv 3_en.md",
       "Nvv 4_en.md",
       "Nvv 5_en.md",
+      "Pasiv_en.md",
       "Zungenbrecher_en.md",
       "ihr_euch_en.md",
       "mix 1_en.md"
@@ -119,6 +124,7 @@
       "Nvv 3_ku.md",
       "Nvv 4_ku.md",
       "Nvv 5_ku.md",
+      "Pasiv_ku.md",
       "Zungenbrecher_ku.md",
       "ihr_euch_ku.md",
       "mix 1_ku.md"
@@ -148,6 +154,7 @@
       "Nvv 3_ps.md",
       "Nvv 4_ps.md",
       "Nvv 5_ps.md",
+      "Pasiv_ps.md",
       "Zungenbrecher_ps.md",
       "ihr_euch_ps.md",
       "mix 1_ps.md"
@@ -177,6 +184,7 @@
       "Nvv 3_fa.md",
       "Nvv 4_fa.md",
       "Nvv 5_fa.md",
+      "Pasiv_fa.md",
       "Zungenbrecher_fa.md",
       "ihr_euch_fa.md",
       "mix 1_fa.md"
@@ -206,6 +214,7 @@
       "Nvv 3_ru.md",
       "Nvv 4_ru.md",
       "Nvv 5_ru.md",
+      "Pasiv_ru.md",
       "Zungenbrecher_ru.md",
       "ihr_euch_ru.md",
       "mix 1_ru.md"
@@ -235,6 +244,7 @@
       "Nvv 3_so.md",
       "Nvv 4_so.md",
       "Nvv 5_so.md",
+      "Pasiv_so.md",
       "Zungenbrecher_so.md",
       "ihr_euch_so.md",
       "mix 1_so.md"
@@ -243,15 +253,20 @@
   {
     "language": "Test",
     "files": [
-      "Kapitel 1.md"
+      "777 baglaclar 2.md",
+      "Redemittel A1.md",
+      "nom-akk-dativ-gen.md"
     ]
   },
   {
     "language": "Turkish",
     "files": [
+      "Adjektive und Nomen_tr.md",
+      "Adjektive_tr.md",
       "Aktiv A1-B1 Beispiele_tr.md",
       "Aktiv A1-B1 Sprechtraining_tr.md",
       "Aktiv B2-C1 Sprechtraining v3_tr.md",
+      "Arbeitslos - Kein Bock oder keine Chance_tr.md",
       "Fragen B2 Beruf Dialog_tr.md",
       "Fragen max B2_tr.md",
       "Fragen und Antworten B2 Beruf_tr.md",
@@ -259,6 +274,7 @@
       "Fragen_A1_tr.md",
       "Fragen_B1 Beruf_tr.md",
       "Fragen_B1_tr.md",
+      "Fragetypen_tr.md",
       "Genetiv 2_tr.md",
       "Genetiv_tr.md",
       "Grammatikunterricht_tr.md",
@@ -267,6 +283,7 @@
       "Kapitel 1 Redemittel_tr.md",
       "Kapitel 1 Wortschatz_tr.md",
       "Kapitel 1_tr.md",
+      "Konjunktionen_extra_tr.md",
       "Konjunktionen_tr.md",
       "Konjunktiv II_tr.md",
       "Nvv 1_tr.md",
@@ -274,6 +291,9 @@
       "Nvv 3_tr.md",
       "Nvv 4_tr.md",
       "Nvv 5_tr.md",
+      "Pasiv_tr.md",
+      "Zeitformen 1_tr.md",
+      "Zeitformen 2_tr.md",
       "Zungenbrecher_tr.md",
       "der Vorname_tr.md",
       "ihr_euch_tr.md",
@@ -304,9 +324,16 @@
       "Nvv 3_uk.md",
       "Nvv 4_uk.md",
       "Nvv 5_uk.md",
+      "Pasiv_uk.md",
       "Zungenbrecher_uk.md",
       "ihr_euch_uk.md",
       "mix 1_uk.md"
+    ]
+  },
+  {
+    "language": "_Selbst",
+    "files": [
+      "Kapitel 3 Neu in der Firma-2b .md"
     ]
   }
 ]
