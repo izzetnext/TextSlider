@@ -2,6 +2,11 @@
   {
     "language": "Arabic",
     "files": [
+      "Arbeitgeber_ar.md",
+      "Arbeitssuche_ar.md",
+      "Arbeitsumfeld_ar.md",
+      "Berufswahl_ar.md",
+      "Bewerbungsgespräch_ar.md",
       "Fragen B2 Beruf Dialog_ar.md",
       "Fragen max B2_ar.md",
       "Fragen und Antworten B2 Beruf_ar.md",
@@ -11,6 +16,7 @@
       "Fragen_B1_ar.md",
       "Genetiv 2_ar.md",
       "Genetiv_ar.md",
+      "Geschäftsidee_ar.md",
       "Grammatikunterricht_ar.md",
       "Infinitiv_um_zu_ar.md",
       "Infinitiv_zu_ar.md",
@@ -25,6 +31,8 @@
       "Nvv 5_ar.md",
       "Pasiv_ar.md",
       "Zungenbrecher_ar.md",
+      "berufliches Vorbild_ar.md",
+      "ein Produkt_ar.md",
       "ihr_euch_ar.md",
       "mix 1_ar.md"
     ]
@@ -73,6 +81,11 @@
   {
     "language": "English",
     "files": [
+      "Arbeitgeber_en.md",
+      "Arbeitssuche_en.md",
+      "Arbeitsumfeld_en.md",
+      "Berufswahl_en.md",
+      "Bewerbungsgespräch_en.md",
       "Fragen B2 Beruf Dialog_en.md",
       "Fragen max B2_en.md",
       "Fragen und Antworten B2 Beruf_en.md",
@@ -82,6 +95,7 @@
       "Fragen_B1_en.md",
       "Genetiv 2_en.md",
       "Genetiv_en.md",
+      "Geschäftsidee_en.md",
       "Grammatikunterricht_en.md",
       "Infinitiv_um_zu_en.md",
       "Infinitiv_zu_en.md",
@@ -96,6 +110,8 @@
       "Nvv 5_en.md",
       "Pasiv_en.md",
       "Zungenbrecher_en.md",
+      "berufliches Vorbild_en.md",
+      "ein Produkt_en.md",
       "ihr_euch_en.md",
       "mix 1_en.md"
     ]
@@ -103,6 +119,11 @@
   {
     "language": "Kurdish",
     "files": [
+      "Arbeitgeber_ku.md",
+      "Arbeitssuche_ku.md",
+      "Arbeitsumfeld_ku.md",
+      "Berufswahl_ku.md",
+      "Bewerbungsgespräch_ku.md",
       "Fragen B2 Beruf Dialog_ku.md",
       "Fragen max B2_ku.md",
       "Fragen und Antworten B2 Beruf_ku.md",
@@ -112,6 +133,7 @@
       "Fragen_B1_ku.md",
       "Genetiv 2_ku.md",
       "Genetiv_ku.md",
+      "Geschäftsidee_ku.md",
       "Grammatikunterricht_ku.md",
       "Infinitiv_um_zu_ku.md",
       "Infinitiv_zu_ku.md",
@@ -126,6 +148,8 @@
       "Nvv 5_ku.md",
       "Pasiv_ku.md",
       "Zungenbrecher_ku.md",
+      "berufliches Vorbild_ku.md",
+      "ein Produkt_ku.md",
       "ihr_euch_ku.md",
       "mix 1_ku.md"
     ]
@@ -133,6 +157,11 @@
   {
     "language": "Pashto",
     "files": [
+      "Arbeitgeber_ps.md",
+      "Arbeitssuche_ps.md",
+      "Arbeitsumfeld_ps.md",
+      "Berufswahl_ps.md",
+      "Bewerbungsgespräch_ps.md",
       "Fragen B2 Beruf Dialog_ps.md",
       "Fragen max B2_ps.md",
       "Fragen und Antworten B2 Beruf_ps.md",
@@ -142,6 +171,7 @@
       "Fragen_B1_ps.md",
       "Genetiv 2_ps.md",
       "Genetiv_ps.md",
+      "Geschäftsidee_ps.md",
       "Grammatikunterricht_ps.md",
       "Infinitiv_um_zu_ps.md",
       "Infinitiv_zu_ps.md",
@@ -156,6 +186,8 @@
       "Nvv 5_ps.md",
       "Pasiv_ps.md",
       "Zungenbrecher_ps.md",
+      "berufliches Vorbild_ps.md",
+      "ein Produkt_ps.md",
       "ihr_euch_ps.md",
       "mix 1_ps.md"
     ]
@@ -163,6 +195,11 @@
   {
     "language": "Persian",
     "files": [
+      "Arbeitgeber_fa.md",
+      "Arbeitssuche_fa.md",
+      "Arbeitsumfeld_fa.md",
+      "Berufswahl_fa.md",
+      "Bewerbungsgespräch_fa.md",
       "Fragen B2 Beruf Dialog_fa.md",
       "Fragen max B2_fa.md",
       "Fragen und Antworten B2 Beruf_fa.md",
@@ -172,6 +209,7 @@
       "Fragen_B1_fa.md",
       "Genetiv 2_fa.md",
       "Genetiv_fa.md",
+      "Geschäftsidee_fa.md",
       "Grammatikunterricht_fa.md",
       "Infinitiv_um_zu_fa.md",
       "Infinitiv_zu_fa.md",
@@ -186,6 +224,8 @@
       "Nvv 5_fa.md",
       "Pasiv_fa.md",
       "Zungenbrecher_fa.md",
+      "berufliches Vorbild_fa.md",
+      "ein Produkt_fa.md",
       "ihr_euch_fa.md",
       "mix 1_fa.md"
     ]
@@ -193,6 +233,11 @@
   {
     "language": "Russian",
     "files": [
+      "Arbeitgeber_ru.md",
+      "Arbeitssuche_ru.md",
+      "Arbeitsumfeld_ru.md",
+      "Berufswahl_ru.md",
+      "Bewerbungsgespräch_ru.md",
       "Fragen B2 Beruf Dialog_ru.md",
       "Fragen max B2_ru.md",
       "Fragen und Antworten B2 Beruf_ru.md",
@@ -202,6 +247,7 @@
       "Fragen_B1_ru.md",
       "Genetiv 2_ru.md",
       "Genetiv_ru.md",
+      "Geschäftsidee_ru.md",
       "Grammatikunterricht_ru.md",
       "Infinitiv_um_zu_ru.md",
       "Infinitiv_zu_ru.md",
@@ -216,6 +262,8 @@
       "Nvv 5_ru.md",
       "Pasiv_ru.md",
       "Zungenbrecher_ru.md",
+      "berufliches Vorbild_ru.md",
+      "ein Produkt_ru.md",
       "ihr_euch_ru.md",
       "mix 1_ru.md"
     ]
@@ -223,6 +271,11 @@
   {
     "language": "Somali",
     "files": [
+      "Arbeitgeber_so.md",
+      "Arbeitssuche_so.md",
+      "Arbeitsumfeld_so.md",
+      "Berufswahl_so.md",
+      "Bewerbungsgespräch_so.md",
       "Fragen B2 Beruf Dialog_so.md",
       "Fragen max B2_so.md",
       "Fragen und Antworten B2 Beruf_so.md",
@@ -232,6 +285,7 @@
       "Fragen_B1_so.md",
       "Genetiv 2_so.md",
       "Genetiv_so.md",
+      "Geschäftsidee_so.md",
       "Grammatikunterricht_so.md",
       "Infinitiv_um_zu_so.md",
       "Infinitiv_zu_so.md",
@@ -246,6 +300,8 @@
       "Nvv 5_so.md",
       "Pasiv_so.md",
       "Zungenbrecher_so.md",
+      "berufliches Vorbild_so.md",
+      "ein Produkt_so.md",
       "ihr_euch_so.md",
       "mix 1_so.md"
     ]
@@ -266,7 +322,12 @@
       "Aktiv A1-B1 Beispiele_tr.md",
       "Aktiv A1-B1 Sprechtraining_tr.md",
       "Aktiv B2-C1 Sprechtraining v3_tr.md",
+      "Arbeitgeber_tr.md",
       "Arbeitslos - Kein Bock oder keine Chance_tr.md",
+      "Arbeitssuche_tr.md",
+      "Arbeitsumfeld_tr.md",
+      "Berufswahl_tr.md",
+      "Bewerbungsgespräch_tr.md",
       "Fragen B2 Beruf Dialog_tr.md",
       "Fragen max B2_tr.md",
       "Fragen und Antworten B2 Beruf_tr.md",
@@ -277,6 +338,7 @@
       "Fragetypen_tr.md",
       "Genetiv 2_tr.md",
       "Genetiv_tr.md",
+      "Geschäftsidee_tr.md",
       "Grammatikunterricht_tr.md",
       "Infinitiv_um_zu_tr.md",
       "Infinitiv_zu_tr.md",
@@ -295,7 +357,9 @@
       "Zeitformen 1_tr.md",
       "Zeitformen 2_tr.md",
       "Zungenbrecher_tr.md",
+      "berufliches Vorbild_tr.md",
       "der Vorname_tr.md",
+      "ein Produkt_tr.md",
       "ihr_euch_tr.md",
       "mix 1_tr.md"
     ]
@@ -303,6 +367,11 @@
   {
     "language": "Ukrainian",
     "files": [
+      "Arbeitgeber_uk.md",
+      "Arbeitssuche_uk.md",
+      "Arbeitsumfeld_uk.md",
+      "Berufswahl_uk.md",
+      "Bewerbungsgespräch_uk.md",
       "Fragen B2 Beruf Dialog_uk.md",
       "Fragen max B2_uk.md",
       "Fragen und Antworten B2 Beruf_uk.md",
@@ -312,6 +381,7 @@
       "Fragen_B1_uk.md",
       "Genetiv 2_uk.md",
       "Genetiv_uk.md",
+      "Geschäftsidee_uk.md",
       "Grammatikunterricht_uk.md",
       "Infinitiv_um_zu_uk.md",
       "Infinitiv_zu_uk.md",
@@ -326,8 +396,23 @@
       "Nvv 5_uk.md",
       "Pasiv_uk.md",
       "Zungenbrecher_uk.md",
+      "berufliches Vorbild_uk.md",
+      "ein Produkt_uk.md",
       "ihr_euch_uk.md",
       "mix 1_uk.md"
+    ]
+  },
+  {
+    "language": "_Presantations",
+    "files": [
+      "Arbeitgeber.md",
+      "Arbeitssuche.md",
+      "Arbeitsumfeld.md",
+      "Berufswahl.md",
+      "Bewerbungsgespräch.md",
+      "Geschäftsidee.md",
+      "berufliches Vorbild.md",
+      "ein Produkt.md"
     ]
   },
   {
@@ -337,3 +422,5 @@
     ]
   }
 ]
+
+
