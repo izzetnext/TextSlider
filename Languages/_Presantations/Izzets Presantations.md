@@ -1,37 +1,4 @@
- 
-
-Deutschsprachig: 
-
-Punkt
-Komma
-Fragezeichen
-Ausrufezeichen
-Neue Zeile
-Neuer Absatz
-Apostroph
-Semikolon
-Doppelpunkt
-Klammer auf/zu
-Anführungszeichen unten/oben
-Einzelnes Anführungszeichen unten/oben
-Bindestrich
-Gedankenstrich
-Tilde
-At-Zeichen
-Und-Zeichen
-Hashtag
-Schrägstrich
-Backslash
-Unterstrich
-Längsstrich
-Auslassungspunkte
-Asterisk
-Eckige Klammer auf/zu
-Geschweifte Klammer auf/zu
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 1 Arbeitgeber:
 Ich möchte heute über einen Arbeitgeber sprechen, bei dem ich in der Zukunft gerne arbeiten würde: Enpoi Technologie.
  Enpoi Technologie ist ein Unternehmen im Bereich Forschung und Entwicklung.
@@ -111,13 +78,7 @@ gute Produkte und Dienstleistungen anbietet und ein erfahrenes Team hat.
    - Durch kontinuierliche Forschung, Weiterbildung der Mitarbeiter und Investitionen in neue Technologien könnte Enpoi Technologie seine Dienstleistungen weiter verbessern.
 - **Welche Aspekte machen Enpoi Technologie für dich zu einem attraktiven Arbeitgeber?**
    - Enpoi Technologie ist für mich attraktiv aufgrund der spannenden und innovativen Arbeitsaufgaben, der Möglichkeit zur persönlichen und beruflichen Weiterentwicklung und des erfahrenen Teams, das eine unterstützende Arbeitsumgebung schafft.
-
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 2 Arbeitsumfeld:
 Ein gutes Arbeitsumfeld ist für mich sehr wichtig.
  An erster Stelle steht die Freiheit, eigenständig arbeiten zu können.
@@ -201,13 +162,7 @@ beruflicher Zufriedenheit und guter Kommunikation.
    - Ein gutes Arbeitsumfeld bietet die notwendigen Ressourcen und Unterstützung, um sich weiterzuentwickeln und neue Fähigkeiten zu erlernen.
 - **Inwiefern tragen interessante und herausfordernde Aufgaben zu deiner beruflichen Zufriedenheit bei?**
    - Interessante und herausfordernde Aufgaben halten meine Arbeit spannend und motivierend, was zu meiner langfristigen beruflichen Zufriedenheit beiträgt.
-
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 3 Berufswahl:
 Heute möchte ich über die Ereignisse und Erfahrungen sprechen, die meine Berufswahl zum Produktdesigner beeinflusst haben.
 Seit meiner Kindheit interessiere ich mich für Design, da ich gerne zeichne und kreativ bin.
@@ -287,13 +242,7 @@ Jetzt arbeite ich als Forschungs- und Entwicklungs-Spezialist sowie Produktdesig
 - **Welche Herausforderungen hast du als Produktdesigner gemeistert und wie?**
    - Ich habe Herausforderungen wie technische Schwierigkeiten und enge Zeitpläne gemeistert, indem ich kreativ und flexibel gearbeitet habe.
 - **Wie hat die Unterstützung von inspirierenden Personen deinen beruflichen Erfolg beeinflusst?**
-   - Die Unterstützung von inspirierenden Personen hat meinen beruflichen Erfolg beeinflusst, indem sie mir Motivation und wertvolle Ratschläge gegeben haben.
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+   - Die Unterstützung von inspirierenden Personen hat meinen beruflichen Erfolg beeinflusst, indem sie mir Motivation und wertvolle Ratschläge gegeben haben.--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 4 berufliches Vorbild :
 heute möchte ich über Dieter Rams sprechen, der für mich ein bedeutendes berufliches Vorbild ist.
 Dieter Rams ist ein bekannter deutscher Industriedesigner, 
@@ -376,13 +325,7 @@ Seine Prinzipien und seine Arbeit sind ein ständiger Ansporn für mich, hochwer
    - Seine Philosophie hilft mir, indem ich mich auf einfache und effektive Lösungen konzentriere, anstatt die Dinge zu komplizieren.
 - **Inwiefern motiviert dich Dieter Rams' Arbeit, hochwertige und funktionale Produkte zu schaffen?**
    - Seine Arbeit motiviert mich, weil sie zeigt, dass durch sorgfältige Planung und Fokus auf wesentliche Prinzipien exzellente und langlebige Designs entstehen können.
-
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema Arbeitssuche in Deutschland sprechen.
  In Deutschland gibt es viele Möglichkeiten, nach einer Stelle zu suchen.
 Man kann auf Internetseiten wie Glassdoor, Indeed und LinkedIn nach Stellen suchen und Angebote vergleichen.
@@ -464,13 +407,7 @@ Abschließend möchte ich sagen, dass der Arbeitsmarkt in Deutschland vielfälti
 - **Welche Soft Skills sind bei einer Bewerbung besonders relevant?**
    - Besonders relevante Soft Skills sind Teamfähigkeit, Kommunikationsstärke, Problemlösungsfähigkeiten und Flexibilität.
 - **Wie kann ein professionelles Foto die Bewerbung beeinflussen?**
-   - Ein professionelles Foto vermittelt einen guten ersten Eindruck und kann die Professionalität und Sympathie des Bewerbers unterstreichen.
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+   - Ein professionelles Foto vermittelt einen guten ersten Eindruck und kann die Professionalität und Sympathie des Bewerbers unterstreichen.--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 6 Bewerbungsgespräch:
 Ein Bewerbungsgespräch ist sehr wichtig, um den gewünschten Job zu bekommen.
  In Deutschland muss man sich gut vorbereiten und professionell auftreten.
@@ -547,13 +484,7 @@ Zusammengefasst sind in Deutschland eine gute Vorbereitung, klare Selbstpräsent
    - Durch klare, strukturierte und selbstbewusste Darstellung der eigenen Qualifikationen und Erfahrungen.
 - **Was sind die wichtigsten Aspekte, die man bei der Vorbereitung auf ein Bewerbungsgespräch beachten sollte?**
    - Wichtige Aspekte sind das Sammeln von Informationen über die Firma, die Vorbereitung auf typische Fragen und das Üben der Selbstpräsentation.
-
-
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 7 ein Produkt :
 Heute möchte ich über ein interessantes Produkt sprechen: den 3D-Drucker.
 Ein 3D-Drucker ist ein Gerät, das dreidimensionale Objekte aus Materialien wie Kunststoff oder Metall herstellt.
@@ -632,12 +563,7 @@ Trotz dieser Nachteile ist der 3D-Drucker sehr erfolgreich und wird in vielen Br
 - **Welche Umweltauswirkungen hat der Einsatz von 3D-Druckern?**
    - Der Einsatz von 3D-Druckern kann zu weniger Abfall und einer effizienteren Nutzung von Materialien führen, aber auch der Energieverbrauch und die Umweltverträglichkeit der Materialien müssen berücksichtigt werden.
 - **Wie kann die Flexibilität des 3D-Drucks zur Lösung komplexer Probleme beitragen?**
-   - Die Flexibilität des 3D-Drucks ermöglicht es, maßgeschneiderte Lösungen für komplexe Probleme zu entwickeln und innovative Ansätze in der Produktion umzusetzen.
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
+   - Die Flexibilität des 3D-Drucks ermöglicht es, maßgeschneiderte Lösungen für komplexe Probleme zu entwickeln und innovative Ansätze in der Produktion umzusetzen.--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Thema 8 Geschäftsidee:
 Ich freue mich sehr, heute meine Geschäftsidee vorstellen zu dürfen.
  Ich möchte ein Dienstleistungsunternehmen für Forschung und Entwicklung gründen.
