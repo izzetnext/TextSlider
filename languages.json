@@ -5,6 +5,7 @@
       "Arbeitgeber_ar.md",
       "Arbeitssuche_ar.md",
       "Arbeitsumfeld_ar.md",
+      "B2 Beruf Worter_ar.md",
       "Berufswahl_ar.md",
       "Bewerbungsgespräch_ar.md",
       "Fragen B2 Beruf Dialog_ar.md",
@@ -75,7 +76,8 @@
       "Zungenbrecher.md",
       "der Vorname.md",
       "ihr_euch.md",
-      "mix 1.md"
+      "mix 1.md",
+      "nvv1 mit beispiele.md"
     ]
   },
   {
@@ -84,6 +86,7 @@
       "Arbeitgeber_en.md",
       "Arbeitssuche_en.md",
       "Arbeitsumfeld_en.md",
+      "B2 Beruf Worter_en.md",
       "Berufswahl_en.md",
       "Bewerbungsgespräch_en.md",
       "Fragen B2 Beruf Dialog_en.md",
@@ -122,6 +125,7 @@
       "Arbeitgeber_ku.md",
       "Arbeitssuche_ku.md",
       "Arbeitsumfeld_ku.md",
+      "B2 Beruf Worter_ku.md",
       "Berufswahl_ku.md",
       "Bewerbungsgespräch_ku.md",
       "Fragen B2 Beruf Dialog_ku.md",
@@ -160,6 +164,7 @@
       "Arbeitgeber_ps.md",
       "Arbeitssuche_ps.md",
       "Arbeitsumfeld_ps.md",
+      "B2 Beruf Worter_ps.md",
       "Berufswahl_ps.md",
       "Bewerbungsgespräch_ps.md",
       "Fragen B2 Beruf Dialog_ps.md",
@@ -198,6 +203,7 @@
       "Arbeitgeber_fa.md",
       "Arbeitssuche_fa.md",
       "Arbeitsumfeld_fa.md",
+      "B2 Beruf Worter_fa.md",
       "Berufswahl_fa.md",
       "Bewerbungsgespräch_fa.md",
       "Fragen B2 Beruf Dialog_fa.md",
@@ -236,6 +242,7 @@
       "Arbeitgeber_ru.md",
       "Arbeitssuche_ru.md",
       "Arbeitsumfeld_ru.md",
+      "B2 Beruf Worter_ru.md",
       "Berufswahl_ru.md",
       "Bewerbungsgespräch_ru.md",
       "Fragen B2 Beruf Dialog_ru.md",
@@ -274,6 +281,7 @@
       "Arbeitgeber_so.md",
       "Arbeitssuche_so.md",
       "Arbeitsumfeld_so.md",
+      "B2 Beruf Worter_so.md",
       "Berufswahl_so.md",
       "Bewerbungsgespräch_so.md",
       "Fragen B2 Beruf Dialog_so.md",
@@ -326,6 +334,7 @@
       "Arbeitslos - Kein Bock oder keine Chance_tr.md",
       "Arbeitssuche_tr.md",
       "Arbeitsumfeld_tr.md",
+      "B2 Beruf Worter_tr.md",
       "Berufswahl_tr.md",
       "Bewerbungsgespräch_tr.md",
       "Fragen B2 Beruf Dialog_tr.md",
@@ -354,6 +363,7 @@
       "Nvv 4_tr.md",
       "Nvv 5_tr.md",
       "Pasiv_tr.md",
+      "Redemittel Ex.md",
       "Zeitformen 1_tr.md",
       "Zeitformen 2_tr.md",
       "Zungenbrecher_tr.md",
@@ -361,7 +371,8 @@
       "der Vorname_tr.md",
       "ein Produkt_tr.md",
       "ihr_euch_tr.md",
-      "mix 1_tr.md"
+      "mix 1_tr.md",
+      "nvv1 mit beispiele.md"
     ]
   },
   {
@@ -370,6 +381,7 @@
       "Arbeitgeber_uk.md",
       "Arbeitssuche_uk.md",
       "Arbeitsumfeld_uk.md",
+      "B2 Beruf Worter_uk.md",
       "Berufswahl_uk.md",
       "Bewerbungsgespräch_uk.md",
       "Fragen B2 Beruf Dialog_uk.md",
@@ -405,22 +417,31 @@
   {
     "language": "_Presantations",
     "files": [
-      "Arbeitgeber.md",
-      "Arbeitssuche.md",
-      "Arbeitsumfeld.md",
-      "Berufswahl.md",
-      "Bewerbungsgespräch.md",
-      "Geschäftsidee.md",
-      "berufliches Vorbild.md",
-      "ein Produkt.md"
+      "1 Arbeitgeber.md",
+      "2 Arbeitsumfeld.md",
+      "3 Berufswahl.md",
+      "4 berufliches Vorbild.md",
+      "5 Arbeitssuche.md",
+      "6 Bewerbungsgespräch.md",
+      "7 ein Produkt.md",
+      "8 Geschäftsidee.md"
     ]
   },
   {
     "language": "_Selbst",
     "files": [
-      "Kapitel 3 Neu in der Firma-2b .md"
+      "1 Sprechen Teil 2 nur tema.md",
+      "2 Sprechen Teil 2 Leicht.md",
+      "3 Sprechen Teil 2 Hard.md",
+      "4 Sprechen Teil 2 Hard claud.md",
+      "5 Sprechen Teil 2 Leicht.md",
+      "Deutschsprachig.md",
+      "bausteine mit beispiele.md",
+      "bausteine.md",
+      "schlüssel worter 1.md",
+      "schlüssel worter 2.md",
+      "schlüssel worter 3.md",
+      "schlüssel worter 4.md"
     ]
   }
 ]
-
-
