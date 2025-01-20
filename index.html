@@ -19,33 +19,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="toolbar">
-
-
-            <select id="select_language">
-                <option value="" selected>Select Language</option>
-                <!-- GitHub API ile doldurulacak -->
-            </select>
-
-            <select id="select_text_slide">
-                <option value="" selected>Select a text.slide</option>
-                <!-- GitHub API ile doldurulacak -->
-            </select>
-
- 
-            <div class="slidecontainer" id="slidecontainer">
-                <input type="range" min="0" max="11" value="1" class="slider" id="myRange">
-              </div>
-              <p id="delayText">Slide delay : <span id="demo"></span></p>
-
-    </div>
 
         <div class="toolbar">
             
             <input type="file" id="file-input" style="display: none;">
-            <img src="images/choose-file.png" id="choose-file" alt="Choose File">
+            <img src="images/choose-local-file.png" id="choose-local-file" alt="Choose Local File">
+
+            <img src="images/choose-from-cloud.png" id="choose-from-cloud" alt="Choose From Cloud">
+
             <div class="empty-space"></div>
             <span id="slide-info">0 / 0</span>
+            <div class="empty-space"></div>
             <div class="empty-space"></div>
             <img src="images/fast-backward.png" id="fast-backward" alt="Fast Backward">
             <img src="images/previous.png" id="previous" alt="Previous">
@@ -53,9 +37,15 @@
             <img src="images/next.png" id="next" alt="Next">
             <img src="images/fast-forward.png" id="fast-forward" alt="Fast Forward">
             <div class="empty-space"></div>
+            <div class="slidecontainer" id="slidecontainer">
+                <input type="range" min="1" max="11" value="1" class="slider" id="slider-value">
+              </div>
+              <p id="delayText">Slide delay : <span id="slide-delay-value">1</span></p>
+
             <div class="empty-space"></div>
-            <img src="images/sound-on.png" id="sound-toggle" alt="Sound Toggle">
+            <img src="images/sound-off.png" id="sound-toggle" alt="Sound Toggle">
             <img src="images/shuffle-off.png" id="shuffle-toggle" alt="Shuffle Toggle">
+            
             <img src="images/danke.png" id="danke" alt="danke">
 
             <!-- Danke Modal -->
@@ -71,6 +61,20 @@
             <div class="text-display">
                 <p id="text-content">Please choose a text file to start.</p>
             </div>
+        </div>
+    </div>
+    <div id="cloudModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <select id="select_language">
+                <option value="" selected>Select Language</option>
+            </select>
+    
+            <select id="select_text_slide">
+                <option value="" selected>Select a text.slide</option>
+            </select>
+    
+            <button id="load-cloud-file">Load</button>
         </div>
     </div>
 
