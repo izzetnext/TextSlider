@@ -1,7 +1,4 @@
- 
-
 Deutschsprachig: 
-
 Punkt
 Komma
 Fragezeichen
@@ -25,9 +22,6 @@ Backslash
 Unterstrich
 Längsstrich
 Auslassungspunkte
-
-
-
 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
