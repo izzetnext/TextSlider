@@ -49,6 +49,81 @@ document.addEventListener('DOMContentLoaded', () => {
     const delaySlider = document.getElementById('slider-value');
     const slideDelayValue = document.getElementById('slide-delay-value'); // slide-delay-value elemanını seçin
        
+    const chooseFromCloud = document.getElementById('choose-from-cloud');
+    const cloudModal = document.getElementById('cloudModal');
+
+    chooseFromCloud.addEventListener('click', () => {
+        cloudModal.style.display = 'block';
+        loadLanguages();
+    });
+
+    function loadLanguages() {
+        fetch('languages.json')
+            .then(response => response.json())
+            .then(data => {
+                const select_language = document.getElementById('select_language');
+                data.forEach(language => {
+                    const option = document.createElement('option');
+                    option.value = option.textContent = language.language;
+                    select_language.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function handleLanguageChange() {
+        const language = document.getElementById('select_language').value;
+        const select_text_slide = document.getElementById('select_text_slide');
+        select_text_slide.innerHTML = '<option value="" selected>Select a text.slide</option>';
+
+        if (language) {
+            fetch('languages.json')
+                .then(response => response.json())
+                .then(data => {
+                    const languageFiles = data.find(l => l.language === language)?.files ||;
+                    languageFiles.forEach(fileName => {
+                        const option = document.createElement('option');
+                        option.value = option.textContent = fileName;
+                        select_text_slide.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    }
+
+    function handleTextSlideChange() {
+        const select_language = document.getElementById('select_language');
+        const select_text_slide = document.getElementById('select_text_slide');
+        const filePath = `Languages/${select_language.value}/${select_text_slide.value}`;
+        const fileUrl = `https://raw.githubusercontent.com/izzetnext/TextSlider/main/${filePath}`;
+
+        if (select_text_slide.value) {
+            fetch(fileUrl)
+                .then(response => response.text())
+                .then(data => {
+                    slides = data.split(/\n\n|\n/)
+                        .filter(slide => slide.trim() !== '')
+                        .map(cleanText);
+
+                    if (slides.length > 0) {
+                        currentSlideIndex = 0;
+                        updateSlide();
+                        closeCloudModal();
+                    }
+                })
+                .catch((error) => {
+                    console.error('Fetch error: ', error);
+                });
+        }
+    }
+
+    function closeCloudModal() {
+        cloudModal.style.display = 'none';
+    }
+
+
+
+
 
     let slides = [];
     let currentSlideIndex = 0;
@@ -67,84 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return text.trim();
     }
 
-    const chooseFromCloud = document.getElementById('choose-from-cloud');
-    const cloudModal = document.getElementById('cloudModal');
-    const closeCloudModal = cloudModal.querySelector('.close');
-    const selectLanguage = document.getElementById('select_language');
-    const selectTextSlide = document.getElementById('select_text_slide');
-    const loadCloudFileBtn = document.getElementById('load-cloud-file');
     
-    chooseFromCloud.addEventListener('click', () => {
-        cloudModal.style.display = 'block';
-        populateLanguageOptions(); // Dil seçeneklerini doldur
-    });
-    
-    closeCloudModal.addEventListener('click', () => {
-        cloudModal.style.display = 'none';
-    });
-
-
-
-    function populateLanguageOptions() {
-        fetch('languages.json')
-            .then(response => response.json())
-            .then(languages => {
-                selectLanguage.innerHTML = '<option value="" selected>Select Language</option>'; // Reset options
-                languages.forEach(language => {
-                    let option = document.createElement('option');
-                    option.value = language.language;
-                    option.text = language.language;
-                    selectLanguage.add(option);
-                });
-            })
-            .catch(error => console.error('Error fetching languages:', error));
-    }
-
-
-    selectLanguage.addEventListener('change', () => {
-        const selectedLanguage = selectLanguage.value;
-        fetch('languages.json')
-            .then(response => response.json())
-            .then(languages => {
-                const selectedLanguageData = languages.find(lang => lang.language === selectedLanguage);
-                selectTextSlide.innerHTML = '<option value="" selected>Select a text.slide</option>'; // Reset options
-                if (selectedLanguageData) {
-                    selectedLanguageData.files.forEach(file => {
-                        let option = document.createElement('option');
-                        option.value = file;
-                        option.text = file;
-                        selectTextSlide.add(option);
-                    });
-                }
-            })
-            .catch(error => console.error('Error fetching languages:', error));
-    });
-
-
-
-    loadCloudFileBtn.addEventListener('click', () => {
-        const selectedLanguage = selectLanguage.value;
-        const selectedFile = selectTextSlide.value;
-        if (selectedLanguage && selectedFile) {
-            const filePath = `${selectedLanguage}/${selectedFile}`;
-            fetch(filePath)
-                .then(response => response.text())
-                .then(text => {
-                    slides = text.split(/\n\n|\n/)
-                        .filter(slide => slide.trim() !== '')
-                        .map(cleanText);
-                    currentSlideIndex = 0;
-                    updateSlide();
-                })
-                .catch(error => console.error('Error fetching slides:', error));
-            cloudModal.style.display = 'none';
-        }
-    });
-
- 
-
-
-
 
     chooseLocalFile.addEventListener('click', () => fileInput.click());
     
