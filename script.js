@@ -121,18 +121,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
     loadCloudFileBtn.addEventListener('click', () => {
         const selectedLanguage = selectLanguage.value;
         const selectedFile = selectTextSlide.value;
         if (selectedLanguage && selectedFile) {
-            const filePath = `${selectedLanguage}/${selectedFile}`; // Dosya yolunu oluşturun
-            // TODO: Bu dosya yolunu kullanarak metin slaytını yükleyin ve `updateSlide()` fonksiyonunu çağırın.
-            cloudModal.style.display = 'none'; // Popup'ı kapatın
+            const filePath = `${selectedLanguage}/${selectedFile}`;
+            fetch(filePath)
+                .then(response => response.text())
+                .then(text => {
+                    slides = text.split(/\n\n|\n/)
+                        .filter(slide => slide.trim() !== '')
+                        .map(cleanText);
+                    currentSlideIndex = 0;
+                    updateSlide();
+                })
+                .catch(error => console.error('Error fetching slides:', error));
+            cloudModal.style.display = 'none';
         }
     });
 
+ 
 
-    
+
+
 
     chooseLocalFile.addEventListener('click', () => fileInput.click());
     
