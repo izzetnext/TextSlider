@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     chooseLocalFile.addEventListener('click', () => fileInput.click());
-    
+   
     fileInput.addEventListener('change', async (e) => {
         const file = e.target.files[0];
         if (file) {
@@ -170,6 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlide();
     }
 
+
+
+
+
+
+
+
+
     // Calculate jump size based on total slides
     function calculateJumpSize() {
         return Math.max(1, Math.floor(slides.length / 12));
@@ -225,4 +233,96 @@ document.addEventListener('DOMContentLoaded', () => {
             ? 'images/shuffle-on.png' 
             : 'images/shuffle-off.png';
     });
+
+
+    const chooseFromCloud = document.getElementById('choose-from-cloud');
+    const cloudModal = document.getElementById('cloudModal');
+    const closeSpan = cloudModal.querySelector('.close');
+    
+    chooseFromCloud.onclick = function() {
+      cloudModal.style.display = 'block';
+      loadLanguages(); // Modal açıldığında dilleri yükle
+    }
+    
+    closeSpan.onclick = function() {
+      cloudModal.style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == cloudModal) {
+        cloudModal.style.display = 'none';
+      }
+    }
+
+
+    function loadLanguages() {
+        const select_language = document.getElementById('select_language');
+        select_language.innerHTML = ''; // Önceki seçenekleri temizle
+      
+        fetch('languages.json')
+          .then(response => response.json())
+          .then(data => {
+            data.forEach(language => {
+              const option = document.createElement('option');
+              option.value = option.textContent = language.language;
+              select_language.appendChild(option);
+            });
+          })
+          .catch(error => console.error('Error:', error));
+      }
+
+
+      const select_language = document.getElementById('select_language');
+      const select_text_slide = document.getElementById('select_text_slide');
+      
+      select_language.addEventListener('change', () => {
+        const language = select_language.value;
+        select_text_slide.innerHTML = ''; // Önceki seçenekleri temizle
+      
+        fetch('languages.json')
+          .then(response => response.json())
+          .then(data => {
+            const languageFiles = data.find(l => l.language === language)?.files || [];
+            languageFiles.forEach(fileName => {
+              const option = document.createElement('option');
+              option.value = option.textContent = fileName;
+              select_text_slide.appendChild(option);
+            });
+          })
+          .catch(error => console.error('Error:', error));
+      });
+      
+
+
+      const loadCloudFileBtn = document.getElementById('load-cloud-file');
+
+      loadCloudFileBtn.addEventListener('click', () => {
+        const language = select_language.value;
+        const fileName = select_text_slide.value;
+      
+        // Dosyanın tam yolunu oluşturun (örneğin, 'Languages/Turkish/Genetiv_tr.md')
+        const filePath = `Languages/${language}/${fileName}`;
+      
+        // Sunucudan dosyayı çekin (burada GitHub'dan çekildiğini varsayıyoruz)
+        const fileUrl = `https://raw.githubusercontent.com/izzetnext/TextSlider/main/${filePath}`;
+      
+        fetch(fileUrl)
+          .then(response => response.text())
+          .then(text => {
+            slides = text.split(/\n\n|\n/)
+              .filter(slide => slide.trim() !== '')
+              .map(cleanText);
+      
+            if (slides.length > 0) {
+              currentSlideIndex = 0;
+              updateSlide();
+              cloudModal.style.display = 'none'; // Modal'ı kapat
+            }
+          })
+          .catch(error => console.error('Error:', error));
+      });
+
+
+
+
 });

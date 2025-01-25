@@ -27,6 +27,21 @@
 
             <img src="images/choose-from-cloud.png" id="choose-from-cloud" alt="Choose From Cloud">
 
+            <div id="cloudModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <label for="select_language">Dil Seçin:</label>
+                <select id="select_language">
+                  </select>
+            
+                <label for="select_text_slide">Dosya Seçin:</label>
+                <select id="select_text_slide">
+                  </select>
+                <button id="load-cloud-file">Yükle</button>
+              </div>
+            </div>
+
+
             <div class="empty-space"></div>
             <span id="slide-info">0 / 0</span>
             <div class="empty-space"></div>
@@ -42,7 +57,7 @@
 
             <div class="slidecontainer" id="slidecontainer">
                 <p id="delayText">Slide delay : <span id="slide-delay-value">1</span></p> 
-                <input type="range" min="1" max="11" value="1" class="slider" id="slider-value">
+                <input type="range" min="1" max="22" value="1" class="slider" id="slider-value">
             </div>
 
             <div class="empty-space"></div>
