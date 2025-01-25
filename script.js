@@ -49,14 +49,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const delaySlider = document.getElementById('slider-value');
     const slideDelayValue = document.getElementById('slide-delay-value'); // slide-delay-value elemanını seçin
        
+
     const chooseFromCloud = document.getElementById('choose-from-cloud');
     const cloudModal = document.getElementById('cloudModal');
+
+    chooseLocalFile.addEventListener('click', () => fileInput.click());
 
     chooseFromCloud.addEventListener('click', () => {
         cloudModal.style.display = 'block';
         loadLanguages();
     });
+    
 
+    let slides = [];
+    let currentSlideIndex = 0;
+    let isPlaying = false;
+    let isSoundOn = false;
+    let isShuffleOn = false;
+    let playTimeout = null;
+
+    const speechSynthesis = window.speechSynthesis;
+    let currentSpeech = null;
+
+    // Function to clean text
+    function cleanText(text) {
+        // Remove all * characters
+        text = text.replace(/\*/g, '');
+        return text.trim();
+    }
+
+    
     function loadLanguages() {
         fetch('languages.json')
             .then(response => response.json())
@@ -75,12 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const language = document.getElementById('select_language').value;
         const select_text_slide = document.getElementById('select_text_slide');
         select_text_slide.innerHTML = '<option value="" selected>Select a text.slide</option>';
-
+    
         if (language) {
             fetch('languages.json')
                 .then(response => response.json())
                 .then(data => {
-                    const languageFiles = data.find(l => l.language === language)?.files ||;
+                    const languageFiles = data.find(l => l.language === language)?.files || []; // Boş dizi atadık
                     languageFiles.forEach(fileName => {
                         const option = document.createElement('option');
                         option.value = option.textContent = fileName;
@@ -122,29 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-
-
-
-    let slides = [];
-    let currentSlideIndex = 0;
-    let isPlaying = false;
-    let isSoundOn = false;
-    let isShuffleOn = false;
-    let playTimeout = null;
-
-    const speechSynthesis = window.speechSynthesis;
-    let currentSpeech = null;
-
-    // Function to clean text
-    function cleanText(text) {
-        // Remove all * characters
-        text = text.replace(/\*/g, '');
-        return text.trim();
-    }
-
-    
-
-    chooseLocalFile.addEventListener('click', () => fileInput.click());
     
     fileInput.addEventListener('change', async (e) => {
         const file = e.target.files[0];
