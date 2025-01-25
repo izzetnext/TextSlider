@@ -175,13 +175,29 @@ body {
     padding: 0;
   }
 
+ 
+ 
+
+
   #slidecontainer
   {
-    height:22px;
-    border: 1px solid #797979;
-    overflow: hidden;
+ 
+    line-height: 1; /* Satır yüksekliğini azaltır */
+ 
+    height: max-content;
+    width: 80%; /* veya istediğiniz bir genişlik değeri */
+    max-width: 200px; /* Maksimum genişlik */
   }
   
+  #delayText  {
+    text-align: right; 
+  
+    height:14px;
+    margin-top: 0px; /* veya istediğiniz bir değer */
+    margin-bottom: -1px; /* veya istediğiniz bir değer */
+  }
+
+
   .slider {
     -webkit-appearance: none;
     width: 100%;
