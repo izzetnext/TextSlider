@@ -50,17 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideDelayValue = document.getElementById('slide-delay-value'); // slide-delay-value elemanını seçin
        
 
-    const chooseFromCloud = document.getElementById('choose-from-cloud');
-    const cloudModal = document.getElementById('cloudModal');
-
-    chooseLocalFile.addEventListener('click', () => fileInput.click());
-
-    chooseFromCloud.addEventListener('click', () => {
-        cloudModal.style.display = 'block';
-        loadLanguages();
-    });
-    
-
     let slides = [];
     let currentSlideIndex = 0;
     let isPlaying = false;
@@ -79,71 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-    function loadLanguages() {
-        fetch('languages.json')
-            .then(response => response.json())
-            .then(data => {
-                const select_language = document.getElementById('select_language');
-                data.forEach(language => {
-                    const option = document.createElement('option');
-                    option.value = option.textContent = language.language;
-                    select_language.appendChild(option);
-                });
-            })
-            .catch(error => console.error('Error:', error));
-    }
 
-    function handleLanguageChange() {
-        const language = document.getElementById('select_language').value;
-        const select_text_slide = document.getElementById('select_text_slide');
-        select_text_slide.innerHTML = '<option value="" selected>Select a text.slide</option>';
-    
-        if (language) {
-            fetch('languages.json')
-                .then(response => response.json())
-                .then(data => {
-                    const languageFiles = data.find(l => l.language === language)?.files || []; // Boş dizi atadık
-                    languageFiles.forEach(fileName => {
-                        const option = document.createElement('option');
-                        option.value = option.textContent = fileName;
-                        select_text_slide.appendChild(option);
-                    });
-                })
-                .catch(error => console.error('Error:', error));
-        }
-    }
-
-    function handleTextSlideChange() {
-        const select_language = document.getElementById('select_language');
-        const select_text_slide = document.getElementById('select_text_slide');
-        const filePath = `Languages/${select_language.value}/${select_text_slide.value}`;
-        const fileUrl = `https://raw.githubusercontent.com/izzetnext/TextSlider/main/${filePath}`;
-
-        if (select_text_slide.value) {
-            fetch(fileUrl)
-                .then(response => response.text())
-                .then(data => {
-                    slides = data.split(/\n\n|\n/)
-                        .filter(slide => slide.trim() !== '')
-                        .map(cleanText);
-
-                    if (slides.length > 0) {
-                        currentSlideIndex = 0;
-                        updateSlide();
-                        closeCloudModal();
-                    }
-                })
-                .catch((error) => {
-                    console.error('Fetch error: ', error);
-                });
-        }
-    }
-
-    function closeCloudModal() {
-        cloudModal.style.display = 'none';
-    }
-
-
+    chooseLocalFile.addEventListener('click', () => fileInput.click());
     
     fileInput.addEventListener('change', async (e) => {
         const file = e.target.files[0];
