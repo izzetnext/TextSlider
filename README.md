@@ -28,10 +28,10 @@ To get started with TextSlider, simply clone the repository and follow the setup
 
 ```bash
 git clone https://github.com/izzetnext/TextSlider.git
+---
+
 
 **Text Slider User Guide**  
-
----
 
 ### **Introduction**  
 Text Slider is a hobby project designed to help users learn languages through interactive slides. It supports text playback with speech synthesis, keyboard controls, and cloud integration for easy access to language files.  
