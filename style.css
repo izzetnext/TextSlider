@@ -316,3 +316,7 @@ body {
   width: 100%; /* İsteğe bağlı: Elementlerin tam genişlikte olmasını sağlamak için */
   margin-bottom: 10px; /* Alt kenar boşluğu ekleme */
 }
+
+.slide-transition {  
+  transition: opacity 0.5s ease-in-out;  
+}  
