@@ -257,19 +257,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadLanguages() {
         const select_language = document.getElementById('select_language');
-        select_language.innerHTML = ''; // Önceki seçenekleri temizle
-      
-        fetch('languages.json')
-          .then(response => response.json())
-          .then(data => {
-            data.forEach(language => {
-              const option = document.createElement('option');
-              option.value = option.textContent = language.language;
-              select_language.appendChild(option);
-            });
-          })
-          .catch(error => console.error('Error:', error));
-      }
+    
+        // Sadece seçenekler boşsa yükle
+        if (select_language.options.length === 0) {
+            fetch('languages.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(language => {
+                        const option = document.createElement('option');
+                        option.value = option.textContent = language.language;
+                        select_language.appendChild(option);
+                    });
+    
+                    // Kaydedilen dil seçeneğini yükle
+                    const savedLanguage = localStorage.getItem('selectedLanguage');
+                    if (savedLanguage) {
+                        select_language.value = savedLanguage;
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        } else {
+            // Seçenekler zaten doluysa, sadece kaydedilen dili ayarla
+            const savedLanguage = localStorage.getItem('selectedLanguage');
+            if (savedLanguage) {
+                select_language.value = savedLanguage;
+            }
+        }
+    }
 
 
       const select_language = document.getElementById('select_language');
@@ -321,6 +335,20 @@ document.addEventListener('DOMContentLoaded', () => {
           })
           .catch(error => console.error('Error:', error));
       });
+
+
+// Dil seçeneğini kaydet
+select_language.addEventListener('change', () => {
+    localStorage.setItem('selectedLanguage', select_language.value);
+  });
+  
+  // Kaydedilen dil seçeneğini yükle
+  const savedLanguage = localStorage.getItem('selectedLanguage');
+  if (savedLanguage) {
+    select_language.value = savedLanguage;
+  }
+
+
 
 
 
