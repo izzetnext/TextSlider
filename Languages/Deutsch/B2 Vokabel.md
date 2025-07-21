@@ -1,5 +1,5 @@
 B2-Deutsch Vokabeln ((nach Themen gruppiert))
-1. Akademisches & Hochschulwesen
+Akademisches & Hochschulwesen
 die Fakultät, die Fakultäten: ((Teil der Uni für ein Fach))
 das Institut, die Institute: ((Forschungsstelle an der Uni))
 die Bibliothek, die Bibliotheken: ((leiht Bücher))
@@ -54,8 +54,7 @@ die Austauschstudentin, die Austauschstudentinnen: ((weibliche Austauschstudente
 die Studienwahl, die Studienwahlen: ((wählt Fach))
 die Bibliothekskarte, die Bibliothekskarten: ((leiht Bücher aus))
 die Anwesenheitsliste, die Anwesenheitslisten: ((kontrolliert Anwesenheit))
-
-2. Arbeitswelt & Business
+Arbeitswelt & Business
 der Geschäftsführer, die Geschäftsführer: ((leitet die Firma))
 die Geschäftsführerin, die Geschäftsführerinnen: ((weibliche Geschäftsführer))
 die Personalabteilung, die Personalabteilungen: ((kümmert um Mitarbeiter))
@@ -112,8 +111,7 @@ der Vertragspartner, die Vertragspartner: ((unterschreibt Vertrag))
 die Selbstständigkeit ((kein Pl.)): ((arbeitet für sich))
 der Freiberufler, die Freiberufler: ((arbeitet selbstständig))
 die Freiberuflerin, die Freiberuflerinnen: ((weibliche Freiberufler))
-
-3. Regierung & Politik
+Regierung & Politik
 die Regierung, die Regierungen: ((leitet das Land))
 regieren ((hat regiert, regierte)): ((leiten))
 die Opposition, die Oppositionen: ((andere Meinung))
@@ -169,8 +167,7 @@ die Bürokratie ((kein Pl.)): ((viele Formulare))
 das Amt, die Ämter: ((Behörde))
 die Zuständigkeit, die Zuständigkeiten: ((muss sich kümmern))
 die Gesetzesänderung, die Gesetzesänderungen: ((Gesetz wird neu))
-
-4. Recht & Justiz
+Recht & Justiz
 das Gesetz, die Gesetze: ((Regel vom Staat))
 das Urteil, die Urteile: ((Gerichtsentscheidung))
 der Richter, die Richter: ((spricht Urteil))
@@ -229,8 +226,7 @@ die Polizei ((kein Pl.)): ((fängt Täter))
 der Täter, die Täter: ((macht Verbrechen))
 die Täterin, die Täterinnen: ((weibliche Täter))
 das Opfer, die Opfer: ((wurde verletzt))
-
-5. Höflich & Formell
+Höflich & Formell
 duzen ((hat geduzt, duzte)): ((„du“ sagen))
 siezen ((hat gesiezt, siezte)): ((„Sie“ sagen))
 die Anrede, die Anreden: ((wie man jemanden nennt))
@@ -271,8 +267,7 @@ die Distanz, die Distanzen: ((Abstand halten))
 die Beziehungsebene, die Beziehungsebenen: ((wie nah man ist))
 der Kontext, die Kontexte: ((Situation))
 die Etikette ((kein Pl.)): ((gutes Benehmen))
-
-6. Redewendungen & Idiome
+Redewendungen & Idiome
 etwas auf dem Schirm haben: ((weiß Bescheid))
 aus einer Mücke einen Elefanten machen: ((macht großes Drama))
 ins kalte Wasser springen: ((fängt ohne Vorbereitung an))
@@ -312,8 +307,7 @@ auf Nummer sicher gehen: ((spielt sicher))
 etwas ist in trockenen Tüchern: ((ist fertig))
 die Daumen drücken: ((wünscht Glück))
 eine Bauchentscheidung treffen: ((entscheidet aus dem Bauch))
-
-7. Trennbare Verben
+Trennbare Verben
 abbrechen ((hat abgebrochen, brach ab)): ((stoppt))
 annehmen ((hat angenommen, nahm an)): ((akzeptiert))
 aufstellen ((hat aufgestellt, stellte auf)): ((macht Plan))
@@ -361,8 +355,7 @@ durchsetzen ((hat durchgesetzt, setzte durch)): ((macht durch))
 nachdenken ((hat nachgedacht, dachte nach)): ((überlegt))
 auseinandersetzen ((hat auseinandergesetzt, setzte auseinander)): ((beschäftigt sich))
 vorgehen ((ist vorgegangen, ging vor)): ((handelt))
-
-8. Emotionen & Psychologie
+Emotionen & Psychologie
 die Stimmung, die Stimmungen: ((gute oder schlechte Atmosphäre))
 die Laune, die Launen: ((gute oder schlechte Tagesform))
 gut gelaunt ((Gegenteil=> schlecht gelaunt)): ((fröhlich))
@@ -418,8 +411,7 @@ ausgeglichen ((Gegenteil=> gereizt)): ((ruhig und stabil))
 der Burnout ((kein Pl.)): ((total erschöpft))
 die Selbstwahrnehmung ((kein Pl.)): ((kennt sich selbst))
 die mentale Gesundheit ((kein Pl.)): ((Kopf ist gesund))
-
-9. Kultur, Kunst & Unterhaltung
+Kultur, Kunst & Unterhaltung
 die Kultur, die Kulturen: ((Kunst und Lebensweise))
 das kulturelle Angebot, die kulturellen Angebote: ((Theater, Museen …))
 die Veranstaltung, die Veranstaltungen: ((Event))
@@ -478,8 +470,7 @@ die Nebenrolle, die Nebenrollen: ((weniger wichtige Person))
 die Szene, die Szenen: ((kurzer Filmabschnitt))
 der Zuschauer, die Zuschauer: ((sieht zu))
 die Zuschauerin, die Zuschauerinnen: ((weibliche Zuschauer))
-
-10. Soziale Medien & Internet
+Soziale Medien & Internet
 das soziale Netzwerk, die sozialen Netzwerke: ((Facebook, Instagram …))
 die Plattform, die Plattformen: ((Ort im Internet))
 der Beitrag, die Beiträge: ((Post im Internet))
@@ -537,8 +528,7 @@ das WLAN ((kein Pl.)): ((Internet ohne Kabel))
 die Verbindung, die Verbindungen: ((ist online))
 die App, die Apps: ((Programm fürs Handy))
 der Bildschirm, die Bildschirme: ((zeigt Bild))
-
-11. Wissenschaft & Technik
+Wissenschaft & Technik
 die Wissenschaft, die Wissenschaften: ((Forschung))
 die Naturwissenschaft, die Naturwissenschaften: ((Physik, Chemie …))
 die Sozialwissenschaft, die Sozialwissenschaften: ((Gesellschaft studieren))
@@ -589,8 +579,7 @@ die Genetik ((kein Pl.)): ((Gen-Forschung))
 der Klimawandel ((kein Pl.)): ((Erde wird wärmer))
 die Nachhaltigkeit ((kein Pl.)): ((gut für Zukunft))
 die Weltraumforschung ((kein Pl.)): ((erforscht Weltall))
-
-12. Wirtschaft & Finanzen
+Wirtschaft & Finanzen
 die Wirtschaft, die Wirtschaften: ((Geld und Arbeit))
 die Volkswirtschaft, die Volkswirtschaften: ((ganze Wirtschaft))
 die Betriebswirtschaft ((kein Pl.)): ((lehrt Unternehmen))
@@ -647,8 +636,7 @@ das Online-Banking ((kein Pl.)): ((Bank im Internet))
 der Wechselkurs, die Wechselkurse: ((Euro in andere Währung))
 die Bargeldzahlung, die Bargeldzahlungen: ((zahlt mit Scheinen))
 die Kartenzahlung, die Kartenzahlungen: ((zahlt mit Karte))
-
-13. Gesundheit & Medizin
+Gesundheit & Medizin
 die Gesundheit ((kein Pl.)): ((fühlt sich gut))
 die Krankheit, die Krankheiten: ((fühlt sich schlecht))
 sich erkälten ((hat sich erkältet, erkältete sich)): ((Schnupfen bekommen))
@@ -703,8 +691,7 @@ die öffentliche Gesundheit ((kein Pl.)): ((Gesundheit für alle))
 die Gesundheitspolitik ((kein Pl.)): ((Regeln für Gesundheit))
 die Lebenserwartung ((kein Pl.)): ((wie alt man wird))
 der Lebensstil, die Lebensstile: ((wie man lebt))
-
-14. Ethik & Gesellschaft
+Ethik & Gesellschaft
 die Ethik ((kein Pl.)): ((was richtig oder falsch))
 die Moral ((kein Pl.)): ((gute Werte))
 moralisch ((Gegenteil=> unmoralisch)): ((gut))
@@ -758,8 +745,7 @@ das Mitgefühl ((kein Pl.)): ((fühlt mit))
 mitfühlend ((Gegenteil=> gefühllos)): ((zeigt Mitgefühl))
 die Spende, die Spenden: ((gibt Geld))
 spenden ((hat gespendet, spendete)): ((gibt Geld))
-
-15. Konsum & Werbung
+Konsum & Werbung
 der Konsum ((kein Pl.)): ((kauft viel))
 der Verbraucher, die Verbraucher: ((kauft ein))
 die Verbraucherin, die Verbraucherinnen: ((weibliche Käufer))
@@ -811,8 +797,7 @@ der bewusste Konsum ((kein Pl.)): ((kauft nachdenklich))
 die Produktverpackung, die Produktverpackungen: ((Verpackung))
 der Werbeslogan, die Werbeslogans: ((kurzer Werbespruch))
 die Kaufempfehlung, die Kaufempfehlungen: ((sagt, was gut ist))
-
-16. Berufliche Kommunikation
+Berufliche Kommunikation
 die Arbeitswelt ((kein Pl.)): ((alle Jobs))
 das Arbeitsumfeld, die Arbeitsumfelder: ((Atmosphäre im Job))
 der Arbeitsplatz, die Arbeitsplätze: ((Ort des Jobs))
@@ -875,8 +860,7 @@ das Arbeitszeugnis, die Arbeitszeugnisse: ((Zeugnis vom Chef))
 die Fortbildung, die Fortbildungen: ((lernt für Job))
 die Kompetenz, die Kompetenzen: ((kann gut))
 die Qualifikation, die Qualifikationen: ((Zeugnisse))
-
-17. Politik & Internationale Beziehungen
+Politik & Internationale Beziehungen
 die Politik ((kein Pl.)): ((Regeln für alle))
 der Politiker, die Politiker: ((arbeitet in Politik))
 die Politikerin, die Politikerinnen: ((weibliche Politiker))
@@ -939,8 +923,7 @@ die Krise, die Krisen: ((großes Problem))
 die Instabilität ((kein Pl.)): ((ist nicht stabil))
 die Entwicklungspolitik ((kein Pl.)): ((hilft armen Ländern))
 der Konflikt, die Konflikte: ((Streit))
-
-18. Infrastruktur & Stadt
+Infrastruktur & Stadt
 die Infrastruktur, die Infrastrukturen: ((Straßen, Wasser, Strom))
 das Stadtviertel, die Stadtviertel: ((Teil der Stadt))
 die Innenstadt, die Innenstädte: ((Mitte der Stadt))
@@ -997,8 +980,7 @@ die Verkehrsplanung ((kein Pl.)): ((plant Straßen))
 die Lebensqualität ((kein Pl.)): ((wohnt gut))
 die Mietpreisbremse ((kein Pl.)): ((Miete wird begrenzt))
 die Gentrifizierung ((kein Pl.)): ((Viertel wird teurer))
-
-19. Rhetorik & Argumentation
+Rhetorik & Argumentation
 die Meinung, die Meinungen: ((was man denkt))
 der Standpunkt, die Standpunkte: ((Position))
 die Ansicht, die Ansichten: ((Meinung))
@@ -1062,8 +1044,7 @@ die Metapher, die Metaphern: ((bildlicher Vergleich))
 die Ironie ((kein Pl.)): ((meint das Gegenteil))
 die Übertreibung, die Übertreibungen: ((macht größer))
 die Gegenüberstellung, die Gegenüberstellungen: ((zeigt Unterschied))
-
-20. Globale Themen & Nachhaltigkeit
+Globale Themen & Nachhaltigkeit
 die Globalisierung ((kein Pl.)): ((Welt wird zusammen))
 die Nachhaltigkeit ((kein Pl.)): ((gut für Zukunft))
 nachhaltig ((Gegenteil=> kurzfristig)): ((schont Zukunft))

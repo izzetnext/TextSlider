@@ -1,6 +1,5 @@
 B1-Deutsch Vokabeln ((nach Themen gruppiert))
-
-1. Charakter & Persönlichkeit
+Charakter & Persönlichkeit
 ehrlich ((Gegenteil=> unehrlich)): ((sagt die Wahrheit))
 unehrlich ((Gegenteil=> ehrlich)): ((sagt nicht die Wahrheit))
 zuverlässig ((Gegenteil=> unzuverlässig)): ((tut, was man verspricht))
@@ -24,8 +23,7 @@ unhöflich ((Gegenteil=> höflich)): ((vergisst „bitte“ und „danke“))
 frech ((Gegenteil=> artig)): ((sagt Dinge, die man nicht sagt))
 neugierig ((Gegenteil=> desinteressiert)): ((will alles wissen))
 bescheiden ((Gegenteil=> arrogant)): ((zeigt nicht, was man kann))
-
-2. Freundschaft & Beziehungen
+Freundschaft & Beziehungen
 der Freund, die Freunde: ((Person, die man gern hat))
 die Freundin, die Freundinnen: ((weibliche Person, die man gern hat))
 der Bekannte, die Bekannten: ((man kennt sich, aber ist nicht nah))
@@ -59,8 +57,7 @@ die Kollegin, die Kolleginnen: ((weibliche Person im gleichen Büro))
 vertrauen ((hat vertraut, vertraute)): ((jemandem glauben))
 sich kümmern um ((hat sich gekümmert, kümmerte sich)): ((helfen und pflegen))
 unterstützen ((hat unterstützt, unterstützte)): ((helfen, auch mit Geld))
-
-3. Stadt & Land
+Stadt & Land
 die Großstadt, die Großstädte: ((viele Menschen und hohe Häuser))
 das Dorf, die Dörfer: ((kleine Siedlung auf dem Land))
 das Stadtzentrum, die Stadtzentren: ((Mitte der Stadt))
@@ -105,8 +102,7 @@ die Arbeitsmöglichkeit, die Arbeitsmöglichkeiten: ((viele Jobs))
 die Freizeitmöglichkeit, die Freizeitmöglichkeiten: ((viel zu tun in der Freizeit))
 das Kulturangebot, die Kulturangebote: ((Theater, Museen …))
 die Nachbarschaft, die Nachbarschaften: ((alle Leute in der Straße))
-
-4. Natur & Wetter
+Natur & Wetter
 die Landschaft, die Landschaften: ((Berge, Wälder, Seen zusammen))
 der Berg, die Berge: ((hohes Land))
 das Tal, die Täler: ((tief zwischen Bergen))
@@ -155,8 +151,7 @@ der Frühling, die Frühlinge: ((warme Blumenzeit))
 der Sommer, die Sommer: ((heiße Ferienzeit))
 der Herbst, die Herbste: ((Blätter werden bunt))
 der Winter, die Winter: ((kalt und oft Schnee))
-
-5. Umwelt & Klimawandel
+Umwelt & Klimawandel
 die Umwelt ((kein Pl.)): ((Natur und Luft um uns))
 der Umweltschutz ((kein Pl.)): ((helfen der Natur))
 der Klimawandel ((kein Pl.)): ((Erde wird wärmer))
@@ -197,8 +192,7 @@ die Naturkatastrophe, die Naturkatastrophen: ((Überschwemmung, Erdbeben …))
 die Überschwemmung, die Überschwemmungen: ((zu viel Wasser))
 das Hochwasser ((kein Pl.)): ((Fluss kommt aus dem Bett))
 die Dürre, die Dürren: ((zu wenig Wasser))
-
-6. Bildung & Ausbildung
+Bildung & Ausbildung
 die Grundschule, die Grundschulen: ((erste Schule für Kinder))
 die weiterführende Schule, die weiterführenden Schulen: ((nach der Grundschule))
 das Gymnasium, die Gymnasien: ((macht Abitur))
@@ -241,8 +235,7 @@ die Karriere, die Karrieren: ((beruflicher Weg))
 der Karriereweg, die Karrierewege: ((Plan für den Beruf))
 sich fortbilden ((hat sich fortgebildet, bildete sich fort)): ((weiter lernen))
 das Fernstudium, die Fernstudien: ((zuhause lernen))
-
-7. Träume & Ziele
+Träume & Ziele
 der Traum, die Träume: ((Wunsch im Schlaf oder im Leben))
 träumen von ((hat geträumt, träumte)): ((im Kopf etwas sehen))
 der Traumjob, die Traumjobs: ((Arbeit, die man gern macht))
@@ -279,8 +272,7 @@ pessimistisch ((Gegenteil=> optimistisch)): ((denkt, dass alles schlecht wird))
 zuversichtlich ((Gegenteil=> unsicher)): ((glaubt an Erfolg))
 die Inspiration, die Inspirationen: ((gute neue Idee))
 die Motivation, die Motivationen: ((will etwas tun))
-
-8. Gesundheit & Fitness
+Gesundheit & Fitness
 gesund ((Gegenteil=> krank)): ((fühlt sich gut))
 ungesund ((Gegenteil=> gesund)): ((schadet dem Körper))
 die Gesundheit ((kein Pl.)): ((Körper und Seele gut))
@@ -341,8 +333,7 @@ die Gewohnheit, die Gewohnheiten: ((jeden Tag gleich tun))
 die Angewohnheit, die Angewohnheiten: ((oft schlechte Gewohnheit))
 die Herausforderung, die Herausforderungen: ((schwierige Aufgabe))
 sich vornehmen ((hat sich vorgenommen, nahm sich vor)): ((Plan machen))
-
-9. Essen & Trinken
+Essen & Trinken
 das Lebensmittel, die Lebensmittel: ((Essen aus dem Laden))
 die Nahrung ((kein Pl.)): ((Essen für den Körper))
 das Gericht, die Gerichte: ((fertiges Essen))
@@ -401,8 +392,7 @@ allergisch ((Gegenteil=> unempfindlich)): ((kriegt Ausschlag))
 ich bin satt: ((kein Hunger mehr))
 Guten Appetit!: ((wünscht gutes Essen))
 Prost!: ((beim Trinken anstoßen))
-
-10. Verbindungswörter
+Verbindungswörter
 und: ((plus))
 oder: ((eins von beiden))
 aber: ((jedoch))
@@ -468,8 +458,7 @@ langweilig ((Gegenteil=> spannend)): ((nicht interessant))
 die Pointe, die Pointen: ((lustiges Ende))
 zusammenfassen ((hat zusammengefasst, fasste zusammen)): ((kurz sagen))
 die Zusammenfassung, die Zusammenfassungen: ((kurzer Text))
-
-11. Medien & Technik
+Medien & Technik
 das Handy, die Handys: ((kleines Telefon))
 das Smartphone, die Smartphones: ((Handy mit Internet))
 das Telefon, die Telefone: ((Festnetz oder Handy))
@@ -525,8 +514,7 @@ das Fernsehen ((kein Pl.)): ((TV als Medium))
 der Fernseher, die Fernseher: ((Gerät))
 die Fernbedienung, die Fernbedienungen: ((Schalter für TV))
 die Bildschirmzeit ((kein Pl.)): ((wie lange man am Bildschirm ist))
-
-12. Reisen & Tourismus
+Reisen & Tourismus
 reisen ((ist gereist, reiste)): ((woanders hin fahren))
 die Reise, die Reisen: ((Fahrt oder Flug))
 der Urlaub, die Urlaube: ((freie Zeit zum Reisen))
@@ -581,8 +569,7 @@ die Insel, die Inseln: ((Land im Wasser))
 das Zelt, die Zelte: ((kleines Haus aus Stoff))
 zelten ((hat gezeltet, zeltete)): ((im Zelt schlafen))
 die Jugendherberge, die Jugendherbergen: ((günstige Übernachtung))
-
-13. Emotionen & Reaktionen
+Emotionen & Reaktionen
 die Emotion, die Emotionen: ((starke Gefühle))
 das Gefühl, die Gefühle: ((was man spürt))
 fühlen ((hat gefühlt, fühlte)): ((spüren))
@@ -632,8 +619,7 @@ gleichgültig ((Gegenteil=> interessiert)): ((kümmert nicht))
 begeistert ((Gegenteil=> enttäuscht)): ((sehr glücklich))
 die Begeisterung ((kein Pl.)): ((große Freude))
 beruhigend ((Gegenteil=> beunruhigend)): ((macht ruhig))
-
-14. Politik & Gesellschaft
+Politik & Gesellschaft
 die Politik ((kein Pl.)): ((Regeln für alle))
 politisch ((Gegenteil=> unpolitisch)): ((mit Politik zu tun))
 der Politiker, die Politiker: ((arbeitet in der Politik))
@@ -687,8 +673,7 @@ die Steuer, die Steuern: ((Geld für den Staat))
 der Staat, die Staaten: ((Land mit Regierung))
 die EU ((kein Pl.)): ((europäische Ländergemeinschaft))
 das Mitglied, die Mitglieder: ((Teil einer Gruppe))
-
-15. Alltag & Hausarbeit
+Alltag & Hausarbeit
 der Alltag ((kein Pl.)): ((jeden Tag))
 der Staub ((kein Pl.)): ((kleine Schmutzpartikel))
 staubsaugen ((hat gestaubsaugt, staubsaugte)): ((Staub wegmachen))
@@ -715,8 +700,7 @@ die WG, die WGs: ((Wohngemeinschaft))
 die Ordnung ((kein Pl.)): ((alles ist richtig))
 ordentlich ((Gegenteil=> chaotisch)): ((sauber und richtig))
 chaotisch ((Gegenteil=> ordentlich)): ((alles durcheinander))
-
-16. Arbeit & Büro
+Arbeit & Büro
 der Arbeitsplatz, die Arbeitsplätze: ((Ort, wo man arbeitet))
 der Angestellte, die Angestellten: ((hat einen Job))
 die Angestellte, die Angestellten: ((weibliche Mitarbeiter))
@@ -754,8 +738,7 @@ verantwortlich ((Gegenteil=> unverantwortlich)): ((muss aufpassen))
 unter Druck stehen ((hat gestanden, stand)): ((viel Stress haben))
 stressig ((Gegenteil=> entspannt)): ((macht Stress))
 die Zufriedenheit ((kein Pl.)): ((alles passt))
-
-17. Kommunikation & Interaktion
+Kommunikation & Interaktion
 
 mitteilen ((hat mitgeteilt, teilte mit)): ((Info geben))
 reden ((hat geredet, redete)): ((sprechen))
@@ -772,8 +755,7 @@ zuständig sein für ((ist gewesen, war)): ((muss sich kümmern))
 sich melden ((hat sich gemeldet, meldete sich)): ((sich zeigen))
 sich verabreden ((hat sich verabredet, verabredete sich)): ((Treffen vereinbaren))
 die Verabredung, die Verabredungen: ((vereinbartes Treffen))
-
-18. Feiern & Traditionen
+Feiern & Traditionen
 der Brauch, die Bräuche: ((Tradition))
 das Ereignis, die Ereignisse: ((besonderer Tag))
 der Feiertag, die Feiertage: ((arbeitsfreier Tag))
@@ -791,8 +773,7 @@ die Verkleidung, die Verkleidungen: ((Kostüm))
 sich verkleiden ((hat sich verkleidet, verkleidete sich)): ((anders anziehen))
 die Kerze, die Kerzen: ((brennt und gibt Licht))
 die Stimmung, die Stimmungen: ((gute oder schlechte Laune))
-
-19. Einwanderung & Integration
+Einwanderung & Integration
 die Migration ((kein Pl.)): ((Menschen ziehen um))
 der Migrant, die Migranten: ((zieht ins andere Land))
 die Migrantin, die Migrantinnen: ((weibliche Migranten))
