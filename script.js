@@ -353,4 +353,32 @@ select_language.addEventListener('change', () => {
 
 
 
+// Ekranı üçe bölen alanlar için tıklama olayları
+const zoneLeft = document.getElementById('zone-left');
+const zoneCenter = document.getElementById('zone-center');
+const zoneRight = document.getElementById('zone-right');
+
+if (zoneLeft && zoneCenter && zoneRight) {
+    zoneLeft.addEventListener('click', () => {
+        stopCurrentPlayback();
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+        updateSlide();
+    });
+
+    zoneRight.addEventListener('click', () => {
+        stopCurrentPlayback();
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        updateSlide();
+    });
+
+    zoneCenter.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        playPauseBtn.src = isPlaying ? 'images/pause.png' : 'images/play.png';
+        if (isPlaying) {
+            updateSlide();
+        } else {
+            stopCurrentPlayback();
+        }
+    });
+}
 });

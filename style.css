@@ -17,6 +17,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  position: relative;
 }
 
 .toolbar {
@@ -94,6 +96,7 @@ body {
     color: #c8c8c8;
     border-radius: 19px;
     height: 78vh;
+    position: relative;
 }
 
 .text-display {
@@ -316,4 +319,16 @@ body {
   width: 100%; /* İsteğe bağlı: Elementlerin tam genişlikte olmasını sağlamak için */
   margin-bottom: 10px; /* Alt kenar boşluğu ekleme */
 }
+
+.screen-zone {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33.33%;
+    z-index: 20;
+    cursor: pointer;
+}
+#zone-left { left: 0; }
+#zone-center { left: 33.33%; }
+#zone-right { left: 66.66%; }
 
