@@ -239,7 +239,7 @@ body {
   .modal {
     display: none; /* Modal başlangıçta gizli */
     position: fixed;
-    z-index: 1;
+    z-index: 10; /* Daha yüksek bir değer */
     left: 0;
     top: 0;
     width: 100%;
@@ -325,7 +325,7 @@ body {
     top: 0;
     height: 100%;
     width: 33.33%;
-    z-index: 20;
+    z-index: 2; /* Daha düşük bir değer */
     cursor: pointer;
 }
 #zone-left { left: 0; }
